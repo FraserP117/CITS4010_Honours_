@@ -1,0 +1,18 @@
+TY  - JOUR
+AU  - Friston, Karl
+AU  - Samothrakis, Spyridon
+AU  - Montague, Read
+PY  - 2012
+DA  - 2012/10/01
+TI  - Active inference and agency: optimal control without cost functions
+JO  - Biological Cybernetics
+SP  - 523
+EP  - 541
+VL  - 106
+IS  - 8
+AB  - This paper describes a variational free-energy formulation of (partially observable) Markov decision problems in decision making under uncertainty. We show that optimal control can be cast as active inference. In active inference, both action and posterior beliefs about hidden states minimise a free energy bound on the negative log-likelihood of observed states, under a generative model. In this setting, reward or cost functions are absorbed into prior beliefs about state transitions and terminal states. Effectively, this converts optimal control into a pure inference problem, enabling the application of standard Bayesian filtering techniques. We then consider optimal trajectories that rest on posterior beliefs about hidden states in the future. Crucially, this entails modelling control as a hidden state that endows the generative model with a representation of agency. This leads to a distinction between models with and without inference on hidden control states; namely, agency-free and agency-based models, respectively.
+SN  - 1432-0770
+UR  - https://doi.org/10.1007/s00422-012-0512-8
+DO  - 10.1007/s00422-012-0512-8
+ID  - Friston2012
+ER  - 

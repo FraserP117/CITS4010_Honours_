@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {0.1}Introduction}{3}{}%
+\contentsline {subsection}{\numberline {0.1.1}Motivation and Background}{3}{}%
+\contentsline {subsection}{\numberline {0.1.2}Active Inference: An Overview}{3}{}%
+\contentsline {section}{\numberline {0.2}Research Objectives}{4}{}%
+\contentsline {subsection}{\numberline {0.2.1}Central Research Questions}{5}{}%
+\contentsline {section}{\numberline {0.3}Previous Work}{5}{}%
+\contentsline {section}{\numberline {0.4}Methods and Objectives}{6}{}%
+\contentsline {subsection}{\numberline {0.4.1}Epoch 1: Benchmark AIF and RL Agents}{6}{}%
+\contentsline {subsection}{\numberline {0.4.2}Epoch 2: Deep AIF - The Partially Observable Case}{7}{}%
+\contentsline {subsection}{\numberline {0.4.3}Epoch 3: Deep, Contrastive AIF With Partial Observability}{7}{}%
+\contentsline {section}{\numberline {0.5}Software and Hardware Requirements}{7}{}%
+\contentsline {section}{\numberline {0.6}Rough Schedule}{7}{}%

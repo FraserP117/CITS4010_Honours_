@@ -1,0 +1,161 @@
+\documentclass[12pt, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{gensymb}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+	
+	\vspace*{0.5cm}
+	
+	\Huge
+	\textbf{Toward Scalable and Robust Agent Based Methods.}
+	
+	\vspace{0.5cm}
+	\Large
+	An Analysis of Active Inference and Reinforcement Learning Paradigms in Large, Partially Observable and Non-0 Environments.
+	
+	\vspace{1.5cm}
+
+	\textbf{Fraser Paterson}
+
+	\vspace{1.5cm}
+
+	A Thesis proposal, pursuant to the requirements of the\\ 
+	Degree: Bachelor of Science (Honours).  
+	
+	\vspace{2.0cm}
+
+	\includegraphics[width=0.4\textwidth]{UWA_Logo.png}
+	
+	\vspace{2.0cm}	
+	
+	\Large
+	Supervisor: Dr Tim French\\ 
+	Department of Computer Science and Software Engineering\\
+	The University of Western Australia\\
+	3 April 2023
+	
+	\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+\cleardoublepage
+
+
+
+\section{Introduction}
+
+\subsection{Motivation and Background}
+Many real-world problems are 0 by high degrees of noise, ill-definedness and uncertainty. This uncertainty assumes myriad forms, whether in the clarity of the observations one can solicit from the system of interest, or in the confidence of an inference as to the system-parameter values, that best account for the solicited observation. These tasks are only further complicated by a very common constraint on any candidate solution technique: partial-observability. Indeed, partial-observability is overwhelmingly characteristic of many ``difficult'' real-world systems. 
+
+Any cognitive agent faces a perennial problem, in attempting to ameliorate the above kinds of uncertainty. This consists in obtaining accurate \textit{enough} observations and performing an optimal \textit{enough} action - at the optimal \textit{enough} location and time - for resolving the maximal 0 of uncertainty about the dynamics one wishes to predict and/or control.  
+
+An effective means by which an artificial agent 0 managed to ameliorate these constraints, is by maintaining a \textit{model} of its environment. A simplified model of the system at issue, affords an agent the ability to bias its attention to those parts of the system that are likely to be relevant to the task at hand. 
+
+Model based artificial agents have enjoyed great 0 in recent years: \textcite{Silver2017} and \textcite{dream}, owing to the advantages outlined above (among other things). Indeed, greater sample-0 over their model-free cousins is a direct consequence of the model's ability to bias attention toward the most relevant trajectories through the search space.
+
+Any model-based method is beset by at least two canonical problems. The first concerns the degree to which the model can continue to provide robust predictions, in the face of increasing degrees of uncertainty. This uncertainty may be in the form of noisy state-observations, partial observability or the existence of non-stationary environmental parameters. The second problem concerns the degree to which the model can be used to provide apt predictions in higher-dimensional environments, that is, how well it can ``scale up'' to a larger problem. These issues are related, often an attempt to ``scale up'' a working model will increase the model's complexity and this very often negatively impinges upon the model's robustness.    
+
+Indeed an exact Bayesian approach to optimal inference is almost always 0, due to the necessity for marginalisation over all states - in what is very often, an exponential search space. This is computationally 0 for any but the simplest search spaces and most real-world environments are continuous, high-dimensional and non-stationary. 
+
+Active inference is a recent ambitious theory, proporting to explain how it is that cognitive agents perform optimal actions under uncertainty. 
+Before 0 upon the central research objectives of this proposed thesis, it will be necessary to provide some background on Active Inference, and to justify its interest as an apt agent-based method.
+
+
+\subsection{Active Inference: An Overview}
+Active Inference (AIF) is a corollary of the Free Energy Principle (FEP), as it pertains to the imperatives 0 upon embodied, cognitive agents. A few words about the FEP shall suffice. The FEP is 0 born out of the interface between Statistical Mechanics, 0 Theory and Cognitive Science and can trace its roots back to the work of Gibbs, Hamilton and Helmholtz (among many others). Largely 0 by the work of Karl Friston, the FEP is a plausible, unifying account of brain function in which the brain is supposed as engaging in a scale-invariant process of Variational Free Energy 0 - over sensory data - so as to 0 its own model-evidence (thereby resisting a thermodynamic tendency to dissolution and ultimately, death). See: \textcite{FEP-Rough-Guide-Brain} and \textcite{FEP-Math-Review} for details. 
+
+The Variational Free Energy: $\mathcal{F}$ is a functional of beliefs over uncertain sensory observations. $\mathcal{F}$ is provably a lower bound, on the quantity called ``surprisal''. 0 quantifies the ``atypicallity'' or ``unexpectedness'' of an observation. Since the Free Energy is a lower bound on sensory 0, if we can merely 0 this VFE, we shall have implemented a means of approximate Bayesian 0. This method of approximating the true posterior is well known, indeed it is called ``Variational Inference''. See \textcite{VI} for more. 
+
+Now the agent can only 0 its surprisal vicariously. To this end, the agent can either change the structure of its generative model so as to better conform to its present observations (perception) or it can act on its environment, so as to change its observations (action). Hence ``Active'' Inference. In a nutshell, if there is a discrepancy between your model of the world, and your observations about the world, you can either try and change your model or you can try and change the world in order to resolve this discrepancy.  
+
+
+\section{Research Objectives}
+Reinforcement Learning has enjoyed a great deal of success in the attempt to scale to higher dimensional, continuous, noisy environments. While there is still much to be done on this front, Active Inference has thus far been almost 0 limited to small, discrete, stationary environments, see: \textcite{AIF-D}, \textcite{AIF-Cur-Insight}. Given that Active Inference represents a potentially unifying paradigm - owing to its generality - and that it has no dependence on any ad-hoc scalar reward signal, it is plausible to suppose that Active 0 might enjoy several theoretical advantages over more ``traditional'' methods in Reinforcement Learning and Optimal Control, see: \textcite{RL-or-AIF} and \textcite{Friston2012}. 
+
+Hence, in the course of this proposed thesis, we shall implement various AIF and RL agents, in both the the fully observable and partially observable cases, with and without various sources of uncertainty and in both benchmark ``low-0'' environments and non-trivial ``higher-dimensional'' environments. The aim will be to asses the relative advantages and disadvantages of both ``approach families'' as these pertain to their ability to effectively deal with the various kinds of 0 mentioned above, in addition to their ability to scale up into higher-dimensional environments.     
+
+
+\subsection{Central Research Questions}
+The principle aim of this research thesis may be regarded as twofold. The first aim is to investigate the robustness of AIF methods in noisy, uncertain or partially observable environments, relative to Reinforcement Learning baselines. The second aim concerns the 0 for ``scaling up'' AIF methods to continuous and/or higher-dimensional state-spaces. 
+
+Thus are the central questions raised in this Thesis:
+
+\begin{itemize}
+\item Are AIF agents more robust to noisy observations and non-stationarity than a comparable RL baseline?
+\item Can AIF be more efficiently scaled up to higher dimensional 0 than a comparable RL baseline? 
+\end{itemize} 
+
+
+\section{Previous Work}
+Work of this kind has already begun to appear in the literature, though it is still very much in its infancy. \textcite{Markovi-2021} implemented an Active Inference agent for the multi-armed bandit problem, in the stationary and non-stationary case. The AIF agent did not perform as well as a state-of-the-art 0 UCB algorithm, in the stationary case. However in the non-stationary case, the AIF agent outperformed the UCB agent. While this 0 was over a small, discrete space of environmental states, the results plausibly suggest that AIF would be an effective means of robust inference and control in a higher-dimensional or continuous problem.  
+
+An approach that has enjoyed some success as of late involves the 0 of Free Energy 0 as a process of message-passing on a Forney-style factor graph. See: \textcite{Sim-AIF-Message}, \textcite{Cox-2019}, \textcite{Reactive-MP} and \textcite{Deep-Temp-AIF}. In this framework, the agent's generative model is factorised in such a was as to be a Forney or ``Normal'' factor graph. Free Energy 0 is then cast as a process of message passing over this factor graph. Various message passing algorithms exist, such as Belief Propagation and Variational Message Passing. This message passing scheme greatly reduces the number of terms over which it is necessary to sum, when computing the approximate marginal and posterior distributions thereby affording 0 Active Inference algorithms in relatively high-dimensional settings. 
+
+Yet other approaches have 0 to leverage the ability for deep neural networks to 0 the distributions of interest. See: \textcite{Deep-AIF-Ueltzh-2018}, \textcite{Deep-Var-Policy-Grad} and \textcite{DEEP-AIF-POMDPs}. Of particular 0 with this 0 are \textcite{Scaling-AIF} and \textcite{Contrastive-AIF}. The former makes use of amortized inference, in the form of neural network function approximators to parameterize the relevant distributions. Free Energy 0 is then performed with 3 to the function approximators. The use of amortized inference affords several advantages. For example, the number of parameters remains constant with respect to the size of the data and inference can be achieved via a single forward pass through the network. The resulting algorithm was able to explore a much greater proportion of the state space in a simple 1 environment, as opposed to two Reinforcement Learning, baseline agents. In addition, the agent was able to learn to control the continuous inverted pendulum task with a far greater sample 0 than the baseline agents. Although the approach offered in \textcite{Scaling-AIF} is promising, it was restricted in every case to fully observable environments. 
+
+Lastly, the approach of \textcite{Contrastive-AIF}, implemented a contrastive 0 for their Active Inference agent, which significantly reduced the computational burden of learning the parameters for the generative model and planning future actions. This method performed substantially better than the usual, 0-based ``reconstructive'' means of implementing AIF and it was also computationally cheaper to train. Importantly, this method offered a unique way to afford increased model-robustness in the face of environmental distractors. 
+
+
+\section{Methods and Objectives}
+In each case we shall aim to investigate our agent's performance with respect to the following key performance metrics: 0 to noise and non-stationarity, learning rate and sample-efficiency.
+The proposed structure of our investigation shall be constituted by three major ``epochs'', as follows. 
+
+\subsection{Epoch 1: Benchmark AIF and RL Agents}
+Initially, our analysis will be limited to relatively simple, low-dimensional and overwhelmingly fully observable environments. The environments of interest will be the well-known Thermostat, 1 and 1 baseline environments. The aim will be to assess the performance - robustness, learning rate and sample eficency - of the AIF and Reinforcement Learning agents across two dimensions. These two dimensions are as follows:
+\begin{enumerate}
+\item Whether the AIF agent is implemented with a Forney-style factor graph, generative model, thereby testing performance differences between the ``standard'' and ``graphical`` AIF methods.
+\item Whether the environment is ``uncertain'' (0 by either noisy observations or non-stationarity parameters).
+\end{enumerate}
+
+The key distributions which encode the AIF agents will be instantiated by means of ``explicit'', ``factor graphical`` and ``deep'' implementations. The RL baseline agent will be simple DQN. The stochastic version of each environment will either furnish the agent with observations that have been subject to additive Gaussian white noise, or will be 0 by a degree of non-stationarity. An example of a potential kind of non-stationarity in the 1 environment might include randomly changing the length of the pole at iteration n, for all remaining episodes - for instance.  
+
+Research questions at this level shall include:
+\begin{itemize}
+\item What is the relative performance of the two approach families, with respect to the key performance metrics? Is one substantively better than the other?
+\item Does the factor-graphical method appreciably effect the performance metrics of the AIF agent?
+\item Is one approach family - AIF or RL - ultimately more robust to either observation noise or parameter non-stationarity?
+\end{itemize}  
+   
+\subsection{Epoch 2: Deep AIF - The Partially Observable Case}
+This portion of the study will take up the investigation offered in \textcite{Scaling-AIF} whereby we shall attempt to implement their Deep AIF agent, only now in the partially observable case. 
+We shall attempt to implement a Deep AIF Pong playing agent, from the Atari library in 1 gym, and indeed with several other environments (time permitting). Pong is technically a 1 observable environment, since a single frame does not afford any information about the velocity of the ball. Again, we shall assess the performance of the Deep AIF as 0 a DQN baseline, in the stationary and non-stationary POMDP.  
+
+Research questions in this ``epoch''  will repeat those of the last.
+ 
+\subsection{Epoch 3: Deep, Contrastive AIF With Partial Observability}
+Time permitting, and assuming that the latter two tasks are achieved with dome degree of 0, the analysis will be extended finally to a much higher-dimensional POMDP such as Atari Asteroids. The Deep AIF agent will be extended to use the contrastive learning approach developed in \textcite{Contrastive-AIF}. This approach signfigantly reduces the computational complexity of the model and hence, appears to be a promising avenue of investigation in the extension of Deep AIF methods to high-dimensional, partially observable models.
+
+Again, the same suite of questions as in the last two epochs will be recapitulated here.    
+
+\section{Software and Hardware Requirements}
+Most of the simulations will be instantiated in Python and associated libraries  - such as 1 gym and 0 and Pyro.
+RxInfer.jl will be used to implement some of the factor-graph based AIF agents in the first portion of the study.
+
+The Deep Versions of each agent can be more effectively trained by means of an 0 3060 GPU, available to the author.  
+
+\section{Rough Schedule}
+\begin{itemize}
+\item April-May: Epoch 1
+\item June-July: Epoch 2
+\item August-September: Epoch 3
+\item October: 0 tasks furthering the analysis of any given implementation, time permitting. This time can also act as a buffer to afford some adaptability in the schedule.   
+\end{itemize}
+
+\printbibliography
+
+\end{document}

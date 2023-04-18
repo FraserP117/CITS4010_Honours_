@@ -1,0 +1,158 @@
+\documentclass[12pt, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{gensymb}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+	
+	\vspace*{0.5cm}
+	
+	\Huge
+	\textbf{Toward Scalable and Robust Agent Based Methods.}
+	
+	\vspace{0.5cm}
+	\Large
+	An Analysis of Active Inference and Reinforcement Learning Paradigms in Large, Partially Observable and Non-Stationary Environments.
+	
+	\vspace{1.5cm}
+
+	\textbf{Fraser Paterson}
+
+	\vspace{1.5cm}
+
+	A Thesis proposal, pursuant to the requirements of the\\ 
+	Degree: Bachelor of Science (Honours).  
+	
+	\vspace{2.0cm}
+
+	\includegraphics[width=0.4\textwidth]{UWA_Logo.png}
+	
+	\vspace{2.0cm}	
+	
+	\Large
+	Supervisor: Dr Tim French\\ 
+	Department of Computer Science and Software Engineering\\
+	The University of Western Australia\\
+	3 April 2023
+	
+	\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+\cleardoublepage
+
+
+
+\section{Introduction}
+
+\subsection{Motivation and Background}
+Many real-world problems are characterized by high degrees of noise, ill-definedness and uncertainty. This uncertainty assumes myriad forms, whether in the clarity of the observations one can solicit from the system of interest, or in the confidence of an inference as to the system-parameter values, that best account for the solicited observation. These tasks are only further complicated by a very common constraint on any candidate solution technique: partial-observability. Indeed, partial-observability is overwhelmingly characteristic of many ``difficult'' real-world systems. 
+
+Any cognitive agent faces a perennial problem, in attempting to ameliorate the above kinds of uncertainty. This consists in obtaining accurate \textit{enough} observations and performing an optimal \textit{enough} action - at the optimal \textit{enough} location and time - for resolving the maximal amount of uncertainty about the dynamics one wishes to predict and/or control.  
+
+An effective means by which an artificial agent can managed to ameliorate these constraints, is by maintaining a \textit{model} of its environment. A simplified model of the system at issue, affords an agent the ability to bias its attention to those parts of the system that are likely to be relevant to the task at hand. 
+
+Model based artificial agents have enjoyed great success in recent years: \textcite{dream}, owing to the advantages outlined above (among other things). Indeed, greater sample-efficiency over their model-free cousins is a direct consequence of the model's ability to bias attention toward the most relevant trajectories through the search space.
+
+Any model-based method is beset by at least two problems. The first concerns the degree to which the model can continue to provide robust predictions, in the face of increasing degrees of uncertainty. This uncertainty may be in the form of noisy state-observations, partial observability or the existence of non-stationary environmental parameters. The second problem concerns the degree to which the model can be used to provide apt predictions in higher-dimensional environments, that is, how well it can ``scale up'' to a larger problem instance. 
+
+Active inference is a recent ambitious theory, purporting to explain how it is that cognitive agents perform optimal actions under uncertainty. This thesis will aim to compare the performance of Active Inference as against various Reinforcement Learning baselines, with respect to their ability to adapt to uncertainty, and their ability to scale up to higher-dimensional problem instances. Active Inference purports to enjoy several theoretical benefits over Reinforcement Learning, such as the absence of a scaler reward signal and the presence of a generative model (among many other examples). These examples, in particular, offer Active Inference a plausible advantage over Reinforcement Learning, in dealing with the above issues of uncertainty and scaling.  
+
+\subsection{Active Inference: An Overview}
+Active Inference is a corollary of the Free Energy Principle (FEP) in Physics and Biology: \textcite{FEP-Rough-Guide-Brain}. The FEP is born out of the interface between Statistical Mechanics, Information Theory and Cognitive Science and can trace its roots back to the work of Gibbs, Hamilton and Helmholtz (among many others). Largely popularized by the work of Karl Friston, the FEP is a plausible, unifying account of brain function in which the brain is supposed as engaging in a scale-invariant process of Variational Free Energy minimization - over sensory data - thereby resisting a thermodynamic tendency to dissolution and ultimately, death.
+
+An Active Inference agent maintains a probabilistic, generative model of its environment which encodes the agent's beliefs about environmental states (hidden or otherwise), in addition to the agent's beliefs about how its actions will effect the environment. This generative model can then be used to generate \textit{predictions}, which are compared to the observations solicited by an action. This \textit{prediction error} can then be used to update the agent's \textit{beliefs} about hidden states, via Bayesian Inference. The prediction error can be expressed as the sensory ``surprisal'' of an observation. This is simply the negative log-probability of the observation. Now the surprisal itself is often computationally intractable to determine exactly and hence Active Inference makes use of a Variational Free Energy functional of beliefs, to approximate this surprisal.  
+
+The Variational Free Energy is provably a lower bound on surprisal. Surprisal quantifies the ``atypicallity'' or ``unexpectedness'' of an observation. Since the Free Energy is a lower bound on sensory surprisal, if we can merely minimize this VFE, we shall have implemented a means of approximate Bayesian Inference. This method of approximating the true posterior is well known, indeed it is called ``Variational Inference''. 
+
+Now the agent can only minimize its surprisal vicariously. It can do this by either changing the structure of its generative model, so as to better conform to the present observations (perception) or it can manipulate its environment, so as to change these observations (action). Hence ``Active'' Inference. In a nutshell, if there is a discrepancy between your model of the world, and your observations about the world, you can either try and change your model or you can try and change the world. Either approach can resolve this discrepancy.  
+
+Reinforcement Learning has enjoyed a great deal of success in the attempt to scale to higher dimensional, continuous, noisy environments. While there is still much to be done on this front, Active Inference has thus far been almost entirely limited to small, discrete, stationary environments. Given that Active Inference represents a potentially unifying paradigm - owing to its generality - and that it has no dependence on any ad-hoc scalar reward signal, it is plausible to suppose that Active Inference might be better able to deal with sources of uncertainty, than the more ``traditional'' methods in Reinforcement Learning and Optimal Control: \textcite{RL-or-AIF}. 
+
+
+\subsection{Research Questions}
+In the course of this proposed study, we shall implement various Active Inference and Reinforcement Learning agents. These implementations will contend with fully, and partially-observable environments, with and without various sources of uncertainty and in both ``low-dimensional'' non-trivial ``higher-dimensional'' environments. The aim will be to assess the relative advantages and disadvantages of both ``approach families'' as these pertain to their ability to deal with various kinds of uncertainty. Additionally, we aim to compare their ability to scale up into higher-dimensional environments.    
+ 
+The principle aim of this research thesis is twofold. The first aim is to investigate the robustness of Active Inference methods in noisy, uncertain or partially observable environments, relative to Reinforcement Learning baselines. The second aim concerns the potential for ``scaling up'' Active Inference methods to continuous and/or higher-dimensional state-spaces. 
+
+Thus are the central questions raised in this Thesis:
+
+\begin{itemize}
+\item Are Active Inference agents more robust to noisy observations and non-stationarity than a comparable RL baseline?
+\item Can Active Inference be more efficiently scaled up to higher dimensional environments than a comparable RL baseline? 
+\end{itemize} 
+
+
+\section{Previous Work}
+Work of this kind has already begun to appear in the literature, though it is still very much in its infancy. \textcite{Markovi-2021} implemented an Active Inference agent for the multi-armed bandit problem, in the stationary and non-stationary case. The Active Inference agent did not perform as well as a state-of-the-art Bayesian UCB algorithm, in the stationary case. However in the non-stationary case, the Active Inference agent outperformed the UCB agent. While this conducted over a small, discrete space of environmental states, the results plausibly suggest that Active Inference would be an effective means of robust inference and control in a higher-dimensional or continuous problem.  
+
+An approach that has enjoyed some success as of late involves the minimization of Free Energy as a process of message-passing on a Forney-style factor graph: \textcite{Cox-2019} and \textcite{Reactive-MP}. In this framework, the agent's generative model is factorized in such a was as to instantiate a Forney or ``Normal'' factor graph. Free Energy minimization is then cast as a process of message passing over this factor graph. Various message passing algorithms exist, such as Belief Propagation and Variational Message Passing. This message passing scheme greatly reduces the number of terms over which it is necessary to sum, when computing the approximate marginal and posterior distributions; affording much more efficient inference and a great potential for scaling up to higher-dimensional settings. As it stands, the main difficulty with this approach is in deciding upon the exact nature of the optimal factorization for the problem at hand. It is scarcely ever obvious or straightforward to determine the optimal structure of the graph, and it can be computationally expensive to achieve this.   
+
+Yet other approaches leverage the ability for deep neural networks to approximate the distributions of interest: \textcite{Deep-AIF-Ueltzh-2018}. Of particular interest are: \textcite{Scaling-AIF} and \textcite{Contrastive-AIF}. The former makes use of amortized inference, in the form of neural network function approximators to parameterize the relevant distributions. Free Energy minimization is then performed with respect to the function approximators. The use of amortized inference affords several advantages. For example, the number of parameters remains constant with respect to the size of the data and inference can be achieved via a single forward pass through the network. The resulting algorithm was able to explore a much greater proportion of the state space in a simple stationary environment, as opposed to two Reinforcement Learning, baseline agents. In addition, the agent was able to learn to control the continuous inverted pendulum task with a far greater sample efficiency than the baseline agents. Although the approach offered in \textcite{Scaling-AIF} is promising, it was restricted in every case to fully observable environments. 
+
+Lastly, the approach of \textcite{Contrastive-AIF}, implemented a contrastive method for their Active Inference agent, which significantly reduced the computational burden of learning the parameters for the generative model and planning future actions. This method performed substantially better than the usual, likelihood-based ``reconstructive'' means of implementing Active Inference and it was also computationally cheaper to train. Importantly, this method offered a unique way to afford increased model-robustness in the face of environmental distractors. 
+
+
+\section{Methods and Objectives}
+In each case we shall aim to investigate our agent's performance with respect to the following key performance metrics: robustness to noise and non-stationarity, learning rate and sample-efficiency.
+The proposed structure of our investigation shall be constituted by three major ``epochs'', as follows. 
+
+\subsection{Phase 1: Benchmark Active Inference and RL Agents}
+Initially, our analysis will be limited to relatively simple, low-dimensional and overwhelmingly fully observable environments. The environments of interest will be the well-known Thermostat, Cart-Pole and Mountain-Car baseline environments. The aim will be to assess the performance - robustness, learning rate and sample efficiency - of the Active Inference and Reinforcement Learning agents across two dimensions. These two dimensions are as follows:
+\begin{enumerate}
+\item Whether the Active Inference agent is implemented with a Forney-style factor graph, generative model, thereby testing performance differences between the ``standard'' and ``graphical`` Active Inference methods.
+\item Whether the environment is ``uncertain'' (characterized by either noisy observations or non-stationarity parameters).
+\end{enumerate}
+
+The key distributions which encode the Active Inference agents will be instantiated by means of ``explicit'', ``factor graphical`` and ``deep'' implementations. The RL baseline agent will be simple DQN. The stochastic version of each environment will either furnish the agent with observations that have been subject to additive Gaussian white noise, or will be characterized by a degree of non-stationarity. An example of a potential kind of non-stationarity in the 1
+Cart-Pole environment might include randomly changing the length of the pole at iteration n, for all remaining episodes - for instance.  
+
+Research questions at this level shall include:
+\begin{itemize}
+\item What is the relative performance of the two approach families, with respect to the key performance metrics? Is one substantively better than the other?
+\item Does the factor-graphical method appreciably effect the performance metrics of the Active Inference agent?
+\item Is one approach family - Active Inference or RL - ultimately more robust to either observation noise or parameter non-stationarity?
+\end{itemize}  
+   
+\subsection{Phase 2: Deep Active Inference - The Partially Observable Case}
+This portion of the study will take up the investigation offered in \textcite{Scaling-AIF} whereby we shall attempt to implement their Deep Active Inference agent, only now in the partially observable case. 
+We shall attempt to implement a Deep Active Inference Pong playing agent, from the Atari library in Open-AI gym, and indeed with several other environments (time permitting). Pong is technically a partially-observable environment, since a single frame does not afford any information about the velocity of the ball. Again, we shall assess the performance of the Deep Active Inference as against a DQN baseline, in the stationary and non-stationary POMDP.  
+
+Research questions in this ``epoch''  will repeat those of the last.
+ 
+\subsection{Phase 3: Deep, Contrastive Active Inference With Partial Observability}
+Time permitting, and assuming that the latter two tasks are achieved with dome degree of satisfaction, the analysis will be extended finally to a much higher-dimensional POMDP such as Atari Asteroids. The Deep Active Inference agent will be extended to use the contrastive learning approach developed in \textcite{Contrastive-AIF}. This approach significantly reduces the computational complexity of the model and hence, appears to be a promising avenue of investigation in the extension of Deep Active Inference methods to high-dimensional, partially observable models.
+
+Again, the same suite of questions as in the last two epochs will be recapitulated here.    
+
+\section{Software and Hardware Requirements}
+Most of the simulations will be instantiated in Python and associated libraries  - such as Open-AI gym, PyTorch and Pyro.
+RxInfer.jl will be used to implement some of the factor-graph based Active Inference agents in the first portion of the study.
+
+The Deep Versions of each agent can be more effectively trained by means of an NVIDIA 3060 GPU, available to the author.  
+
+\section{Schedule}
+\begin{itemize}
+\item April-May: Phase 1, literature review, revised proposal and code repository.
+\item June-July: Phase 2
+\item August-September: Phase 3
+\item October: Various tasks furthering the analysis of any given implementation, time permitting. This time can also act as a buffer to afford some adaptability in the schedule.   
+\end{itemize}
+
+\printbibliography
+
+\end{document}

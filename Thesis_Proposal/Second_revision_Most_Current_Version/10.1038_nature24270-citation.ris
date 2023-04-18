@@ -1,0 +1,32 @@
+TY  - JOUR
+AU  - Silver, David
+AU  - Schrittwieser, Julian
+AU  - Simonyan, Karen
+AU  - Antonoglou, Ioannis
+AU  - Huang, Aja
+AU  - Guez, Arthur
+AU  - Hubert, Thomas
+AU  - Baker, Lucas
+AU  - Lai, Matthew
+AU  - Bolton, Adrian
+AU  - Chen, Yutian
+AU  - Lillicrap, Timothy
+AU  - Hui, Fan
+AU  - Sifre, Laurent
+AU  - van den Driessche, George
+AU  - Graepel, Thore
+AU  - Hassabis, Demis
+PY  - 2017
+DA  - 2017/10/01
+TI  - Mastering the game of Go without human knowledge
+JO  - Nature
+SP  - 354
+EP  - 359
+VL  - 550
+IS  - 7676
+AB  - A long-standing goal of artificial intelligence is an algorithm that learns, tabula rasa, superhuman proficiency in challenging domains. Recently, AlphaGo became the first program to defeat a world champion in the game of Go. The tree search in AlphaGo evaluated positions and selected moves using deep neural networks. These neural networks were trained by supervised learning from human expert moves, and by reinforcement learning from self-play. Here we introduce an algorithm based solely on reinforcement learning, without human data, guidance or domain knowledge beyond game rules. AlphaGo becomes its own teacher: a neural network is trained to predict AlphaGo’s own move selections and also the winner of AlphaGo’s games. This neural network improves the strength of the tree search, resulting in higher quality move selection and stronger self-play in the next iteration. Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100–0 against the previously published, champion-defeating AlphaGo.
+SN  - 1476-4687
+UR  - https://doi.org/10.1038/nature24270
+DO  - 10.1038/nature24270
+ID  - Silver2017
+ER  - 
