@@ -1,0 +1,157 @@
+\documentclass[12pt, twoside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+	\begin{center}
+	
+	\vspace*{0.5cm}
+	
+	\Huge
+	\textbf{Toward Scalable and Robust Agent Based Methods.}
+	
+	\vspace{0.5cm}
+	\Large
+	An Analysis of Active Inference and Reinforcement Learning Paradigms in Large, Non-Statioanry Environments.
+	
+	\vspace{1.5cm}
+
+	\textbf{Fraser Paterson}
+
+	\vspace{1.5cm}
+
+	A Thesis proposal, pursuant to the requirements of the\\ 
+	Degree: Bachelor of Science (Honours).  
+	
+	\vspace{2.0cm}
+
+	\includegraphics[width=0.4\textwidth]{UWA_Logo.png}
+	
+	\vspace{2.0cm}	
+	
+	\Large
+	Supervisor: Dr Tim French\\ 
+	Department of Computer Science and Software Engineering\\
+	The University of Western Australia\\
+	12 March 2023
+	
+	\end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+\cleardoublepage
+
+
+
+\section{Introduction}
+
+\subsection{Motivation and Background}
+Many real-world problems are characterised by high degrees of noise, ill-definedness and uncertainty. This uncertainty assumes myriad forms, whether in the clarity of the observations one can solicit from the system of interest (signal detection), or in the confidence of an inference as to the system-parameter values, that best account for the solicited observation (state-estimation). These tasks are only further complicated by a very common constraint on any candidate solution technique: partial-observability, which is an obvious source of uncertainty. Indeed, partial-observability is overwhelmingly characteristic of many ``difficult'' real-world systems, \textcolor{red}{examples and citations?}. 
+\\
+
+It is the perogative of the Engineer to make simplifying assumptions about the kinds and sources of uncertainty which beset the task of modeling, controling and/or predicting the behaviour of a system. A ``good'' simplification (model) of a complicated system, affords some relevant trade-off between the computational resources necessary to predict and control the entities of interest, as against the material and temporal constraints necessitated by the nature of the problem. This trade-off is inherent to cognitive agency itself; it is to be in the ``Finitary Predicament'', see: \textcite{Cherniak}. For example, a ``pedestrian-detection'' algorithm on a self-driving car, plausibly needs to put a premium on speed since temporal constraints are quite salient in this case. An algrithm for optimising the trajectory of a spacecraft mission 5 years from now faces the same trade-off, but under near-inverse constraints. In this case, it is plausable to suppose that there is not such a high premium on time. In any case, a perennial problem remains, that of obtaining accurate \textit{enough} observations and performing an optimal \textit{enough} action - at the optimal \textit{enough} location and time - for resolving the maximal ammount of uncertainty about the dynamics one wishes to predict and/or control, while also minimising the costs associated with planning and performing these actions.  
+\\    
+
+The faculty by which complex biological organisms achieve these ends is by means of their intelligence. A relatively non-controvercial definition of \textit{Intelligence} is ``general problem-solving ability''. The ongoing project of defining, detecting and creating instances of intelligence is one that takes a startling variety of forms. Psychologists speak of ``intelligent behaviour'', whereas to the Neuroscientist, intelligence is studied in terms of ``patterns of neuronal activation''. Yet again, the computer scientist traditionally accounts for intelligence as a kind of ``information processing''. Insofar as these disciplines might share a common project, it may plausibly be supposed as the attempt to understand the nature and function of intelligence. Several philosophical approaches to this project abound - as attested by the variety of disciplines it spanns. Again, the Psychologist studies \textit{behaviour}, the neuroscientist studies \textit{the brain} but the computer scientist has an altogether distinct modality of investigation. This ``investigative modality'' consists in the attempt to build, create and/or instantiate an \textit{instance} of intelligence, hence ``Artificial'' Intelligence. The hope is that if we are succesful enough at reproducing the effects of natural intelligence, that this will count as a good reason to suppose that the nature and function of our artificial intelligence, is constitutive of the nature and function of ``Natural Intelligence''. Thus the project of Artificial Intelligence consists in the attempt to analyse, formalise and mechanise Natural Intelligence. 
+\\
+
+An early and perhaps paradigm case of an attempt to so analyse, formalise and mechanise intelligence was Newell and Simon's General Problem Solver (GPS): \textcite{Newell-Simon}.
+Newell and Simon attempted to specify \textit{what it was to have a problem at all}. For them, a \textit{problem specification} consisted in a specification of the goal state, the starting state, a set of operators that can transform one state into another and lastly, a set of path-constraints that any trajectory must satisfy in order to be considered a valid trajectory. The set of all trajectories from the start to the goal state is the ``search space'' and hence a problem solution consists in finding the optimal trajectory through this search space.     
+
+\begin{itemize}
+\item Intelligence as ``general problem Solving ability''. Newell and Simon and the GPS. 
+\item The justification for ``biologically inspired'' A.I - we can do it very well so let's pattern AI on us...
+\item Insight into the structure and function of AI might come from the attempt to build it: analyse, formalise and mechanise
+\item Newell and Simon, the GPS - as an example of analysis, formalisation and mechninisation. 
+\item Combinatorial explosion, the necessity for biased attention.
+\item Model based AI as a means for this.
+\item dealing with combinatorial explosion in model based methods.
+\item optimal behaviour as the satisfcation of imperatives: ``to maximise reward'', ``to minimise uncertainty'', ``to seek information''. 
+\item The conflict between imperatives: explore-exploit trade-off?
+
+\item AIF and RL as aproaches to afford intelligent agency.    
+\item Scalibility issues. Robusteness Issues (the money-shot).
+\end{itemize}
+
+
+\subsection{Active Inference: An Overview}
+\begin{itemize}
+\item The FEP
+\item Variational inference
+\item Lightening quick exposition of the general theroy
+\end{itemize}
+
+AIF is an agent-based method which makes use of a probabilistic, generative model over sensory observations, environmental states and various parameters necessary to encode the Variational Free Energy (VFE). The ontological basis of Active Inference is broardly similar to various, older agent based methods such as Reinfrcement Learning: Cite RL. An AIF  agent performs approximate bayesian inference over a hidden state-space to oprimise/control some external process, in the service of some goal, where this goal is encoded as a Bayesian prior belief (a distribution over observations). 
+
+
+Due to the fact that exact inference is usually intractible, AIF introduces an approximate posterior distrbution over sensory states: $q(\phi)$, where we denote the true posterior as $p(\phi | e)$, where $\phi$ is sensory data of one kind or another and $e$ is an environmental variable in the hidden-state space. We can then construct a ``measure'' - in the colloquial sense - of distance between these two densities, as the kullback-leibler divergence between each density. Assuming the discrete case: 
+
+\subsubsection{A Simple Example}
+Manuel's minimal agent
+
+
+
+\section{Previous Work}
+\begin{itemize}
+\item RL and AIF
+\item AIF on a Factor Graph and Message-Passing
+\item Manuel's paper
+\item Contrastive Methods paper
+\item Latent Space paper
+\item \textcite{Bandits}
+\end{itemize}
+
+
+
+\section{Research Objectives}
+
+
+\subsection{Central Research Question}
+The principle aim of this research thesis wil be to investigate the relative advantages and disadvantages of AIF methods, as aginst more "traditional" methods of inference and control, such as the well-known Linear Quadratic Gaussian (LGQ), and Reinforcement Leraning (RL) algorithms. Of specific interest, will be the question as to the performance of AIF as against the above methods, in the non-stationary control and inference environments.  
+
+The natural inclusion of a generative model and the built-in epistemic imperatives - toward the aim of uncertainty reduction - in AIF, make it highly plausable that this method will be better able to deal with non-stationary environments, dynamic constraint changes, noise and other such sources of uncertainty. Indeed, just as much has been shown in \textcite{Bandits}, where AIF performd better than a strong Bayesian UCB algorithm in a non-stationary multi-armed bandit problem. 
+
+
+
+\section{Methods}
+
+\subsection{Techniques to be Investigated}
+
+\subsection{Metrics}
+
+\subsection{Software and Data}
+\begin{itemize}
+\item RxInfer.jl, see the mountaincar implementation: https://biaslab.github.io/RxInfer.jl
+\item OpenAI gym and Atari Environments
+\item DeepMind Control Suite: https://www.deepmind.com/open-source/deepmind-control-suite
+\end{itemize}
+
+
+\subsection{Simplifying Assumptions}
+
+\subsubsection{Factor Graphs}
+
+\subsubsection{Laplace Approximation}
+
+\subsubsection{Mean-Field Assumption}
+
+
+
+\section{Schedule}
+
+\printbibliography
+
+\end{document}

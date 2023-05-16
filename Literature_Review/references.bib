@@ -1,0 +1,845 @@
+@book{Active-Inference-Book,
+    author = {Parr, Thomas and Pezzulo, Giovanni and Friston, Karl J.},
+    title = "{Active Inference: The Free Energy Principle in Mind, Brain, and Behavior}",
+    publisher = {The MIT Press},
+    year = {2022},
+    month = {03},
+    abstract = "{The first comprehensive treatment of active inference, an integrative perspective on brain, cognition, and behavior used across multiple disciplines.Active inference is a way of understanding sentient behavior—a theory that characterizes perception, planning, and action in terms of probabilistic inference. Developed by theoretical neuroscientist Karl Friston over years of groundbreaking research, active inference provides an integrated perspective on brain, cognition, and behavior that is increasingly used across multiple disciplines including neuroscience, psychology, and philosophy. Active inference puts the action into perception. This book offers the first comprehensive treatment of active inference, covering theory, applications, and cognitive domains. Active inference is a “first principles” approach to understanding behavior and the brain, framed in terms of a single imperative to minimize free energy. The book emphasizes the implications of the free energy principle for understanding how the brain works. It first introduces active inference both conceptually and formally, contextualizing it within current theories of cognition. It then provides specific examples of computational models that use active inference to explain such cognitive phenomena as perception, attention, memory, and planning.}",
+    isbn = {9780262369978},
+    doi = {10.7551/mitpress/12441.001.0001},
+    url = {https://doi.org/10.7551/mitpress/12441.001.0001},
+    eprint = {https://direct.mit.edu/book-pdf/2087488/book\_9780262369978.pdf},
+}
+
+@article{AIF-A-Process-Theory,
+    author = {Friston, Karl and FitzGerald, Thomas and Rigoli, Francesco and Schwartenbeck, Philipp and Pezzulo, Giovanni},
+    title = "{Active Inference: A Process Theory}",
+    journal = {Neural Computation},
+    volume = {29},
+    number = {1},
+    pages = {1-49},
+    year = {2017},
+    month = {01},
+    abstract = "{This article describes a process theory based on active inference and belief propagation. Starting from the premise that all neuronal processing (and action selection) can be explained by maximizing Bayesian model evidence—or minimizing variational free energy—we ask whether neuronal responses can be described as a gradient descent on variational free energy. Using a standard (Markov decision process) generative model, we derive the neuronal dynamics implicit in this description and reproduce a remarkable range of well-characterized neuronal phenomena. These include repetition suppression, mismatch negativity, violation responses, place-cell activity, phase precession, theta sequences, theta-gamma coupling, evidence accumulation, race-to-bound dynamics, and transfer of dopamine responses. Furthermore, the (approximately Bayes’ optimal) behavior prescribed by these dynamics has a degree of face validity, providing a formal explanation for reward seeking, context learning, and epistemic foraging. Technically, the fact that a gradient descent appears to be a valid description of neuronal activity means that variational free energy is a Lyapunov function for neuronal dynamics, which therefore conform to Hamilton’s principle of least action.}",
+    issn = {0899-7667},
+    doi = {10.1162/NECO_a_00912},
+    url = {https://doi.org/10.1162/NECO\_a\_00912},
+    eprint = {https://direct.mit.edu/neco/article-pdf/29/1/1/984132/neco\_a\_00912.pdf},
+}
+
+@article{AIF-Demystified,
+    author = {Sajid, Noor and Ball, Philip J. and Parr, Thomas and Friston, Karl J.},
+    title = "{Active Inference: Demystified and Compared}",
+    journal = {Neural Computation},
+    volume = {33},
+    number = {3},
+    pages = {674-712},
+    year = {2021},
+    month = {03},
+    abstract = "{Active inference is a first principle account of how autonomous agents operate in dynamic, nonstationary environments. This problem is also considered in reinforcement learning, but limited work exists on comparing the two approaches on the same discrete-state environments. In this letter, we provide (1) an accessible overview of the discrete-state formulation of active inference, highlighting natural behaviors in active inference that are generally engineered in reinforcement learning, and (2) an explicit discrete-state comparison between active inference and reinforcement learning on an OpenAI gym baseline. We begin by providing a condensed overview of the active inference literature, in particular viewing the various natural behaviors of active inference agents through the lens of reinforcement learning. We show that by operating in a pure belief-based setting, active inference agents can carry out epistemic exploration—and account for uncertainty about their
+          environment—in a Bayes-optimal fashion. Furthermore, we show that the reliance on an explicit reward signal in reinforcement learning is removed in active inference, where reward can simply be treated as another observation we have a preference over; even in the total absence of rewards, agent behaviors are learned through preference learning. We make these properties explicit by showing two scenarios in which active inference agents can infer behaviors in reward-free environments compared to both Q-learning and Bayesian model-based reinforcement learning agents and by placing zero prior preferences over rewards and learning the prior preferences over the observations corresponding to reward. We conclude by noting that this formalism can be applied to more complex settings (e.g., robotic arm movement, Atari games) if appropriate generative models can be formulated. In short, we aim to demystify the behavior of active inference agents by presenting an accessible discrete
+          state-space and time formulation and demonstrate these behaviors in a OpenAI gym environment, alongside reinforcement learning agents.}",
+    issn = {0899-7667},
+    doi = {10.1162/neco_a_01357},
+    url = {https://doi.org/10.1162/neco\_a\_01357},
+    eprint = {https://direct.mit.edu/neco/article-pdf/33/3/674/1889396/neco\_a\_01357.pdf},
+}
+
+@article {Computational-Mech-Curiosity-Goal-Exploration,
+    article_type = {journal},
+    title = {Computational mechanisms of curiosity and goal-directed exploration},
+    author = {Schwartenbeck, Philipp and Passecker, Johannes and Hauser, Tobias U and FitzGerald, Thomas HB and Kronbichler, Martin and Friston, Karl J},
+    editor = {Frank, Michael J},
+    volume = 8,
+    year = 2019,
+    month = {may},
+    pub_date = {2019-05-10},
+    pages = {e41703},
+    citation = {eLife 2019;8:e41703},
+    doi = {10.7554/eLife.41703},
+    url = {https://doi.org/10.7554/eLife.41703},
+    abstract = {Successful behaviour depends on the right balance between maximising reward and soliciting information about the world. Here, we show how different types of information-gain emerge when casting behaviour as surprise minimisation. We present two distinct mechanisms for goal-directed exploration that express separable profiles of active sampling to reduce uncertainty. ‘Hidden state’ exploration motivates agents to sample unambiguous observations to accurately infer the (hidden) state of the world. Conversely, ‘model parameter’ exploration, compels agents to sample outcomes associated with high uncertainty, if they are informative for their representation of the task structure. We illustrate the emergence of these types of information-gain, termed active inference and active learning, and show how these forms of exploration induce distinct patterns of ‘Bayes-optimal’ behaviour. Our findings provide a computational framework for understanding how distinct levels of uncertainty systematically affect the exploration-exploitation trade-off in decision-making.},
+    keywords = {exploration, exploitation, active learning, active inference, curiosity, intrinsic motivation},
+    journal = {eLife},
+    issn = {2050-084X},
+    publisher = {eLife Sciences Publications, Ltd},
+}
+
+@Article{Free-Energy-Users-Guide,
+    author={Mann, Stephen Francis
+    and Pain, Ross
+    and Kirchhoff, Michael D.},
+    title={Free energy: a user's guide},
+    journal={Biology {\&} Philosophy},
+    year={2022},
+    month={Jul},
+    day={20},
+    volume={37},
+    number={4},
+    pages={33},
+    abstract={Over the last fifteen years, an ambitious explanatory framework has been proposed to unify explanations across biology and cognitive science. Active inference, whose most famous tenet is the free energy principle, has inspired excitement and confusion in equal measure. Here, we lay the ground for proper critical analysis of active inference, in three ways. First, we give simplified versions of its core mathematical models. Second, we outline the historical development of active inference and its relationship to other theoretical approaches. Third, we describe three different kinds of claim---labelled mathematical, empirical and general---routinely made by proponents of the framework, and suggest dialectical links between them. Overall, we aim to increase philosophical understanding of active inference so that it may be more readily evaluated. This paper is the Introduction to the Topical Collection ``The Free Energy Principle: From Biology to Cognition''.},
+    issn={1572-8404},
+    doi={10.1007/s10539-022-09864-z},
+    url={https://doi.org/10.1007/s10539-022-09864-z}
+}
+
+@online{FEP-Rough-Guide-Brain,
+    author        = {Karl Friston},
+    title         = {The free-energy principle: a rough guide to the brain?},
+    year          = {2009},
+    url           = {https://doi.org/10.1016/j.tics.2009.04.005}
+}
+
+@Article{FEP-Unified-Brain-Theory,
+    author={Friston, Karl},
+    title={The free-energy principle: a unified brain theory?},
+    journal={Nature Reviews Neuroscience},
+    year={2010},
+    month={Feb},
+    day={01},
+    volume={11},
+    number={2},
+    pages={127-138},
+    abstract={Adaptive agents must occupy a limited repertoire of states and therefore minimize the long-term average of surprise associated with sensory exchanges with the world. Minimizing surprise enables them to resist a natural tendency to disorder.Surprise rests on predictions about sensations, which depend on an internal generative model of the world. Although surprise cannot be measured directly, a free-energy bound on surprise can be, suggesting that agents minimize free energy by changing their predictions (perception) or by changing the predicted sensory inputs (action).Perception optimizes predictions by minimizing free energy with respect to synaptic activity (perceptual inference), efficacy (learning and memory) and gain (attention and salience). This furnishes Bayes-optimal (probabilistic) representations of what caused sensations (providing a link to the Bayesian brain hypothesis).Bayes-optimal perception is mathematically equivalent to predictive coding and maximizing the mutual information between sensations and the representations of their causes. This is a probabilistic generalization of the principle of efficient coding (the infomax principle) or the minimum-redundancy principle.Learning under the free-energy principle can be formulated in terms of optimizing the connection strengths in hierarchical models of the sensorium. This rests on associative plasticity to encode causal regularities and appeals to the same synaptic mechanisms as those underlying cell assembly formation.Action under the free-energy principle reduces to suppressing sensory prediction errors that depend on predicted (expected or desired) movement trajectories. This provides a simple account of motor control, in which action is enslaved by perceptual (proprioceptive) predictions.Perceptual predictions rest on prior expectations about the trajectory or movement through the agent's state space. These priors can be acquired (as empirical priors during hierarchical inference) or they can be innate (epigenetic) and therefore subject to selective pressure.Predicted motion or state transitions realized by action correspond to policies in optimal control theory and reinforcement learning. In this context, value is inversely proportional to surprise (and implicitly free energy), and rewards correspond to innate priors that constrain policies.},
+    issn={1471-0048},
+    doi={10.1038/nrn2787},
+    url={https://doi.org/10.1038/nrn2787}
+}
+
+
+@article{A_FEP_For_The_Brain,
+    title = {A free energy principle for the brain},
+    journal = {Journal of Physiology-Paris},
+    volume = {100},
+    number = {1},
+    pages = {70-87},
+    year = {2006},
+    note = {Theoretical and Computational Neuroscience: Understanding Brain Functions},
+    issn = {0928-4257},
+    doi = {https://doi.org/10.1016/j.jphysparis.2006.10.001},
+    url = {https://www.sciencedirect.com/science/article/pii/S092842570600060X},
+    author = {Karl Friston and James Kilner and Lee Harrison},
+    keywords = {Variational Bayes, Free energy, Inference, Perception, Action, Learning, Attention, Selection, Hierarchical},
+    abstract = {By formulating Helmholtz’s ideas about perception, in terms of modern-day theories, one arrives at a model of perceptual inference and learning that can explain a remarkable range of neurobiological facts: using constructs from statistical physics, the problems of inferring the causes of sensory input and learning the causal structure of their generation can be resolved using exactly the same principles. Furthermore, inference and learning can proceed in a biologically plausible fashion. The ensuing scheme rests on Empirical Bayes and hierarchical models of how sensory input is caused. The use of hierarchical models enables the brain to construct prior expectations in a dynamic and context-sensitive fashion. This scheme provides a principled way to understand many aspects of cortical organisation and responses. In this paper, we show these perceptual processes are just one aspect of emergent behaviours of systems that conform to a free energy principle. The free energy considered here measures the difference between the probability distribution of environmental quantities that act on the system and an arbitrary distribution encoded by its configuration. The system can minimise free energy by changing its configuration to affect the way it samples the environment or change the distribution it encodes. These changes correspond to action and perception respectively and lead to an adaptive exchange with the environment that is characteristic of biological systems. This treatment assumes that the system’s state and structure encode an implicit and probabilistic model of the environment. We will look at the models entailed by the brain and how minimisation of its free energy can explain its dynamics and structure.}
+}
+
+@article{Life-As-We-Know-It,
+    author = {Friston, Karl },
+    title = {Life as we know it},
+    journal = {Journal of The Royal Society Interface},
+    volume = {10},
+    number = {86},
+    pages = {20130475},
+    year = {2013},
+    doi = {10.1098/rsif.2013.0475},
+
+    URL = {https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2013.0475},
+    eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2013.0475}
+    ,
+        abstract = { This paper presents a heuristic proof (and simulations of a primordial soup) suggesting that life—or biological self-organization—is an inevitable and emergent property of any (ergodic) random dynamical system that possesses a Markov blanket. This conclusion is based on the following arguments: if the coupling among an ensemble of dynamical systems is mediated by short-range forces, then the states of remote systems must be conditionally independent. These independencies induce a Markov blanket that separates internal and external states in a statistical sense. The existence of a Markov blanket means that internal states will appear to minimize a free energy functional of the states of their Markov blanket. Crucially, this is the same quantity that is optimized in Bayesian inference. Therefore, the internal states (and their blanket) will appear to engage in active Bayesian inference. In other words, they will appear to model—and act on—their world to preserve their functional and structural integrity, leading to homoeostasis and a simple form of autopoiesis. }
+}
+
+@article{Tutorial-FEP-Modelling-Perception-Action,
+    title = {A tutorial on the free-energy framework for modelling perception and learning},
+    journal = {Journal of Mathematical Psychology},
+    volume = {76},
+    pages = {198-211},
+    year = {2017},
+    note = {Model-based Cognitive Neuroscience},
+    issn = {0022-2496},
+    doi = {https://doi.org/10.1016/j.jmp.2015.11.003},
+    url = {https://www.sciencedirect.com/science/article/pii/S0022249615000759},
+    author = {Rafal Bogacz},
+    abstract = {This paper provides an easy to follow tutorial on the free-energy framework for modelling perception developed by Friston, which extends the predictive coding model of Rao and Ballard. These models assume that the sensory cortex infers the most likely values of attributes or features of sensory stimuli from the noisy inputs encoding the stimuli. Remarkably, these models describe how this inference could be implemented in a network of very simple computational elements, suggesting that this inference could be performed by biological networks of neurons. Furthermore, learning about the parameters describing the features and their uncertainty is implemented in these models by simple rules of synaptic plasticity based on Hebbian learning. This tutorial introduces the free-energy framework using very simple examples, and provides step-by-step derivations of the model. It also discusses in more detail how the model could be implemented in biological neural circuits. In particular, it presents an extended version of the model in which the neurons only sum their inputs, and synaptic plasticity only depends on activity of pre-synaptic and post-synaptic neurons.}
+}
+
+@article{FEP-Mathematical-Review,
+    title = {The free energy principle for action and perception: A mathematical review},
+    journal = {Journal of Mathematical Psychology},
+    volume = {81},
+    pages = {55-79},
+    year = {2017},
+    issn = {0022-2496},
+    doi = {https://doi.org/10.1016/j.jmp.2017.09.004},
+    url = {https://www.sciencedirect.com/science/article/pii/S0022249617300962},
+    author = {Christopher L. Buckley and Chang Sub Kim and Simon McGregor and Anil K. Seth},
+    keywords = {Free energy principle, Perception, Action, Inference, Bayesian brain, Agent-based model},
+    abstract = {The ‘free energy principle’ (FEP) has been suggested to provide a unified theory of the brain, integrating data and theory relating to action, perception, and learning. The theory and implementation of the FEP combines insights from Helmholtzian ‘perception as inference’, machine learning theory, and statistical thermodynamics. Here, we provide a detailed mathematical evaluation of a suggested biologically plausible implementation of the FEP that has been widely used to develop the theory. Our objectives are (i) to describe within a single article the mathematical structure of this implementation of the FEP; (ii) provide a simple but complete agent-based model utilising the FEP and (iii) to disclose the assumption structure of this implementation of the FEP to help elucidate its significance for the brain sciences.}
+}
+
+@article{Emperical-Eval-AIF-Multi-Arm-Bandits,
+    title = {An empirical evaluation of active inference in multi-armed bandits},
+    journal = {Neural Networks},
+    volume = {144},
+    pages = {229-246},
+    year = {2021},
+    issn = {0893-6080},
+    doi = {https://doi.org/10.1016/j.neunet.2021.08.018},
+    url = {https://www.sciencedirect.com/science/article/pii/S0893608021003233},
+    author = {Dimitrije Marković and Hrvoje Stojić and Sarah Schwöbel and Stefan J. Kiebel},
+    keywords = {Decision making, Bayesian inference, Multi-armed bandits, Active inference, Upper confidence bound, Thompson sampling},
+    abstract = {A key feature of sequential decision making under uncertainty is a need to balance between exploiting—choosing the best action according to the current knowledge, and exploring—obtaining information about values of other actions. The multi-armed bandit problem, a classical task that captures this trade-off, served as a vehicle in machine learning for developing bandit algorithms that proved to be useful in numerous industrial applications. The active inference framework, an approach to sequential decision making recently developed in neuroscience for understanding human and animal behaviour, is distinguished by its sophisticated strategy for resolving the exploration–exploitation trade-off. This makes active inference an exciting alternative to already established bandit algorithms. Here we derive an efficient and scalable approximate active inference algorithm and compare it to two state-of-the-art bandit algorithms: Bayesian upper confidence bound and optimistic Thompson sampling. This comparison is done on two types of bandit problems: a stationary and a dynamic switching bandit. Our empirical evaluation shows that the active inference algorithm does not produce efficient long-term behaviour in stationary bandits. However, in the more challenging switching bandit problem active inference performs substantially better than the two state-of-the-art bandit algorithms. The results open exciting venues for further research in theoretical and applied machine learning, as well as lend additional credibility to active inference as a general framework for studying human and animal behaviour.}
+}
+
+@article{Action-Behaviour-FE,
+    author = {Friston, K  and Daunizeau, J  and Kilner, J  and Kiebel, S},
+    journal = {Biological cybernetics},
+    title = {Action and behavior: a free-energy formulation},
+    year = {2010},
+    volume = {102},
+    number = {3},
+    pages = {227-260},
+    doi = {10.1007/s00422-010-0364-z},
+    url = {https://doi.org/10.1007/s00422-010-0364-z}
+}
+
+@article{Codes-on-Graphs,
+  author={Forney, G.D.},
+  journal={IEEE Transactions on Information Theory}, 
+  title={Codes on graphs: normal realizations}, 
+  year={2001},
+  volume={47},
+  number={2},
+  pages={520-548},
+  doi={10.1109/18.910573}
+}
+
+@article{Markov-Blankets-Life,
+    author = {Kirchhoff, Michael  and Parr, Thomas  and Palacios, Ensor  and Friston, Karl  and Kiverstein, Julian },
+    title = {The Markov blankets of life: autonomy, active inference and the free energy principle},
+    journal = {Journal of The Royal Society Interface},
+    volume = {15},
+    number = {138},
+    pages = {20170792},
+    year = {2018},
+    doi = {10.1098/rsif.2017.0792},
+
+    URL = {https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2017.0792},
+    eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2017.0792}
+    ,
+    abstract = { This work addresses the autonomous organization of biological systems. It does so by considering the boundaries of biological systems, from individual cells to Home sapiens, in terms of the presence of Markov blankets under the active inference scheme—a corollary of the free energy principle. A Markov blanket defines the boundaries of a system in a statistical sense. Here we consider how a collective of Markov blankets can self-assemble into a global system that itself has a Markov blanket; thereby providing an illustration of how autonomous systems can be understood as having layers of nested and self-sustaining boundaries. This allows us to show that: (i) any living system is a Markov blanketed system and (ii) the boundaries of such systems need not be co-extensive with the biophysical boundaries of a living organism. In other words, autonomous systems are hierarchically composed of Markov blankets of Markov blankets—all the way down to individual cells, all the way up to you and me, and all the way out to include elements of the local environment. }
+}
+
+@Article{Neural-Dynamics-AIF,
+    AUTHOR = {Da Costa, Lancelot and Parr, Thomas and Sengupta, Biswa and Friston, Karl},
+    TITLE = {Neural Dynamics under Active Inference: Plausibility and Efficiency of Information Processing},
+    JOURNAL = {Entropy},
+    VOLUME = {23},
+    YEAR = {2021},
+    NUMBER = {4},
+    ARTICLE-NUMBER = {454},
+    URL = {https://www.mdpi.com/1099-4300/23/4/454},
+    PubMedID = {33921298},
+    ISSN = {1099-4300},
+    ABSTRACT = {Active inference is a normative framework for explaining behaviour under the free energy principle—a theory of self-organisation originating in neuroscience. It specifies neuronal dynamics for state-estimation in terms of a descent on (variational) free energy—a measure of the fit between an internal (generative) model and sensory observations. The free energy gradient is a prediction error—plausibly encoded in the average membrane potentials of neuronal populations. Conversely, the expected probability of a state can be expressed in terms of neuronal firing rates. We show that this is consistent with current models of neuronal dynamics and establish face validity by synthesising plausible electrophysiological responses. We then show that these neuronal dynamics approximate natural gradient descent, a well-known optimisation algorithm from information geometry that follows the steepest descent of the objective in information space. We compare the information length of belief updating in both schemes, a measure of the distance travelled in information space that has a direct interpretation in terms of metabolic cost. We show that neural dynamics under active inference are metabolically efficient and suggest that neural representations in biological agents may evolve by approximating steepest descent in information space towards the point of optimal inference.},
+    DOI = {10.3390/e23040454}
+}
+
+@Inbook{View-of-EM-Algorithm,
+    author="Neal, Radford M.
+    and Hinton, Geoffrey E.",
+    editor="Jordan, Michael I.",
+    title="A View of the Em Algorithm that Justifies Incremental, Sparse, and other Variants",
+    bookTitle="Learning in Graphical Models",
+    year="1998",
+    publisher="Springer Netherlands",
+    address="Dordrecht",
+    pages="355--368",
+    abstract="The EM algorithm performs maximum likelihood estimation for data in which some variables are unobserved. We present a function that resembles negative free energy and show that the M step maximizes this function with respect to the model parameters and the E step maximizes it with respect to the distribution over the unobserved variables. From this perspective, it is easy to justify an incremental variant of the EM algorithm in which the distribution for only one of the unobserved variables is recalculated in each E step. This variant is shown empirically to give faster convergence in a mixture estimation problem. A variant of the algorithm that exploits sparse conditional distributions is also described, and a wide range of other variant algorithms are also seen to be possible.",
+    isbn="978-94-011-5014-9",
+    doi="10.1007/978-94-011-5014-9_12",
+    url="https://doi.org/10.1007/978-94-011-5014-9_12"
+}
+
+@ARTICLE{Attention-UUncertainty-Free-Energy,
+    AUTHOR={Feldman, Harriet and Friston, Karl},    
+    TITLE={Attention, Uncertainty, and Free-Energy},      
+    JOURNAL={Frontiers in Human Neuroscience},      
+    VOLUME={4},           
+    YEAR={2010},        
+    URL={https://www.frontiersin.org/articles/10.3389/fnhum.2010.00215},       
+    DOI={10.3389/fnhum.2010.00215},      
+    ISSN={1662-5161},   
+    ABSTRACT={We suggested recently that attention can be understood as inferring the level of uncertainty or precision during hierarchical perception. In this paper, we try to substantiate this claim using neuronal simulations of directed spatial attention and biased competition. These simulations assume that neuronal activity encodes a probabilistic representation of the world that optimizes free-energy in a Bayesian fashion. Because free-energy bounds surprise or the (negative) log-evidence for internal models of the world, this optimization can be regarded as evidence accumulation or (generalized) predictive coding. Crucially, both predictions about the state of the world generating sensory data and the precision of those data have to be optimized. Here, we show that if the precision depends on the states, one can explain many aspects of attention. We illustrate this in the context of the Posner paradigm, using the simulations to generate both psychophysical and electrophysiological responses. These simulated responses are consistent with attentional bias or gating, competition for attentional resources, attentional capture and associated speed-accuracy trade-offs. Furthermore, if we present both attended and non-attended stimuli simultaneously, biased competition for neuronal representation emerges as a principled and straightforward property of Bayes-optimal perception.}
+}
+
+@article{The-Bayesian-Brain,
+    title = {The Bayesian brain: the role of uncertainty in neural coding and computation},
+    journal = {Trends in Neurosciences},
+    volume = {27},
+    number = {12},
+    pages = {712-719},
+    year = {2004},
+    issn = {0166-2236},
+    doi = {https://doi.org/10.1016/j.tins.2004.10.007},
+    url = {https://www.sciencedirect.com/science/article/pii/S0166223604003352},
+    author = {David C. Knill and Alexandre Pouget},
+    abstract = {To use sensory information efficiently to make judgments and guide action in the world, the brain must represent and use information about uncertainty in its computations for perception and action. Bayesian methods have proven successful in building computational theories for perception and sensorimotor control, and psychophysics is providing a growing body of evidence that human perceptual computations are ‘Bayes' optimal’. This leads to the ‘Bayesian coding hypothesis’: that the brain represents sensory information probabilistically, in the form of probability distributions. Several computational schemes have recently been proposed for how this might be achieved in populations of neurons. Neurophysiological data on the hypothesis, however, is almost non-existent. A major challenge for neuroscientists is to test these ideas experimentally, and so determine whether and how neurons code information about sensory uncertainty.}
+}
+
+@article{Demystifying-AIF,
+  author    = {Noor Sajid and
+               Philip J. Ball and
+               Karl J. Friston},
+  title     = {Demystifying active inference},
+  journal   = {CoRR},
+  volume    = {abs/1909.10863},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1909.10863},
+  eprinttype = {arXiv},
+  eprint    = {1909.10863},
+  timestamp = {Fri, 27 Sep 2019 13:04:21 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1909-10863.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@Article{Generalised-Free-Energy-AIF,
+    author={Parr, Thomas
+    and Friston, Karl J.},
+    title={Generalised free energy and active inference},
+    journal={Biological Cybernetics},
+    year={2019},
+    month={Dec},
+    day={01},
+    volume={113},
+    number={5},
+    pages={495-513},
+    abstract={Active inference is an approach to understanding behaviour that rests upon the idea that the brain uses an internal generative model to predict incoming sensory data. The fit between this model and data may be improved in two ways. The brain could optimise probabilistic beliefs about the variables in the generative model (i.e. perceptual inference). Alternatively, by acting on the world, it could change the sensory data, such that they are more consistent with the model. This implies a common objective function (variational free energy) for action and perception that scores the fit between an internal model and the world. We compare two free energy functionals for active inference in the framework of Markov decision processes. One of these is a functional of beliefs (i.e. probability distributions) about states and policies, but a function of observations, while the second is a functional of beliefs about all three. In the former (expected free energy), prior beliefs about outcomes are not part of the generative model (because they are absorbed into the prior over policies). Conversely, in the second (generalised free energy), priors over outcomes become an explicit component of the generative model. When using the free energy function, which is blind to future observations, we equip the generative model with a prior over policies that ensure preferred (i.e. priors over) outcomes are realised. In other words, if we expect to encounter a particular kind of outcome, this lends plausibility to those policies for which this outcome is a consequence. In addition, this formulation ensures that selected policies minimise uncertainty about future outcomes by minimising the free energy expected in the future. When using the free energy functional---that effectively treats future observations as hidden states---we show that policies are inferred or selected that realise prior preferences by minimising the free energy of future expectations. Interestingly, the form of posterior beliefs about policies (and associated belief updating) turns out to be identical under both formulations, but the quantities used to compute them are not.},
+    issn={1432-0770},
+    doi={10.1007/s00422-019-00805-w},
+    url={https://doi.org/10.1007/s00422-019-00805-w}
+}
+
+@Article{Planning-and-Nav-as-AIF,
+    author={Kaplan, Raphael
+    and Friston, Karl J.},
+    title={Planning and navigation as active inference},
+    journal={Biological Cybernetics},
+    year={2018},
+    month={Aug},
+    day={01},
+    volume={112},
+    number={4},
+    pages={323-343},
+    abstract={This paper introduces an active inference formulation of planning and navigation. It illustrates how the exploitation--exploration dilemma is dissolved by acting to minimise uncertainty (i.e. expected surprise or free energy). We use simulations of a maze problem to illustrate how agents can solve quite complicated problems using context sensitive prior preferences to form subgoals. Our focus is on how epistemic behaviour---driven by novelty and the imperative to reduce uncertainty about the world---contextualises pragmatic or goal-directed behaviour. Using simulations, we illustrate the underlying process theory with synthetic behavioural and electrophysiological responses during exploration of a maze and subsequent navigation to a target location. An interesting phenomenon that emerged from the simulations was a putative distinction between `place cells'---that fire when a subgoal is reached---and `path cells'---that fire until a subgoal is reached.},
+    issn={1432-0770},
+    doi={10.1007/s00422-018-0753-2},
+    url={https://doi.org/10.1007/s00422-018-0753-2}
+}
+
+
+@article{AIF-Discrete-Action-Spaces-Synthesis,
+    title = {Active inference on discrete state-spaces: A synthesis},
+    journal = {Journal of Mathematical Psychology},
+    volume = {99},
+    pages = {102447},
+    year = {2020},
+    issn = {0022-2496},
+    doi = {https://doi.org/10.1016/j.jmp.2020.102447},
+    url = {https://www.sciencedirect.com/science/article/pii/S0022249620300857},
+    author = {Lancelot {Da Costa} and Thomas Parr and Noor Sajid and Sebastijan Veselic and Victorita Neacsu and Karl Friston},
+    keywords = {Active inference, Free energy principle, Process theory, Variational Bayesian inference, Markov decision process, Mathematical review},
+    abstract = {Active inference is a normative principle underwriting perception, action, planning, decision-making and learning in biological or artificial agents. From its inception, its associated process theory has grown to incorporate complex generative models, enabling simulation of a wide range of complex behaviours. Due to successive developments in active inference, it is often difficult to see how its underlying principle relates to process theories and practical implementation. In this paper, we try to bridge this gap by providing a complete mathematical synthesis of active inference on discrete state-space models. This technical summary provides an overview of the theory, derives neuronal dynamics from first principles and relates this dynamics to biological processes. Furthermore, this paper provides a fundamental building block needed to understand active inference for mixed generative models; allowing continuous sensations to inform discrete representations. This paper may be used as follows: to guide research towards outstanding challenges, a practical guide on how to implement active inference to simulate experimental behaviour, or a pointer towards various in-silico neurophysiological responses that may be used to make empirical predictions.}
+}
+
+@article{RR-Emerging,
+    author = {Vervaeke, John and Lillicrap, Timothy P. and Richards, Blake A.},
+    title = "{Relevance Realization and the Emerging Framework in Cognitive Science}",
+    journal = {Journal of Logic and Computation},
+    volume = {22},
+    number = {1},
+    pages = {79-99},
+    year = {2009},
+    month = {10},
+    abstract = "{We argue that an explanation of relevance realization is a pervasive problem within cognitive science, and that it is becoming the criterion of the cognitive in terms of which a new framework for doing cognitive science is emerging. We articulate that framework and then make use of it to provide the beginnings of a theory of relevance realization that incorporates many existing insights implicit within the contributing disciplines of cognitive science. We also introduce some theoretical and potentially technical innovations motivated by the articulation of those insights. Finally, we show how the explication of the framework and development of the theory help to clear up some important incompleteness and confusions within both Montague's work and Sperber and Wilson's theory of relevance.}",
+    issn = {0955-792X},
+    doi = {10.1093/logcom/exp067},
+    url = {https://doi.org/10.1093/logcom/exp067},
+    eprint = {https://academic.oup.com/logcom/article-pdf/22/1/79/3262477/exp067.pdf},
+}
+
+@article{Mastering-Go-Without-Human-Knowledge,
+    author={Silver, David
+    and Schrittwieser, Julian
+    and Simonyan, Karen
+    and Antonoglou, Ioannis
+    and Huang, Aja
+    and Guez, Arthur
+    and Hubert, Thomas
+    and Baker, Lucas
+    and Lai, Matthew
+    and Bolton, Adrian
+    and Chen, Yutian
+    and Lillicrap, Timothy
+    and Hui, Fan
+    and Sifre, Laurent
+    and van den Driessche, George
+    and Graepel, Thore
+    and Hassabis, Demis},
+    title={Mastering the game of Go without human knowledge},
+    journal={Nature},
+    year={2017},
+    month={10},
+    volume={550},
+    number={7676},
+    pages={354-359},
+    abstract={A long-standing goal of artificial intelligence is an algorithm that learns, tabula rasa, superhuman proficiency in challenging domains. Recently, AlphaGo became the first program to defeat a world champion in the game of Go. The tree search in AlphaGo evaluated positions and selected moves using deep neural networks. These neural networks were trained by supervised learning from human expert moves, and by reinforcement learning from self-play. Here we introduce an algorithm based solely on reinforcement learning, without human data, guidance or domain knowledge beyond game rules. AlphaGo becomes its own teacher: a neural network is trained to predict AlphaGo's own move selections and also the winner of AlphaGo's games. This neural network improves the strength of the tree search, resulting in higher quality move selection and stronger self-play in the next iteration. Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100--0 against the previously published, champion-defeating AlphaGo.},
+    issn={1476-4687},
+    doi={10.1038/nature24270},
+    url={https://doi.org/10.1038/nature24270}
+}
+
+@misc{Dream-to-Control,
+      title={Dream to Control: Learning Behaviors by Latent Imagination}, 
+      author={Danijar Hafner and Timothy Lillicrap and Jimmy Ba and Mohammad Norouzi},
+      year={2020},
+      eprint={1912.01603},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{Step-by-Step-Tutorial-AIF-Empirical-Data,
+    title = {A step-by-step tutorial on active inference and its application to empirical data},
+    journal = {Journal of Mathematical Psychology},
+    volume = {107},
+    pages = {102632},
+    year = {2022},
+    issn = {0022-2496},
+    doi = {https://doi.org/10.1016/j.jmp.2021.102632},
+    url = {https://www.sciencedirect.com/science/article/pii/S0022249621000973},
+    author = {Ryan Smith and Karl J. Friston and Christopher J. Whyte},
+    keywords = {Active inference, Computational neuroscience, Bayesian inference, Learning, Decision-making, Machine learning},
+    abstract = {The active inference framework, and in particular its recent formulation as a partially observable Markov decision process (POMDP), has gained increasing popularity in recent years as a useful approach for modeling neurocognitive processes. This framework is highly general and flexible in its ability to be customized to model any cognitive process, as well as simulate predicted neuronal responses based on its accompanying neural process theory. It also affords both simulation experiments for proof of principle and behavioral modeling for empirical studies. However, there are limited resources that explain how to build and run these models in practice, which limits their widespread use. Most introductions assume a technical background in programming, mathematics, and machine learning. In this paper we offer a step-by-step tutorial on how to build POMDPs, run simulations using standard MATLAB routines, and fit these models to empirical data. We assume a minimal background in programming and mathematics, thoroughly explain all equations, and provide exemplar scripts that can be customized for both theoretical and empirical studies. Our goal is to provide the reader with the requisite background knowledge and practical tools to apply active inference to their own research. We also provide optional technical sections and multiple appendices, which offer the interested reader additional technical details. This tutorial should provide the reader with all the tools necessary to use these models and to follow emerging advances in active inference research.}
+}
+
+@article{Variational-Inference-Reviews,
+	doi = {10.1080/01621459.2017.1285773},
+	year = 2017,
+	month = {04},
+	publisher = {Informa {UK} Limited},
+	volume = {112},
+	number = {518},
+	pages = {859--877},
+	author = {David M. Blei and Alp Kucukelbir and Jon D. McAuliffe},
+	title = {Variational Inference: A Review for Statisticians},
+	journal = {Journal of the American Statistical Association}
+}
+
+@misc{Practical-Tutorial-Variational-Bayes,
+      title={A practical tutorial on Variational Bayes}, 
+      author={Minh-Ngoc Tran and Trong-Nghia Nguyen and Viet-Hung Dao},
+      year={2021},
+      eprint={2103.01327},
+      archivePrefix={arXiv},
+      primaryClass={stat.CO}
+}
+
+@article{AIF-Curiosity-Insight,
+    author = {Friston, Karl and Lin, Marco and Frith, Chris and Pezzulo, Giovanni and Hobson, J. and Ondobaka, Sasha},
+    year = {2017},
+    month = {08},
+    pages = {1-51},
+    title = {Active Inference, Curiosity and Insight},
+    volume = {29},
+    journal = {Neural Computation},
+    doi = {10.1162/neco_a_00999}
+}
+
+@book{Reinforcement-Learning-An-Introduction,
+  author = {Sutton, Richard S. and Barto, Andrew G.},
+  title = {Reinforcement Learning: An Introduction},
+  edition = {2},
+  publisher = {MIT Press},
+  address = {Cambridge, Massachusetts},
+  year = {2018}
+}
+
+@misc{Async-Methods-Deep-RL,
+      title={Asynchronous Methods for Deep Reinforcement Learning}, 
+      author={Volodymyr Mnih and Adrià Puigdomènech Badia and Mehdi Mirza and Alex Graves and Timothy P. Lillicrap and Tim Harley and David Silver and Koray Kavukcuoglu},
+      year={2016},
+      eprint={1602.01783},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{ATARI-Deep-RL,
+      title={Playing Atari with Deep Reinforcement Learning}, 
+      author={Volodymyr Mnih and Koray Kavukcuoglu and David Silver and Alex Graves and Ioannis Antonoglou and Daan Wierstra and Martin Riedmiller},
+      year={2013},
+      eprint={1312.5602},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{RL-or-AIF,
+    doi = {10.1371/journal.pone.0006421},
+    author = {Friston, Karl J. AND Daunizeau, Jean AND Kiebel, Stefan J.},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Reinforcement Learning or Active Inference?},
+    year = {2009},
+    month = {07},
+    volume = {4},
+    url = {https://doi.org/10.1371/journal.pone.0006421},
+    pages = {1-13},
+    abstract = {This paper questions the need for reinforcement learning or control theory when optimising behaviour. We show that it is fairly simple to teach an agent complicated and adaptive behaviours using a free-energy formulation of perception. In this formulation, agents adjust their internal states and sampling of the environment to minimize their free-energy. Such agents learn causal structure in the environment and sample it in an adaptive and self-supervised fashion. This results in behavioural policies that reproduce those optimised by reinforcement learning and dynamic programming. Critically, we do not need to invoke the notion of reward, value or utility. We illustrate these points by solving a benchmark problem in dynamic programming; namely the mountain-car problem, using active perception or inference under the free-energy principle. The ensuing proof-of-concept may be important because the free-energy formulation furnishes a unified account of both action and perception and may speak to a reappraisal of the role of dopamine in the brain.},
+    number = {7},
+
+}
+
+@Article{AIF-Agency-Optim-Control-No-Cost-Funcs,
+    author={Friston, Karl
+    and Samothrakis, Spyridon
+    and Montague, Read},
+    title={Active inference and agency: optimal control without cost functions},
+    journal={Biological Cybernetics},
+    year={2012},
+    month={10},
+    day={01},
+    volume={106},
+    number={8},
+    pages={523-541},
+    abstract={This paper describes a variational free-energy formulation of (partially observable) Markov decision problems in decision making under uncertainty. We show that optimal control can be cast as active inference. In active inference, both action and posterior beliefs about hidden states minimise a free energy bound on the negative log-likelihood of observed states, under a generative model. In this setting, reward or cost functions are absorbed into prior beliefs about state transitions and terminal states. Effectively, this converts optimal control into a pure inference problem, enabling the application of standard Bayesian filtering techniques. We then consider optimal trajectories that rest on posterior beliefs about hidden states in the future. Crucially, this entails modelling control as a hidden state that endows the generative model with a representation of agency. This leads to a distinction between models with and without inference on hidden control states; namely, agency-free and agency-based models, respectively.},
+    issn={1432-0770},
+    doi={10.1007/s00422-012-0512-8},
+    url={https://doi.org/10.1007/s00422-012-0512-8}
+}
+
+@article{AIF-Robotics-Artificial-Agents,
+  author       = {Pablo Lanillos and
+                  Cristian Meo and
+                  Corrado Pezzato and
+                  Ajith Anil Meera and
+                  Mohamed Baioumy and
+                  Wataru Ohata and
+                  Alexander Tschantz and
+                  Beren Millidge and
+                  Martijn Wisse and
+                  Christopher L. Buckley and
+                  Jun Tani},
+  title        = {Active Inference in Robotics and Artificial Agents: Survey and Challenges},
+  journal      = {CoRR},
+  volume       = {abs/2112.01871},
+  year         = {2021},
+  url          = {https://arxiv.org/abs/2112.01871},
+  eprinttype    = {arXiv},
+  eprint       = {2112.01871},
+  timestamp    = {Tue, 07 Dec 2021 12:15:54 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2112-01871.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{What-Optim-About-Motor-Control,
+    title = {What Is Optimal about Motor Control?},
+    journal = {Neuron},
+    volume = {72},
+    number = {3},
+    pages = {488-498},
+    year = {2011},
+    issn = {0896-6273},
+    doi = {https://doi.org/10.1016/j.neuron.2011.10.018},
+    url = {https://www.sciencedirect.com/science/article/pii/S0896627311009305},
+    author = {Karl Friston},
+    abstract = {This article poses a controversial question: is optimal control theory useful for understanding motor behavior or is it a misdirection? This question is becoming acute as people start to conflate internal models in motor control and perception (Poeppel et al., 2008, Hickok et al., 2011). However, the forward models in motor control are not the generative models used in perceptual inference. This Perspective tries to highlight the differences between internal models in motor control and perception and asks whether optimal control is the right way to think about things. The issues considered here may have broader implications for optimal decision theory and Bayesian approaches to learning and behavior in general.}
+}
+
+@ARTICLE{Simulating-AIF-By-Message-Passing,
+    AUTHOR={van de Laar, Thijs W. and de Vries, Bert},    
+    TITLE={Simulating Active Inference Processes by Message Passing},      
+    JOURNAL={Frontiers in Robotics and AI},      
+    VOLUME={6},           
+    YEAR={2019},
+    URL={https://www.frontiersin.org/articles/10.3389/frobt.2019.00020},       
+    DOI={10.3389/frobt.2019.00020},      
+    ISSN={2296-9144},   
+    ABSTRACT={The free energy principle (FEP) offers a variational calculus-based description for how biological agents persevere through interactions with their environment. Active inference (AI) is a corollary of the FEP, which states that biological agents act to fulfill prior beliefs about preferred future observations (target priors). Purposeful behavior then results from variational free energy minimization with respect to a generative model of the environment with included target priors. However, manual derivations for free energy minimizing algorithms on custom dynamic models can become tedious and error-prone. While probabilistic programming (PP) techniques enable automatic derivation of inference algorithms on free-form models, full automation of AI requires specialized tools for inference on dynamic models, together with the description of an experimental protocol that governs the interaction between the agent and its simulated environment. The contributions of the present paper are two-fold. Firstly, we illustrate how AI can be automated with the use of ForneyLab, a recent PP toolbox that specializes in variational inference on flexibly definable dynamic models. More specifically, we describe AI agents in a dynamic environment as probabilistic state space models (SSM) and perform inference for perception and control in these agents by message passing on a factor graph representation of the SSM. Secondly, we propose a formal experimental protocol for simulated AI. We exemplify how this protocol leads to goal-directed behavior for flexibly definable AI agents in two classical RL examples, namely the Bayesian thermostat and the mountain car parking problems.}
+}
+
+@article{Factor-Graph-Approach-Automated-Design-Bayesian-Algos,
+	doi = {10.1016/j.ijar.2018.11.002},
+	year = 2019,
+	month = {01},
+	publisher = {Elsevier {BV}},
+	volume = {104},
+	pages = {185--204},
+	author = {Marco Cox and Thijs van de Laar and Bert de Vries},
+	title = {A factor graph approach to automated design of Bayesian signal processing algorithms},
+	journal = {International Journal of Approximate Reasoning}
+}
+
+@article{Reactive-MP,
+  author    = {Dmitry Bagaev and
+               Bert de Vries},
+  title     = {Reactive Message Passing for Scalable Bayesian Inference},
+  journal   = {CoRR},
+  volume    = {abs/2112.13251},
+  year      = {2021},
+  url       = {https://arxiv.org/abs/2112.13251},
+  eprinttype = {arXiv},
+  eprint    = {2112.13251},
+  timestamp = {Tue, 04 Jan 2022 15:59:27 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2112-13251.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@ARTICLE{Factor-Graph-Desc-Deep-Temp-AIF,
+    AUTHOR={de Vries, Bert and Friston, Karl J.},   
+    TITLE={A Factor Graph Description of Deep Temporal Active Inference},      
+    JOURNAL={Frontiers in Computational Neuroscience},      
+    VOLUME={11},           
+    YEAR={2017},        
+    URL={https://www.frontiersin.org/articles/10.3389/fncom.2017.00095},       
+    DOI={10.3389/fncom.2017.00095},      
+    ISSN={1662-5188},   
+    ABSTRACT={Active inference is a corollary of the Free Energy Principle that prescribes how self-organizing biological agents interact with their environment. The study of active inference processes relies on the definition of a generative probabilistic model and a description of how a free energy functional is minimized by neuronal message passing under that model. This paper presents a tutorial introduction to specifying active inference processes by Forney-style factor graphs (FFG). The FFG framework provides both an insightful representation of the probabilistic model and a biologically plausible inference scheme that, in principle, can be automatically executed in a computer simulation. As an illustrative example, we present an FFG for a deep temporal active inference process. The graph clearly shows how policy selection by expected free energy minimization results from free energy minimization per se, in an appropriate generative policy model.}
+}
+
+@article{Deep-AIF,
+	doi = {10.1007/s00422-018-0785-7},
+	howpublished = {\url{https://doi.org/10.1007\%2Fs00422-018-0785-7}},
+	year = 2018,
+	month = {10},
+	publisher = {Springer Science and Business Media {LLC}},
+	volume = {112},
+	number = {6},
+	pages = {547--573},
+	author = {Kai Ueltzhöffer},
+	title = {Deep active inference},
+	journal = {Biological Cybernetics}
+}
+
+@article{Deep-AIF-As-Var-Policy-Grad,
+    author = {Millidge, Beren},
+    year = {2019},
+    month = {07},
+    title = {Deep Active Inference as Variational Policy Gradients},
+    url = {https://arxiv.org/pdf/1907.03876.pdf}
+}
+
+@phdthesis{Applications-of-FEP-Machine-Learning-Neuroscience,
+  author = {Millidge, Beren},
+  title = {Applications of the free energy principle to machine learning and neuroscience},
+  school = {University of Edinburgh},
+  year = {2021},
+  url = {https://era.ed.ac.uk/handle/1842/38235}
+}
+
+@InProceedings{DEEP-AIF-For-POMDPs,
+    author="van der Himst, Otto
+    and Lanillos, Pablo",
+    editor="Verbelen, Tim
+    and Lanillos, Pablo
+    and Buckley, Christopher L.
+    and De Boom, Cedric",
+    title="Deep Active Inference for Partially Observable MDPs",
+    booktitle="Active Inference",
+    year="2020",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="61--71",
+    abstract="Deep active inference has been proposed as a scalable approach to perception and action that deals with large policy and state spaces. However, current models are limited to fully observable domains. In this paper, we describe a deep active inference model that can learn successful policies directly from high-dimensional sensory inputs. The deep learning architecture optimizes a variant of the expected free energy and encodes the continuous state representation by means of a variational autoencoder. We show, in the OpenAI benchmark, that our approach has comparable or better performance than deep Q-learning, a state-of-the-art deep reinforcement learning algorithm.",
+    isbn="978-3-030-64919-7"
+}
+
+@misc{Bayesian-Policy-Selection-AIF,
+      title={Bayesian policy selection using active inference}, 
+      author={Ozan Çatal and Johannes Nauta and Tim Verbelen and Pieter Simoens and Bart Dhoedt},
+      year={2019},
+      eprint={1904.08149},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{Scaling-AIF,
+  author    = {Alexander Tschantz and
+               Manuel Baltieri and
+               Anil K. Seth and
+               Christopher L. Buckley},
+  title     = {Scaling active inference},
+  journal   = {CoRR},
+  volume    = {abs/1911.10601},
+  year      = {2019},
+  url       = {http://arxiv.org/abs/1911.10601},
+  eprinttype = {arXiv},
+  eprint    = {1911.10601},
+  timestamp = {Tue, 03 Dec 2019 14:15:54 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1911-10601.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@InProceedings{Infer-in-Circ-AIF-continuous-state-heriarch-gauss-filter,
+    author="Waade, Peter Thestrup
+    and Mikus, Nace
+    and Mathys, Christoph",
+    editor="Kamp, Michael
+    and Koprinska, Irena
+    and Bibal, Adrien
+    and Bouadi, Tassadit
+    and Fr{\'e}nay, Beno{\^i}t
+    and Gal{\'a}rraga, Luis
+    and Oramas, Jos{\'e}
+    and Adilova, Linara
+    and Krishnamurthy, Yamuna
+    and Kang, Bo
+    and Largeron, Christine
+    and Lijffijt, Jefrey
+    and Viard, Tiphaine
+    and Welke, Pascal
+    and Ruocco, Massimiliano
+    and Aune, Erlend
+    and Gallicchio, Claudio
+    and Schiele, Gregor
+    and Pernkopf, Franz
+    and Blott, Michaela
+    and Fr{\"o}ning, Holger
+    and Schindler, G{\"u}nther
+    and Guidotti, Riccardo
+    and Monreale, Anna
+    and Rinzivillo, Salvatore
+    and Biecek, Przemyslaw
+    and Ntoutsi, Eirini
+    and Pechenizkiy, Mykola
+    and Rosenhahn, Bodo
+    and Buckley, Christopher
+    and Cialfi, Daniela
+    and Lanillos, Pablo
+    and Ramstead, Maxwell
+    and Verbelen, Tim
+    and Ferreira, Pedro M.
+    and Andresini, Giuseppina
+    and Malerba, Donato
+    and Medeiros, Ib{\'e}ria
+    and Fournier-Viger, Philippe
+    and Nawaz, M. Saqib
+    and Ventura, Sebastian
+    and Sun, Meng
+    and Zhou, Min
+    and Bitetta, Valerio
+    and Bordino, Ilaria
+    and Ferretti, Andrea
+    and Gullo, Francesco
+    and Ponti, Giovanni
+    and Severini, Lorenzo
+    and Ribeiro, Rita
+    and Gama, Jo{\~a}o
+    and Gavald{\`a}, Ricard
+    and Cooper, Lee
+    and Ghazaleh, Naghmeh
+    and Richiardi, Jonas
+    and Roqueiro, Damian
+    and Saldana Miranda, Diego
+    and Sechidis, Konstantinos
+    and Gra{\c{c}}a, Guilherme",
+    title="Inferring in Circles: Active Inference in Continuous State Space Using Hierarchical Gaussian Filtering of Sufficient Statistics",
+    booktitle="Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+    year="2021",
+    publisher="Springer International Publishing",
+    address="Cham",
+    pages="810--818",
+    abstract="We create a continuous state space active inference agent based on the hierarchical Gaussian filter. It uses the HGF to track the sufficient statistics of noisy observations of a moving target that is performing a Gaussian random walk with drift and varying volatility. On the basis of this filtering, the agent predicts the target's position, and minimizes surprisal by staying close to it. Our simulated agent represents the first full implementation of this approach. It demonstrates the feasibility of supplementing active inference with HGF-filtering of the sufficient statistics of observations, which is particularly useful in noisy and volatile continuous state space environments.",
+    isbn="978-3-030-93736-2"
+}
+
+@misc{Combine-Info-Seek-Explore-and-Reward-Maximization-Under-POMDP,
+      title={Combining information-seeking exploration and reward maximization: Unified inference on continuous state and action spaces under partial observability}, 
+      author={Parvin Malekzadeh and Konstantinos N. Plataniotis},
+      year={2022},
+      eprint={2212.07946},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{Reinforcement-Learning-Through-AIF,
+      title={Reinforcement Learning through Active Inference}, 
+      author={Alexander Tschantz and Beren Millidge and Anil K. Seth and Christopher L. Buckley},
+      year={2020},
+      eprint={2002.12636},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@misc{Bayesian-Policy-Selection-Using-AIF,
+      title={Bayesian policy selection using active inference}, 
+      author={Ozan Çatal and Johannes Nauta and Tim Verbelen and Pieter Simoens and Bart Dhoedt},
+      year={2019},
+      eprint={1904.08149},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@inproceedings{Contrastive-AIF,
+    author = {Mazzaglia, Pietro and Verbelen, Tim and Dhoedt, Bart},
+    booktitle = {Advances in Neural Information Processing Systems},
+    editor = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+    pages = {13870--13882},
+    publisher = {Curran Associates, Inc.},
+    title = {Contrastive Active Inference},
+    url = {https://proceedings.neurips.cc/paper_files/paper/2021/file/73c730319cf839f143bf40954448ce39-Paper.pdf},
+    volume = {34},
+    year = {2021}
+}
+
+@software{Minigrid,
+  author = {Chevalier-Boisvert, Maxime and Willems, Lucas and Pal, Suman},
+  title = {Minimalistic Gridworld Environment for Gymnasium},
+  url = {https://github.com/Farama-Foundation/Minigrid},
+  year = {2018},
+}
+
+@article{Deep-Mind-Control-Suite,
+         title = {dm_control: Software and tasks for continuous control},
+         journal = {Software Impacts},
+         volume = {6},
+         pages = {100022},
+         year = {2020},
+         issn = {2665-9638},
+         doi = {https://doi.org/10.1016/j.simpa.2020.100022},
+         url = {https://www.sciencedirect.com/science/article/pii/S2665963820300099},
+         author = {Saran Tunyasuvunakool and Alistair Muldal and Yotam Doron and
+                   Siqi Liu and Steven Bohez and Josh Merel and Tom Erez and
+                   Timothy Lillicrap and Nicolas Heess and Yuval Tassa},
+}
+
+@InProceedings{Message-Passing-Perspective-Planning-Under-AIF,
+    author="Koudahl, Magnus
+    and Buckley, Christopher L.
+    and de Vries, Bert",
+    editor="Buckley, Christopher L.
+    and Cialfi, Daniela
+    and Lanillos, Pablo
+    and Ramstead, Maxwell
+    and Sajid, Noor
+    and Shimazaki, Hideaki
+    and Verbelen, Tim",
+    title="A Message Passing Perspective on Planning Under Active Inference",
+    booktitle="Active Inference",
+    year="2023",
+    publisher="Springer Nature Switzerland",
+    address="Cham",
+    pages="319--327",
+    abstract="We present a message passing interpretation of planning under Active Inference. Specifically, we show how the Active Inference planning procedure can be broken into a (partial) message passing sweep over a graph, followed by local computations of a cost functional (the Expected Free Energy). Using Forney-style Factor Graphs, we then proceed to show how one can derive novel planning schemes by local changes to the underlying graph and message passing schedule. We illustrate this by first isolating the ``sophisticated'' aspect of Sophisticated Inference and then proposing a novel planning algorithm through combining the sophisticated update mechanism with a different message passing schedule. Our main contribution is a modular view of planning under Active Inference that can serve as a framework for both understanding existing algorithms, deriving new ones and extending the class of models that are amenable to Active Inference. Approaching Active Inference from a message passing perspective also shows how it can be efficiently implemented using off-the-shelf probabilistic programming software, broadening the class of models available to researchers and practitioners.",
+    isbn="978-3-031-28719-0"
+}
+
+@unknown{Relationship-Dynamic-Programming-AIF,
+    author = {Da Costa, Lancelot and Sajid, Noor and Parr, Thomas and Friston, Karl and Smith, Ryan},
+    year = {2020},
+    month = {09},
+    title = {The relationship between dynamic programming and active inference: the discrete, finite-horizon case}
+}
+
+@article{AIF-Epistemic-Value,
+    author = {Karl Friston and Francesco Rigoli and Dimitri Ognibene and Christoph Mathys and Thomas Fitzgerald and Giovanni Pezzulo},
+    title = {Active inference and epistemic value},
+    journal = {Cognitive Neuroscience},
+    volume = {6},
+    number = {4},
+    pages = {187-214},
+    year  = {2015},
+    publisher = {Routledge},
+    doi = {10.1080/17588928.2015.1020053},
+    note ={PMID: 25689102},
+    URL = {https://doi.org/10.1080/17588928.2015.1020053},
+    eprint = {https://doi.org/10.1080/17588928.2015.1020053}
+}

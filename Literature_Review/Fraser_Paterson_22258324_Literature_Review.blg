@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'Fraser_Paterson_22258324_Literature_Review.blg'
+[61] biber:340> INFO - === Tue May 16, 2023, 09:44:07
+[70] Biber.pm:418> INFO - Reading 'Fraser_Paterson_22258324_Literature_Review.bcf'
+[132] Biber.pm:972> INFO - Found 33 citekeys in bib section 0
+[141] Biber.pm:4383> INFO - Processing section 0
+[149] Biber.pm:4574> INFO - Looking for bibtex file 'references.bib' for section 0
+[153] bibtex.pm:1713> INFO - LaTeX decoding ...
+[212] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[491] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[491] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[491] Biber.pm:4203> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[491] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[518] bbl.pm:654> INFO - Writing 'Fraser_Paterson_22258324_Literature_Review.bbl' with encoding 'UTF-8'
+[539] bbl.pm:757> INFO - Output to Fraser_Paterson_22258324_Literature_Review.bbl

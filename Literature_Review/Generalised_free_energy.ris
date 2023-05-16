@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Parr, Thomas
+AU  - Friston, Karl J.
+PY  - 2019
+DA  - 2019/12/01
+TI  - Generalised free energy and active inference
+JO  - Biological Cybernetics
+SP  - 495
+EP  - 513
+VL  - 113
+IS  - 5
+AB  - Active inference is an approach to understanding behaviour that rests upon the idea that the brain uses an internal generative model to predict incoming sensory data. The fit between this model and data may be improved in two ways. The brain could optimise probabilistic beliefs about the variables in the generative model (i.e. perceptual inference). Alternatively, by acting on the world, it could change the sensory data, such that they are more consistent with the model. This implies a common objective function (variational free energy) for action and perception that scores the fit between an internal model and the world. We compare two free energy functionals for active inference in the framework of Markov decision processes. One of these is a functional of beliefs (i.e. probability distributions) about states and policies, but a function of observations, while the second is a functional of beliefs about all three. In the former (expected free energy), prior beliefs about outcomes are not part of the generative model (because they are absorbed into the prior over policies). Conversely, in the second (generalised free energy), priors over outcomes become an explicit component of the generative model. When using the free energy function, which is blind to future observations, we equip the generative model with a prior over policies that ensure preferred (i.e. priors over) outcomes are realised. In other words, if we expect to encounter a particular kind of outcome, this lends plausibility to those policies for which this outcome is a consequence. In addition, this formulation ensures that selected policies minimise uncertainty about future outcomes by minimising the free energy expected in the future. When using the free energy functional—that effectively treats future observations as hidden states—we show that policies are inferred or selected that realise prior preferences by minimising the free energy of future expectations. Interestingly, the form of posterior beliefs about policies (and associated belief updating) turns out to be identical under both formulations, but the quantities used to compute them are not.
+SN  - 1432-0770
+UR  - https://doi.org/10.1007/s00422-019-00805-w
+DO  - 10.1007/s00422-019-00805-w
+ID  - Parr2019
+ER  - 

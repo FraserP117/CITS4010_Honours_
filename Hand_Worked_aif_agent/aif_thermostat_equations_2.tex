@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+The variables used in the Active Inference Thermostat agent:
+
+\begin{enumerate}
+	\item $temperature$: the current temperature of the system being controlled by the Active Inference Thermostat agent.
+	\item $T$: The target temperature, which is the temperature that the thermostat is trying to maintain.
+	\item $P$: The prior belief about the temperature, which is used to update the posterior belief based on new sensory information.
+	\item $E$: The energy or prediction error, which is the difference between the predicted temperature and the actual temperature.
+	\item $H$: The entropy or uncertainty about the prediction error, which represents the degree of confidence in the prediction error.
+	\item $F$: The free energy, which is the difference between the entropy and the energy. It is a measure of the surprise or unexpectedness of the sensory input.
+	\item $k$: The control precision, which is the inverse of the expected variance of the control signal. It determines the strength of the control action.
+	\item $\gamma$: The precision parameter of the noise model, which represents the precision of the sensory input.
+	\item $\phi$: The free energy contribution from the noise model, which represents the cost of acquiring sensory information.
+	\item $\mu$: The mean of the posterior distribution, which represents the best estimate of the temperature.
+	\item $\sigma$: The standard deviation of the posterior distribution, which represents the uncertainty or precision of the estimate.
+	\item $\alpha$: The learning rate, which determines the speed at which the prior parameters are updated based on new sensory information.
+\end{enumerate}
+
+Here are the key equations that describe the operation of the Active Inference Thermostat agent.
+
+1. Generative model:
+The generative model takes in the current temperature ($temperature$) and the parameters of the prior distribution ($T$, $P$, $\mu$, and $\sigma$) and outputs the precision-weighted prediction error ($pe_{pw}$). Mathematically, we can express this as:
+
+\begin{equation}
+pe_{pw} = \frac{1}{\sigma^2}(T\mu + P - temperature)
+\end{equation}
+
+2. Free energy:
+The free energy is calculated based on the precision-weighted prediction error ($pe_{pw}$), the parameters of the noise model ($\phi$ and $\gamma$), and the control parameter ($k$). Mathematically, we can express this as:
+
+\begin{equation}
+E = \frac{1}{2}pe_{pw}^2
+\end{equation}
+
+\begin{equation}
+H = \frac{\gamma}{2}\ln(2\pi) + \frac{\gamma}{2}\ln(k^2) + \frac{\phi}{2\gamma}
+\end{equation}
+
+\begin{equation}
+F = E + H
+\end{equation}
+
+3. Active inference update:
+The active inference update takes in the generative model, the current free energy ($F$), the prior parameters ($T$, $P$, $\mu$, and $\sigma$), the control parameter ($k$), the current temperature ($temperature$), and the learning rate ($\alpha$), and outputs updated values for the prior parameters and the free energy. Mathematically, we can express this as:
+
+\begin{equation}
+\frac{\partial F}{\partial T} = -\frac{pe_{pw}}{k^2}\mu
+\end{equation}
+
+\begin{equation}
+\frac{\partial F}{\partial P} = -\frac{pe_{pw}}{k^2}
+\end{equation}
+
+\begin{equation}
+\frac{\partial F}{\partial \mu} = \frac{pe_{pw}}{k^2}T
+\end{equation}
+
+\begin{equation}
+\frac{\partial F}{\partial \sigma} = -\frac{pe_{pw}}{k^2}\sigma + \frac{\gamma}{\sigma}
+\end{equation}
+
+\begin{equation}
+T_{new} = T - \alpha\frac{\partial F}{\partial T}
+\end{equation}
+
+\begin{equation}
+P_{new} = P - \alpha\frac{\partial F}{\partial P}
+\end{equation}
+
+\begin{equation}
+\mu_{new} = \mu - \alpha\frac{\partial F}{\partial \mu}
+\end{equation}
+
+\begin{equation}
+\sigma_{new} = \sigma - \alpha\frac{\partial F}{\partial \sigma}
+\end{equation}
+
+\begin{equation}
+pe_{pw,new} = \frac{1}{\sigma_{new}^2}(T_{new}\mu_{new} + P_{new} - temperature)
+\end{equation}
+
+\begin{equation}
+F_{new} = E_{new} + H
+\end{equation}
+
+4. Control action:
+The control action is based on the current free energy and the set point temperature ($setpoint$). If the free energy is greater than a threshold value ($F_{threshold}$), the control action decreases the temperature by a fixed amount ($\Delta$). Otherwise, the control action increases the temperature by a fixed amount ($\Delta$). Mathematically, we can express this as:
+
+$$\Delta T = \begin{cases} -\Delta, & F > F_{threshold} \\ \Delta, & F \leq F_{threshold} \end{cases}$$
+
+$$T_{new} = T + \Delta T$$
+
+Once the control action has been calculated, the updated value of the temperature ($T_{new}$) is passed back to the generative model, which in turn generates a new prediction error ($pe_{pw,new}$). This prediction error is then used in the active inference update step to compute updated values for the prior parameters and the free energy, and the process repeats.
+
+\end{document}

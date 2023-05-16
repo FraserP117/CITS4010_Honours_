@@ -1,0 +1,1657 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Reactive-MP}{article}{}
+      \name{author}{2}{}{%
+        {{hash=63366e44ffa7043ff4bd1398c7a44165}{%
+           family={Bagaev},
+           familyi={B\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2caeea1b18c3a6d6099b66a5232eb983}{%
+           family={Vries},
+           familyi={V\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{bec4896e4bdcafc0e730fadcbf0f4602}
+      \strng{fullhash}{bec4896e4bdcafc0e730fadcbf0f4602}
+      \strng{bibnamehash}{bec4896e4bdcafc0e730fadcbf0f4602}
+      \strng{authorbibnamehash}{bec4896e4bdcafc0e730fadcbf0f4602}
+      \strng{authornamehash}{bec4896e4bdcafc0e730fadcbf0f4602}
+      \strng{authorfullhash}{bec4896e4bdcafc0e730fadcbf0f4602}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Reactive Message Passing for Scalable Bayesian Inference}
+      \field{volume}{abs/2112.13251}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2112.13251
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2112.13251
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2112.13251
+      \endverb
+    \endentry
+    \entry{Tutorial-FEP-Modelling-Perception-Action}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e7da25f8bbab1f942bbdedf221c9970}{%
+           family={Bogacz},
+           familyi={B\bibinitperiod},
+           given={Rafal},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e7da25f8bbab1f942bbdedf221c9970}
+      \strng{fullhash}{9e7da25f8bbab1f942bbdedf221c9970}
+      \strng{bibnamehash}{9e7da25f8bbab1f942bbdedf221c9970}
+      \strng{authorbibnamehash}{9e7da25f8bbab1f942bbdedf221c9970}
+      \strng{authornamehash}{9e7da25f8bbab1f942bbdedf221c9970}
+      \strng{authorfullhash}{9e7da25f8bbab1f942bbdedf221c9970}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper provides an easy to follow tutorial on the free-energy framework for modelling perception developed by Friston, which extends the predictive coding model of Rao and Ballard. These models assume that the sensory cortex infers the most likely values of attributes or features of sensory stimuli from the noisy inputs encoding the stimuli. Remarkably, these models describe how this inference could be implemented in a network of very simple computational elements, suggesting that this inference could be performed by biological networks of neurons. Furthermore, learning about the parameters describing the features and their uncertainty is implemented in these models by simple rules of synaptic plasticity based on Hebbian learning. This tutorial introduces the free-energy framework using very simple examples, and provides step-by-step derivations of the model. It also discusses in more detail how the model could be implemented in biological neural circuits. In particular, it presents an extended version of the model in which the neurons only sum their inputs, and synaptic plasticity only depends on activity of pre-synaptic and post-synaptic neurons.}
+      \field{issn}{0022-2496}
+      \field{journaltitle}{Journal of Mathematical Psychology}
+      \field{note}{Model-based Cognitive Neuroscience}
+      \field{title}{A tutorial on the free-energy framework for modelling perception and learning}
+      \field{volume}{76}
+      \field{year}{2017}
+      \field{pages}{198\bibrangedash 211}
+      \range{pages}{14}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmp.2015.11.003
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249615000759
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249615000759
+      \endverb
+    \endentry
+    \entry{FEP-Mathematical-Review}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c1b5b32053d9b98890287559854c6bc0}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Chang\bibnamedelima Sub},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=1f6d0ed894e9e4e40438088b9585eac8}{%
+           family={McGregor},
+           familyi={M\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a18faa5d293b699968705a564971492b}{%
+           family={Seth},
+           familyi={S\bibinitperiod},
+           given={Anil\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{79b1493ab9729517ef84ecf75d82779b}
+      \strng{fullhash}{d6768cab4ac2fbb725f3f42aaa91b95e}
+      \strng{bibnamehash}{79b1493ab9729517ef84ecf75d82779b}
+      \strng{authorbibnamehash}{79b1493ab9729517ef84ecf75d82779b}
+      \strng{authornamehash}{79b1493ab9729517ef84ecf75d82779b}
+      \strng{authorfullhash}{d6768cab4ac2fbb725f3f42aaa91b95e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The ‘free energy principle’ (FEP) has been suggested to provide a unified theory of the brain, integrating data and theory relating to action, perception, and learning. The theory and implementation of the FEP combines insights from Helmholtzian ‘perception as inference’, machine learning theory, and statistical thermodynamics. Here, we provide a detailed mathematical evaluation of a suggested biologically plausible implementation of the FEP that has been widely used to develop the theory. Our objectives are (i) to describe within a single article the mathematical structure of this implementation of the FEP; (ii) provide a simple but complete agent-based model utilising the FEP and (iii) to disclose the assumption structure of this implementation of the FEP to help elucidate its significance for the brain sciences.}
+      \field{issn}{0022-2496}
+      \field{journaltitle}{Journal of Mathematical Psychology}
+      \field{title}{The free energy principle for action and perception: A mathematical review}
+      \field{volume}{81}
+      \field{year}{2017}
+      \field{pages}{55\bibrangedash 79}
+      \range{pages}{25}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmp.2017.09.004
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249617300962
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249617300962
+      \endverb
+      \keyw{Free energy principle,Perception,Action,Inference,Bayesian brain,Agent-based model}
+    \endentry
+    \entry{Bayesian-Policy-Selection-Using-AIF}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=a9469e9b7223203fccc44acf37205929}{%
+           family={Çatal},
+           familyi={Ç\bibinitperiod},
+           given={Ozan},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b7d06c9b4d39365ac1da2ebaecdfa1d4}{%
+           family={Nauta},
+           familyi={N\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7ae0249027282ce63a8b130db60b88f6}{%
+           family={Verbelen},
+           familyi={V\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b205681adac9f09fac495059f6ece5f2}{%
+           family={Simoens},
+           familyi={S\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f3a7566cafe3d87f70b255c25b92611a}{%
+           family={Dhoedt},
+           familyi={D\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{fullhash}{a27200328ae632cf52e87f4cb3ab9c43}
+      \strng{bibnamehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{authorbibnamehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{authornamehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{authorfullhash}{a27200328ae632cf52e87f4cb3ab9c43}
+      \field{extraname}{1}
+      \field{sortinit}{Ç}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Bayesian policy selection using active inference}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1904.08149
+      \endverb
+    \endentry
+    \entry{Bayesian-Policy-Selection-AIF}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=a9469e9b7223203fccc44acf37205929}{%
+           family={Çatal},
+           familyi={Ç\bibinitperiod},
+           given={Ozan},
+           giveni={O\bibinitperiod}}}%
+        {{hash=b7d06c9b4d39365ac1da2ebaecdfa1d4}{%
+           family={Nauta},
+           familyi={N\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7ae0249027282ce63a8b130db60b88f6}{%
+           family={Verbelen},
+           familyi={V\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b205681adac9f09fac495059f6ece5f2}{%
+           family={Simoens},
+           familyi={S\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f3a7566cafe3d87f70b255c25b92611a}{%
+           family={Dhoedt},
+           familyi={D\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{fullhash}{a27200328ae632cf52e87f4cb3ab9c43}
+      \strng{bibnamehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{authorbibnamehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{authornamehash}{699fb36c9052c496193e1600226b7edc}
+      \strng{authorfullhash}{a27200328ae632cf52e87f4cb3ab9c43}
+      \field{extraname}{2}
+      \field{sortinit}{Ç}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Bayesian policy selection using active inference}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1904.08149
+      \endverb
+    \endentry
+    \entry{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4b41e1d66ebdde7171f697bf9892597c}{%
+           family={Cox},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=013ae0ec21570cef47f38a73391b6b1d}{%
+           family={Laar},
+           familyi={L\bibinitperiod},
+           given={Thijs},
+           giveni={T\bibinitperiod},
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=2caeea1b18c3a6d6099b66a5232eb983}{%
+           family={Vries},
+           familyi={V\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{5162e215c531d8e582746526d63ec292}
+      \strng{fullhash}{5162e215c531d8e582746526d63ec292}
+      \strng{bibnamehash}{5162e215c531d8e582746526d63ec292}
+      \strng{authorbibnamehash}{5162e215c531d8e582746526d63ec292}
+      \strng{authornamehash}{5162e215c531d8e582746526d63ec292}
+      \strng{authorfullhash}{5162e215c531d8e582746526d63ec292}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Approximate Reasoning}
+      \field{month}{01}
+      \field{title}{A factor graph approach to automated design of Bayesian signal processing algorithms}
+      \field{volume}{104}
+      \field{year}{2019}
+      \field{pages}{185\bibrangedash 204}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/j.ijar.2018.11.002
+      \endverb
+    \endentry
+    \entry{AIF-Discrete-Action-Spaces-Synthesis}{article}{}
+      \name{author}{6}{}{%
+        {{hash=332cb0e034bc330deba64ea078b1d415}{%
+           family={{Da Costa}},
+           familyi={D\bibinitperiod},
+           given={Lancelot},
+           giveni={L\bibinitperiod}}}%
+        {{hash=11ecca46a14363f21a56a51e1cb6c0ad}{%
+           family={Parr},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e667ee3bbe292c32c024d533e2410a71}{%
+           family={Sajid},
+           familyi={S\bibinitperiod},
+           given={Noor},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fbc1874ff3ffd381916e05dce28b4b8b}{%
+           family={Veselic},
+           familyi={V\bibinitperiod},
+           given={Sebastijan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=00573704568048fe88f8a672331861e4}{%
+           family={Neacsu},
+           familyi={N\bibinitperiod},
+           given={Victorita},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{fullhash}{4c74fee4d74e85a764da54e98c8ba6ac}
+      \strng{bibnamehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{authorbibnamehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{authornamehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{authorfullhash}{4c74fee4d74e85a764da54e98c8ba6ac}
+      \field{extraname}{1}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Active inference is a normative principle underwriting perception, action, planning, decision-making and learning in biological or artificial agents. From its inception, its associated process theory has grown to incorporate complex generative models, enabling simulation of a wide range of complex behaviours. Due to successive developments in active inference, it is often difficult to see how its underlying principle relates to process theories and practical implementation. In this paper, we try to bridge this gap by providing a complete mathematical synthesis of active inference on discrete state-space models. This technical summary provides an overview of the theory, derives neuronal dynamics from first principles and relates this dynamics to biological processes. Furthermore, this paper provides a fundamental building block needed to understand active inference for mixed generative models; allowing continuous sensations to inform discrete representations. This paper may be used as follows: to guide research towards outstanding challenges, a practical guide on how to implement active inference to simulate experimental behaviour, or a pointer towards various in-silico neurophysiological responses that may be used to make empirical predictions.}
+      \field{issn}{0022-2496}
+      \field{journaltitle}{Journal of Mathematical Psychology}
+      \field{title}{Active inference on discrete state-spaces: A synthesis}
+      \field{volume}{99}
+      \field{year}{2020}
+      \field{pages}{102447}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmp.2020.102447
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249620300857
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249620300857
+      \endverb
+      \keyw{Active inference,Free energy principle,Process theory,Variational Bayesian inference,Markov decision process,Mathematical review}
+    \endentry
+    \entry{Relationship-Dynamic-Programming-AIF}{unknown}{}
+      \name{author}{5}{}{%
+        {{hash=332cb0e034bc330deba64ea078b1d415}{%
+           family={Da\bibnamedelima Costa},
+           familyi={D\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Lancelot},
+           giveni={L\bibinitperiod}}}%
+        {{hash=e667ee3bbe292c32c024d533e2410a71}{%
+           family={Sajid},
+           familyi={S\bibinitperiod},
+           given={Noor},
+           giveni={N\bibinitperiod}}}%
+        {{hash=11ecca46a14363f21a56a51e1cb6c0ad}{%
+           family={Parr},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2375765385b5498bd2826de02ade4c7d}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{fullhash}{5682a89f6b7052f55a788db43cd583bf}
+      \strng{bibnamehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{authorbibnamehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{authornamehash}{d1691ea07c6ae43b2eb1ebe845a987b4}
+      \strng{authorfullhash}{5682a89f6b7052f55a788db43cd583bf}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{09}
+      \field{title}{The relationship between dynamic programming and active inference: the discrete, finite-horizon case}
+      \field{year}{2020}
+    \endentry
+    \entry{Codes-on-Graphs}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1c58ad3962bf89e08d33c9278595f3c6}{%
+           family={Forney},
+           familyi={F\bibinitperiod},
+           given={G.D.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{1c58ad3962bf89e08d33c9278595f3c6}
+      \strng{fullhash}{1c58ad3962bf89e08d33c9278595f3c6}
+      \strng{bibnamehash}{1c58ad3962bf89e08d33c9278595f3c6}
+      \strng{authorbibnamehash}{1c58ad3962bf89e08d33c9278595f3c6}
+      \strng{authornamehash}{1c58ad3962bf89e08d33c9278595f3c6}
+      \strng{authorfullhash}{1c58ad3962bf89e08d33c9278595f3c6}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{number}{2}
+      \field{title}{Codes on graphs: normal realizations}
+      \field{volume}{47}
+      \field{year}{2001}
+      \field{pages}{520\bibrangedash 548}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1109/18.910573
+      \endverb
+    \endentry
+    \entry{Action-Behaviour-FE}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6bb644f22d1a01d9ea99fa3f285e0e15}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f2f55a21fe7f17b57c5b9d6678496ba0}{%
+           family={Daunizeau},
+           familyi={D\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5436e33cae5d72aa0e98897adbe7a678}{%
+           family={Kilner},
+           familyi={K\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=69e1fbf549a17e40a4147441a96abe7a}{%
+           family={Kiebel},
+           familyi={K\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b3b7568c58d0d120cdc6b7fc0f1bdfe}
+      \strng{fullhash}{5ddc0f220a3f70c87e1fe619c017d196}
+      \strng{bibnamehash}{6b3b7568c58d0d120cdc6b7fc0f1bdfe}
+      \strng{authorbibnamehash}{6b3b7568c58d0d120cdc6b7fc0f1bdfe}
+      \strng{authornamehash}{6b3b7568c58d0d120cdc6b7fc0f1bdfe}
+      \strng{authorfullhash}{5ddc0f220a3f70c87e1fe619c017d196}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Biological cybernetics}
+      \field{number}{3}
+      \field{title}{Action and behavior: a free-energy formulation}
+      \field{volume}{102}
+      \field{year}{2010}
+      \field{pages}{227\bibrangedash 260}
+      \range{pages}{34}
+      \verb{doi}
+      \verb 10.1007/s00422-010-0364-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00422-010-0364-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00422-010-0364-z
+      \endverb
+    \endentry
+    \entry{Life-As-We-Know-It}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{fullhash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{bibnamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authorbibnamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authornamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authorfullhash}{9f452a84796a900973333b32a5f8bc61}
+      \field{extraname}{1}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a heuristic proof (and simulations of a primordial soup) suggesting that life—or biological self-organization—is an inevitable and emergent property of any (ergodic) random dynamical system that possesses a Markov blanket. This conclusion is based on the following arguments: if the coupling among an ensemble of dynamical systems is mediated by short-range forces, then the states of remote systems must be conditionally independent. These independencies induce a Markov blanket that separates internal and external states in a statistical sense. The existence of a Markov blanket means that internal states will appear to minimize a free energy functional of the states of their Markov blanket. Crucially, this is the same quantity that is optimized in Bayesian inference. Therefore, the internal states (and their blanket) will appear to engage in active Bayesian inference. In other words, they will appear to model—and act on—their world to preserve their functional and structural integrity, leading to homoeostasis and a simple form of autopoiesis.}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{number}{86}
+      \field{title}{Life as we know it}
+      \field{volume}{10}
+      \field{year}{2013}
+      \field{pages}{20130475}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsif.2013.0475
+      \endverb
+      \verb{eprint}
+      \verb https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2013.0475
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2013.0475
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2013.0475
+      \endverb
+    \endentry
+    \entry{FEP-Rough-Guide-Brain}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{fullhash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{bibnamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authorbibnamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authornamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authorfullhash}{9f452a84796a900973333b32a5f8bc61}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The free-energy principle: a rough guide to the brain?}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.tics.2009.04.005
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.tics.2009.04.005
+      \endverb
+    \endentry
+    \entry{A_FEP_For_The_Brain}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b757d0ab7f8fba305197fe5782f69a40}{%
+           family={Kilner},
+           familyi={K\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e8c32a428244daba919a10eb36879a72}{%
+           family={Harrison},
+           familyi={H\bibinitperiod},
+           given={Lee},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5706deb9ee6c19e729be91d04b89629c}
+      \strng{fullhash}{5706deb9ee6c19e729be91d04b89629c}
+      \strng{bibnamehash}{5706deb9ee6c19e729be91d04b89629c}
+      \strng{authorbibnamehash}{5706deb9ee6c19e729be91d04b89629c}
+      \strng{authornamehash}{5706deb9ee6c19e729be91d04b89629c}
+      \strng{authorfullhash}{5706deb9ee6c19e729be91d04b89629c}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{By formulating Helmholtz’s ideas about perception, in terms of modern-day theories, one arrives at a model of perceptual inference and learning that can explain a remarkable range of neurobiological facts: using constructs from statistical physics, the problems of inferring the causes of sensory input and learning the causal structure of their generation can be resolved using exactly the same principles. Furthermore, inference and learning can proceed in a biologically plausible fashion. The ensuing scheme rests on Empirical Bayes and hierarchical models of how sensory input is caused. The use of hierarchical models enables the brain to construct prior expectations in a dynamic and context-sensitive fashion. This scheme provides a principled way to understand many aspects of cortical organisation and responses. In this paper, we show these perceptual processes are just one aspect of emergent behaviours of systems that conform to a free energy principle. The free energy considered here measures the difference between the probability distribution of environmental quantities that act on the system and an arbitrary distribution encoded by its configuration. The system can minimise free energy by changing its configuration to affect the way it samples the environment or change the distribution it encodes. These changes correspond to action and perception respectively and lead to an adaptive exchange with the environment that is characteristic of biological systems. This treatment assumes that the system’s state and structure encode an implicit and probabilistic model of the environment. We will look at the models entailed by the brain and how minimisation of its free energy can explain its dynamics and structure.}
+      \field{issn}{0928-4257}
+      \field{journaltitle}{Journal of Physiology-Paris}
+      \field{note}{Theoretical and Computational Neuroscience: Understanding Brain Functions}
+      \field{number}{1}
+      \field{title}{A free energy principle for the brain}
+      \field{volume}{100}
+      \field{year}{2006}
+      \field{pages}{70\bibrangedash 87}
+      \range{pages}{18}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jphysparis.2006.10.001
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S092842570600060X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S092842570600060X
+      \endverb
+      \keyw{Variational Bayes,Free energy,Inference,Perception,Action,Learning,Attention,Selection,Hierarchical}
+    \endentry
+    \entry{AIF-Epistemic-Value}{article}{}
+      \name{author}{6}{}{%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=103c6f1e922e29f43590be466a0cb206}{%
+           family={Rigoli},
+           familyi={R\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=fc4575c484ed62fef0505e03b18df463}{%
+           family={Ognibene},
+           familyi={O\bibinitperiod},
+           given={Dimitri},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d531a432bbd0476710542d1c3b647224}{%
+           family={Mathys},
+           familyi={M\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9ed05519a8c0ad06d15ad12e8f93ffea}{%
+           family={Fitzgerald},
+           familyi={F\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=a407d9f6bc90219c5764e676c5b8caa7}{%
+           family={Pezzulo},
+           familyi={P\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Routledge}%
+      }
+      \strng{namehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{fullhash}{4dc2bf1cdfb9ed9f94125cbf6d9f95ba}
+      \strng{bibnamehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{authorbibnamehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{authornamehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{authorfullhash}{4dc2bf1cdfb9ed9f94125cbf6d9f95ba}
+      \field{extraname}{2}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Cognitive Neuroscience}
+      \field{note}{PMID: 25689102}
+      \field{number}{4}
+      \field{title}{Active inference and epistemic value}
+      \field{volume}{6}
+      \field{year}{2015}
+      \field{pages}{187\bibrangedash 214}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1080/17588928.2015.1020053
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1080/17588928.2015.1020053
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/17588928.2015.1020053
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/17588928.2015.1020053
+      \endverb
+    \endentry
+    \entry{RL-or-AIF}{article}{}
+      \name{author}{3}{}{%
+        {{hash=558c08870d21f7acad878d94e125a377}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8d47f509e61c9543876ac29ea6eff7ea}{%
+           family={Daunizeau},
+           familyi={D\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2f90964b242f5332c487e701a6d5f780}{%
+           family={Kiebel},
+           familyi={K\bibinitperiod},
+           given={Stefan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{7cf5308d50e8287a641b45d56c82abf4}
+      \strng{fullhash}{7cf5308d50e8287a641b45d56c82abf4}
+      \strng{bibnamehash}{7cf5308d50e8287a641b45d56c82abf4}
+      \strng{authorbibnamehash}{7cf5308d50e8287a641b45d56c82abf4}
+      \strng{authornamehash}{7cf5308d50e8287a641b45d56c82abf4}
+      \strng{authorfullhash}{7cf5308d50e8287a641b45d56c82abf4}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper questions the need for reinforcement learning or control theory when optimising behaviour. We show that it is fairly simple to teach an agent complicated and adaptive behaviours using a free-energy formulation of perception. In this formulation, agents adjust their internal states and sampling of the environment to minimize their free-energy. Such agents learn causal structure in the environment and sample it in an adaptive and self-supervised fashion. This results in behavioural policies that reproduce those optimised by reinforcement learning and dynamic programming. Critically, we do not need to invoke the notion of reward, value or utility. We illustrate these points by solving a benchmark problem in dynamic programming; namely the mountain-car problem, using active perception or inference under the free-energy principle. The ensuing proof-of-concept may be important because the free-energy formulation furnishes a unified account of both action and perception and may speak to a reappraisal of the role of dopamine in the brain.}
+      \field{journaltitle}{PLOS ONE}
+      \field{month}{07}
+      \field{number}{7}
+      \field{title}{Reinforcement Learning or Active Inference?}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 13}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0006421
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1371/journal.pone.0006421
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1371/journal.pone.0006421
+      \endverb
+    \endentry
+    \entry{DEEP-AIF-For-POMDPs}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=06c37bfed052127a76e6474ca3f49f37}{%
+           family={Himst},
+           familyi={H\bibinitperiod},
+           given={Otto},
+           giveni={O\bibinitperiod},
+           prefix={van\bibnamedelima der},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=cf067a7818cf1d885b2180516a8afe69}{%
+           family={Lanillos},
+           familyi={L\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=7ae0249027282ce63a8b130db60b88f6}{%
+           family={Verbelen},
+           familyi={V\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cf067a7818cf1d885b2180516a8afe69}{%
+           family={Lanillos},
+           familyi={L\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=38266ac492939aa0c420eb536a242977}{%
+           family={De\bibnamedelima Boom},
+           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Cedric},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
+      \strng{fullhash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
+      \strng{bibnamehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
+      \strng{authorbibnamehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
+      \strng{authornamehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
+      \strng{authorfullhash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
+      \strng{editorbibnamehash}{8b15176a83e57ea480f936b194676b3b}
+      \strng{editornamehash}{8b15176a83e57ea480f936b194676b3b}
+      \strng{editorfullhash}{c0f0fffcf97521c4f2c33afa1538123d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep active inference has been proposed as a scalable approach to perception and action that deals with large policy and state spaces. However, current models are limited to fully observable domains. In this paper, we describe a deep active inference model that can learn successful policies directly from high-dimensional sensory inputs. The deep learning architecture optimizes a variant of the expected free energy and encodes the continuous state representation by means of a variational autoencoder. We show, in the OpenAI benchmark, that our approach has comparable or better performance than deep Q-learning, a state-of-the-art deep reinforcement learning algorithm.}
+      \field{booktitle}{Active Inference}
+      \field{isbn}{978-3-030-64919-7}
+      \field{title}{Deep Active Inference for Partially Observable MDPs}
+      \field{year}{2020}
+      \field{pages}{61\bibrangedash 71}
+      \range{pages}{11}
+    \endentry
+    \entry{The-Bayesian-Brain}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ff12f66322a37f127d33e91746d3577f}{%
+           family={Knill},
+           familyi={K\bibinitperiod},
+           given={David\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=330aaa9645b14ab62852c0a3bb1c7a9a}{%
+           family={Pouget},
+           familyi={P\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c7746623d64cdf7259e30d04657573c}
+      \strng{fullhash}{3c7746623d64cdf7259e30d04657573c}
+      \strng{bibnamehash}{3c7746623d64cdf7259e30d04657573c}
+      \strng{authorbibnamehash}{3c7746623d64cdf7259e30d04657573c}
+      \strng{authornamehash}{3c7746623d64cdf7259e30d04657573c}
+      \strng{authorfullhash}{3c7746623d64cdf7259e30d04657573c}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{To use sensory information efficiently to make judgments and guide action in the world, the brain must represent and use information about uncertainty in its computations for perception and action. Bayesian methods have proven successful in building computational theories for perception and sensorimotor control, and psychophysics is providing a growing body of evidence that human perceptual computations are ‘Bayes' optimal’. This leads to the ‘Bayesian coding hypothesis’: that the brain represents sensory information probabilistically, in the form of probability distributions. Several computational schemes have recently been proposed for how this might be achieved in populations of neurons. Neurophysiological data on the hypothesis, however, is almost non-existent. A major challenge for neuroscientists is to test these ideas experimentally, and so determine whether and how neurons code information about sensory uncertainty.}
+      \field{issn}{0166-2236}
+      \field{journaltitle}{Trends in Neurosciences}
+      \field{number}{12}
+      \field{title}{The Bayesian brain: the role of uncertainty in neural coding and computation}
+      \field{volume}{27}
+      \field{year}{2004}
+      \field{pages}{712\bibrangedash 719}
+      \range{pages}{8}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.tins.2004.10.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0166223604003352
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0166223604003352
+      \endverb
+    \endentry
+    \entry{Message-Passing-Perspective-Planning-Under-AIF}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=3f9715382a039e62fed7ea317bf9c852}{%
+           family={Koudahl},
+           familyi={K\bibinitperiod},
+           given={Magnus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=2caeea1b18c3a6d6099b66a5232eb983}{%
+           family={Vries},
+           familyi={V\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \name{editor}{7}{}{%
+        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c720fdd47221dd1dac7f176bb824cd81}{%
+           family={Cialfi},
+           familyi={C\bibinitperiod},
+           given={Daniela},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cf067a7818cf1d885b2180516a8afe69}{%
+           family={Lanillos},
+           familyi={L\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ea66ff5ca9929c905754cf378e4fb96c}{%
+           family={Ramstead},
+           familyi={R\bibinitperiod},
+           given={Maxwell},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e667ee3bbe292c32c024d533e2410a71}{%
+           family={Sajid},
+           familyi={S\bibinitperiod},
+           given={Noor},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1412f70278a2490451d2ec6a99ec62f2}{%
+           family={Shimazaki},
+           familyi={S\bibinitperiod},
+           given={Hideaki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7ae0249027282ce63a8b130db60b88f6}{%
+           family={Verbelen},
+           familyi={V\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer Nature Switzerland}%
+      }
+      \strng{namehash}{8ebba9d2eccf7488d75764ba52e6c8ae}
+      \strng{fullhash}{8ebba9d2eccf7488d75764ba52e6c8ae}
+      \strng{bibnamehash}{8ebba9d2eccf7488d75764ba52e6c8ae}
+      \strng{authorbibnamehash}{8ebba9d2eccf7488d75764ba52e6c8ae}
+      \strng{authornamehash}{8ebba9d2eccf7488d75764ba52e6c8ae}
+      \strng{authorfullhash}{8ebba9d2eccf7488d75764ba52e6c8ae}
+      \strng{editorbibnamehash}{79b1493ab9729517ef84ecf75d82779b}
+      \strng{editornamehash}{79b1493ab9729517ef84ecf75d82779b}
+      \strng{editorfullhash}{f777a4f7fd663adb6f88390eb6a8b03d}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a message passing interpretation of planning under Active Inference. Specifically, we show how the Active Inference planning procedure can be broken into a (partial) message passing sweep over a graph, followed by local computations of a cost functional (the Expected Free Energy). Using Forney-style Factor Graphs, we then proceed to show how one can derive novel planning schemes by local changes to the underlying graph and message passing schedule. We illustrate this by first isolating the ``sophisticated'' aspect of Sophisticated Inference and then proposing a novel planning algorithm through combining the sophisticated update mechanism with a different message passing schedule. Our main contribution is a modular view of planning under Active Inference that can serve as a framework for both understanding existing algorithms, deriving new ones and extending the class of models that are amenable to Active Inference. Approaching Active Inference from a message passing perspective also shows how it can be efficiently implemented using off-the-shelf probabilistic programming software, broadening the class of models available to researchers and practitioners.}
+      \field{booktitle}{Active Inference}
+      \field{isbn}{978-3-031-28719-0}
+      \field{title}{A Message Passing Perspective on Planning Under Active Inference}
+      \field{year}{2023}
+      \field{pages}{319\bibrangedash 327}
+      \range{pages}{9}
+    \endentry
+    \entry{Simulating-AIF-By-Message-Passing}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5c38457efdb1b50d60a99a887eec33e1}{%
+           family={Laar},
+           familyi={L\bibinitperiod},
+           given={Thijs\bibnamedelima W.},
+           giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
+           prefix={van\bibnamedelima de},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=2caeea1b18c3a6d6099b66a5232eb983}{%
+           family={Vries},
+           familyi={V\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbeda3265f27ddc63a736bd502adb582}
+      \strng{fullhash}{cbeda3265f27ddc63a736bd502adb582}
+      \strng{bibnamehash}{cbeda3265f27ddc63a736bd502adb582}
+      \strng{authorbibnamehash}{cbeda3265f27ddc63a736bd502adb582}
+      \strng{authornamehash}{cbeda3265f27ddc63a736bd502adb582}
+      \strng{authorfullhash}{cbeda3265f27ddc63a736bd502adb582}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The free energy principle (FEP) offers a variational calculus-based description for how biological agents persevere through interactions with their environment. Active inference (AI) is a corollary of the FEP, which states that biological agents act to fulfill prior beliefs about preferred future observations (target priors). Purposeful behavior then results from variational free energy minimization with respect to a generative model of the environment with included target priors. However, manual derivations for free energy minimizing algorithms on custom dynamic models can become tedious and error-prone. While probabilistic programming (PP) techniques enable automatic derivation of inference algorithms on free-form models, full automation of AI requires specialized tools for inference on dynamic models, together with the description of an experimental protocol that governs the interaction between the agent and its simulated environment. The contributions of the present paper are two-fold. Firstly, we illustrate how AI can be automated with the use of ForneyLab, a recent PP toolbox that specializes in variational inference on flexibly definable dynamic models. More specifically, we describe AI agents in a dynamic environment as probabilistic state space models (SSM) and perform inference for perception and control in these agents by message passing on a factor graph representation of the SSM. Secondly, we propose a formal experimental protocol for simulated AI. We exemplify how this protocol leads to goal-directed behavior for flexibly definable AI agents in two classical RL examples, namely the Bayesian thermostat and the mountain car parking problems.}
+      \field{issn}{2296-9144}
+      \field{journaltitle}{Frontiers in Robotics and AI}
+      \field{title}{Simulating Active Inference Processes by Message Passing}
+      \field{volume}{6}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.3389/frobt.2019.00020
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/frobt.2019.00020
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/frobt.2019.00020
+      \endverb
+    \endentry
+    \entry{Emperical-Eval-AIF-Multi-Arm-Bandits}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fb5bcd02a0c08033a95e19fa22db5659}{%
+           family={Marković},
+           familyi={M\bibinitperiod},
+           given={Dimitrije},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d1a843f1419786bf5083e8421624b68f}{%
+           family={Stojić},
+           familyi={S\bibinitperiod},
+           given={Hrvoje},
+           giveni={H\bibinitperiod}}}%
+        {{hash=868a0d6e2c7004c2335ddf9572950076}{%
+           family={Schwöbel},
+           familyi={S\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2f90964b242f5332c487e701a6d5f780}{%
+           family={Kiebel},
+           familyi={K\bibinitperiod},
+           given={Stefan\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e58637c4542160d10544ad01947ca7bb}
+      \strng{fullhash}{9ee56376af48024f88da0d5d11099dd5}
+      \strng{bibnamehash}{e58637c4542160d10544ad01947ca7bb}
+      \strng{authorbibnamehash}{e58637c4542160d10544ad01947ca7bb}
+      \strng{authornamehash}{e58637c4542160d10544ad01947ca7bb}
+      \strng{authorfullhash}{9ee56376af48024f88da0d5d11099dd5}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A key feature of sequential decision making under uncertainty is a need to balance between exploiting—choosing the best action according to the current knowledge, and exploring—obtaining information about values of other actions. The multi-armed bandit problem, a classical task that captures this trade-off, served as a vehicle in machine learning for developing bandit algorithms that proved to be useful in numerous industrial applications. The active inference framework, an approach to sequential decision making recently developed in neuroscience for understanding human and animal behaviour, is distinguished by its sophisticated strategy for resolving the exploration–exploitation trade-off. This makes active inference an exciting alternative to already established bandit algorithms. Here we derive an efficient and scalable approximate active inference algorithm and compare it to two state-of-the-art bandit algorithms: Bayesian upper confidence bound and optimistic Thompson sampling. This comparison is done on two types of bandit problems: a stationary and a dynamic switching bandit. Our empirical evaluation shows that the active inference algorithm does not produce efficient long-term behaviour in stationary bandits. However, in the more challenging switching bandit problem active inference performs substantially better than the two state-of-the-art bandit algorithms. The results open exciting venues for further research in theoretical and applied machine learning, as well as lend additional credibility to active inference as a general framework for studying human and animal behaviour.}
+      \field{issn}{0893-6080}
+      \field{journaltitle}{Neural Networks}
+      \field{title}{An empirical evaluation of active inference in multi-armed bandits}
+      \field{volume}{144}
+      \field{year}{2021}
+      \field{pages}{229\bibrangedash 246}
+      \range{pages}{18}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.neunet.2021.08.018
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893608021003233
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0893608021003233
+      \endverb
+      \keyw{Decision making,Bayesian inference,Multi-armed bandits,Active inference,Upper confidence bound,Thompson sampling}
+    \endentry
+    \entry{Contrastive-AIF}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=f5f328ed70c8b2dfc4b2eb2d82372eec}{%
+           family={Mazzaglia},
+           familyi={M\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7ae0249027282ce63a8b130db60b88f6}{%
+           family={Verbelen},
+           familyi={V\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f3a7566cafe3d87f70b255c25b92611a}{%
+           family={Dhoedt},
+           familyi={D\bibinitperiod},
+           given={Bart},
+           giveni={B\bibinitperiod}}}%
+      }
+      \name{editor}{5}{}{%
+        {{hash=6cb5af0e649387de5bbfdb150cc7a786}{%
+           family={Ranzato},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=02854da982edf66ffa27f4fc1c738779}{%
+           family={Beygelzimer},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5e4dc483044b6dbd4496a818b8b6c67a}{%
+           family={Dauphin},
+           familyi={D\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=12f9558e0c25864defe6eaed94a9011b}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={P.S.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3d379bd6370f69ebc79dc5337ed96d13}{%
+           family={Vaughan},
+           familyi={V\bibinitperiod},
+           given={J.\bibnamedelimi Wortman},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Curran Associates, Inc.}%
+      }
+      \strng{namehash}{0b93dbd18474912bf8001486d6d9c1d7}
+      \strng{fullhash}{0b93dbd18474912bf8001486d6d9c1d7}
+      \strng{bibnamehash}{0b93dbd18474912bf8001486d6d9c1d7}
+      \strng{authorbibnamehash}{0b93dbd18474912bf8001486d6d9c1d7}
+      \strng{authornamehash}{0b93dbd18474912bf8001486d6d9c1d7}
+      \strng{authorfullhash}{0b93dbd18474912bf8001486d6d9c1d7}
+      \strng{editorbibnamehash}{6013a44c5dec47e5e51fdd72b3f8b5eb}
+      \strng{editornamehash}{6013a44c5dec47e5e51fdd72b3f8b5eb}
+      \strng{editorfullhash}{ad1ea98aa644fe4cbc55fbe24d1f78a9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems}
+      \field{title}{Contrastive Active Inference}
+      \field{volume}{34}
+      \field{year}{2021}
+      \field{pages}{13870\bibrangedash 13882}
+      \range{pages}{13}
+      \verb{urlraw}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2021/file/73c730319cf839f143bf40954448ce39-Paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://proceedings.neurips.cc/paper_files/paper/2021/file/73c730319cf839f143bf40954448ce39-Paper.pdf
+      \endverb
+    \endentry
+    \entry{Applications-of-FEP-Machine-Learning-Neuroscience}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=dcf103531a4bb5a439a2233cf52e9703}{%
+           family={Millidge},
+           familyi={M\bibinitperiod},
+           given={Beren},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Edinburgh}%
+      }
+      \strng{namehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{fullhash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{bibnamehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{authorbibnamehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{authornamehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{authorfullhash}{dcf103531a4bb5a439a2233cf52e9703}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Applications of the free energy principle to machine learning and neuroscience}
+      \field{type}{phdthesis}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://era.ed.ac.uk/handle/1842/38235
+      \endverb
+      \verb{url}
+      \verb https://era.ed.ac.uk/handle/1842/38235
+      \endverb
+    \endentry
+    \entry{Deep-AIF-As-Var-Policy-Grad}{article}{}
+      \name{author}{1}{}{%
+        {{hash=dcf103531a4bb5a439a2233cf52e9703}{%
+           family={Millidge},
+           familyi={M\bibinitperiod},
+           given={Beren},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{fullhash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{bibnamehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{authorbibnamehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{authornamehash}{dcf103531a4bb5a439a2233cf52e9703}
+      \strng{authorfullhash}{dcf103531a4bb5a439a2233cf52e9703}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{07}
+      \field{title}{Deep Active Inference as Variational Policy Gradients}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1907.03876.pdf
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1907.03876.pdf
+      \endverb
+    \endentry
+    \entry{Async-Methods-Deep-RL}{misc}{}
+      \name{author}{8}{}{%
+        {{hash=f7d23cfe4ca0e6bf7a8c251bfa78aca6}{%
+           family={Mnih},
+           familyi={M\bibinitperiod},
+           given={Volodymyr},
+           giveni={V\bibinitperiod}}}%
+        {{hash=db6afdf70ea61bf8ed973a75b90ff818}{%
+           family={Badia},
+           familyi={B\bibinitperiod},
+           given={Adrià\bibnamedelima Puigdomènech},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={Mirza},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dfca94b0427da7f9088af596e23b46c0}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2a321a868e44d49baf52b5e2d816fb71}{%
+           family={Lillicrap},
+           familyi={L\bibinitperiod},
+           given={Timothy\bibnamedelima P.},
+           giveni={T\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=b63b9b2d91f6ba1b1739563edc0432ab}{%
+           family={Harley},
+           familyi={H\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=481308b301166b521c74fde6566e97e6}{%
+           family={Kavukcuoglu},
+           familyi={K\bibinitperiod},
+           given={Koray},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{fullhash}{e067addbfefbaf06a859610fa608b21e}
+      \strng{bibnamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authorbibnamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authornamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authorfullhash}{e067addbfefbaf06a859610fa608b21e}
+      \field{extraname}{1}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Asynchronous Methods for Deep Reinforcement Learning}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1602.01783
+      \endverb
+    \endentry
+    \entry{ATARI-Deep-RL}{misc}{}
+      \name{author}{7}{}{%
+        {{hash=f7d23cfe4ca0e6bf7a8c251bfa78aca6}{%
+           family={Mnih},
+           familyi={M\bibinitperiod},
+           given={Volodymyr},
+           giveni={V\bibinitperiod}}}%
+        {{hash=481308b301166b521c74fde6566e97e6}{%
+           family={Kavukcuoglu},
+           familyi={K\bibinitperiod},
+           given={Koray},
+           giveni={K\bibinitperiod}}}%
+        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=dfca94b0427da7f9088af596e23b46c0}{%
+           family={Graves},
+           familyi={G\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=af540e84ef1ecdaa70b1f7c90f59fd7d}{%
+           family={Antonoglou},
+           familyi={A\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=d7805381550fb5f8360345f7f72c0b49}{%
+           family={Wierstra},
+           familyi={W\bibinitperiod},
+           given={Daan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9449802bcb467309c0ebced658096818}{%
+           family={Riedmiller},
+           familyi={R\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{fullhash}{2860d669102abb5e113bf4232d6d5997}
+      \strng{bibnamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authorbibnamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authornamehash}{aff24b211b34cdd515b2fd148ce0c920}
+      \strng{authorfullhash}{2860d669102abb5e113bf4232d6d5997}
+      \field{extraname}{2}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Playing Atari with Deep Reinforcement Learning}
+      \field{year}{2013}
+      \verb{eprint}
+      \verb 1312.5602
+      \endverb
+    \endentry
+    \entry{Mastering-Go-Without-Human-Knowledge}{article}{}
+      \name{author}{17}{}{%
+        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=8fad8df927bc0014c0bd6a9feb7aa71d}{%
+           family={Schrittwieser},
+           familyi={S\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9d16b7284df92c9adaee86c37ab992df}{%
+           family={Simonyan},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=af540e84ef1ecdaa70b1f7c90f59fd7d}{%
+           family={Antonoglou},
+           familyi={A\bibinitperiod},
+           given={Ioannis},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ba4b200ce1412a2570cb113366cc9559}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Aja},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4131bd14e5ca890278ecd351e356dc34}{%
+           family={Guez},
+           familyi={G\bibinitperiod},
+           given={Arthur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=80c63e95a9e243591a33a7e3156f1d78}{%
+           family={Hubert},
+           familyi={H\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fe79638c2bf15e9cd4021e09ca0fa07b}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=f311ac3fec4a3d3207fdec17a9887704}{%
+           family={Lai},
+           familyi={L\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+        {{hash=fa98d81082da72fd49892566108f9cbe}{%
+           family={Bolton},
+           familyi={B\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5759ff4990bdd8c6f85835738834874a}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yutian},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3a6fdf4df9a25f1d2d506ad9e86e1f6c}{%
+           family={Lillicrap},
+           familyi={L\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod}}}%
+        {{hash=59f6c5b7be30cd01647770d56f297a69}{%
+           family={Hui},
+           familyi={H\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=50d24de916599d306c5cb1a77156e4b9}{%
+           family={Sifre},
+           familyi={S\bibinitperiod},
+           given={Laurent},
+           giveni={L\bibinitperiod}}}%
+        {{hash=54c5c572d4fdc5d822c240b59fcadad4}{%
+           family={Driessche},
+           familyi={D\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod},
+           prefix={van\bibnamedelima den},
+           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=368b9b2de627b852658c433b062d4e1e}{%
+           family={Graepel},
+           familyi={G\bibinitperiod},
+           given={Thore},
+           giveni={T\bibinitperiod}}}%
+        {{hash=b160026950ebb1e2286dfb40c15482f5}{%
+           family={Hassabis},
+           familyi={H\bibinitperiod},
+           given={Demis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{4ccacac34637df06f749428b6ec5052e}
+      \strng{fullhash}{34faf92840e9c6b68a2c64d4df1b42c3}
+      \strng{bibnamehash}{4ccacac34637df06f749428b6ec5052e}
+      \strng{authorbibnamehash}{4ccacac34637df06f749428b6ec5052e}
+      \strng{authornamehash}{4ccacac34637df06f749428b6ec5052e}
+      \strng{authorfullhash}{34faf92840e9c6b68a2c64d4df1b42c3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A long-standing goal of artificial intelligence is an algorithm that learns, tabula rasa, superhuman proficiency in challenging domains. Recently, AlphaGo became the first program to defeat a world champion in the game of Go. The tree search in AlphaGo evaluated positions and selected moves using deep neural networks. These neural networks were trained by supervised learning from human expert moves, and by reinforcement learning from self-play. Here we introduce an algorithm based solely on reinforcement learning, without human data, guidance or domain knowledge beyond game rules. AlphaGo becomes its own teacher: a neural network is trained to predict AlphaGo's own move selections and also the winner of AlphaGo's games. This neural network improves the strength of the tree search, resulting in higher quality move selection and stronger self-play in the next iteration. Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100--0 against the previously published, champion-defeating AlphaGo.}
+      \field{issn}{1476-4687}
+      \field{journaltitle}{Nature}
+      \field{month}{10}
+      \field{number}{7676}
+      \field{title}{Mastering the game of Go without human knowledge}
+      \field{volume}{550}
+      \field{year}{2017}
+      \field{pages}{354\bibrangedash 359}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1038/nature24270
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/nature24270
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/nature24270
+      \endverb
+    \endentry
+    \entry{Step-by-Step-Tutorial-AIF-Empirical-Data}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2375765385b5498bd2826de02ade4c7d}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=558c08870d21f7acad878d94e125a377}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b241685664e7de7eae8f0f2c6a1a869d}{%
+           family={Whyte},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a32bfe6aab2332411e701acebc914238}
+      \strng{fullhash}{a32bfe6aab2332411e701acebc914238}
+      \strng{bibnamehash}{a32bfe6aab2332411e701acebc914238}
+      \strng{authorbibnamehash}{a32bfe6aab2332411e701acebc914238}
+      \strng{authornamehash}{a32bfe6aab2332411e701acebc914238}
+      \strng{authorfullhash}{a32bfe6aab2332411e701acebc914238}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The active inference framework, and in particular its recent formulation as a partially observable Markov decision process (POMDP), has gained increasing popularity in recent years as a useful approach for modeling neurocognitive processes. This framework is highly general and flexible in its ability to be customized to model any cognitive process, as well as simulate predicted neuronal responses based on its accompanying neural process theory. It also affords both simulation experiments for proof of principle and behavioral modeling for empirical studies. However, there are limited resources that explain how to build and run these models in practice, which limits their widespread use. Most introductions assume a technical background in programming, mathematics, and machine learning. In this paper we offer a step-by-step tutorial on how to build POMDPs, run simulations using standard MATLAB routines, and fit these models to empirical data. We assume a minimal background in programming and mathematics, thoroughly explain all equations, and provide exemplar scripts that can be customized for both theoretical and empirical studies. Our goal is to provide the reader with the requisite background knowledge and practical tools to apply active inference to their own research. We also provide optional technical sections and multiple appendices, which offer the interested reader additional technical details. This tutorial should provide the reader with all the tools necessary to use these models and to follow emerging advances in active inference research.}
+      \field{issn}{0022-2496}
+      \field{journaltitle}{Journal of Mathematical Psychology}
+      \field{title}{A step-by-step tutorial on active inference and its application to empirical data}
+      \field{volume}{107}
+      \field{year}{2022}
+      \field{pages}{102632}
+      \range{pages}{1}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.jmp.2021.102632
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249621000973
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022249621000973
+      \endverb
+      \keyw{Active inference,Computational neuroscience,Bayesian inference,Learning,Decision-making,Machine learning}
+    \endentry
+    \entry{Reinforcement-Learning-An-Introduction}{book}{}
+      \name{author}{2}{}{%
+        {{hash=eb920e5277d3d5fd0903f3cd41e11871}{%
+           family={Sutton},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=32a0a208f8bcf56a13b0a8e618aa806a}{%
+           family={Barto},
+           familyi={B\bibinitperiod},
+           given={Andrew\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, Massachusetts}%
+      }
+      \list{publisher}{1}{%
+        {MIT Press}%
+      }
+      \strng{namehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{fullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{bibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorbibnamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authornamehash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \strng{authorfullhash}{c6212f1a1407d96a3d9f4fefbb07eade}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Reinforcement Learning: An Introduction}
+      \field{year}{2018}
+    \endentry
+    \entry{Practical-Tutorial-Variational-Bayes}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=48027d023678afb709bcc017b09e8c8b}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Minh-Ngoc},
+           giveni={M\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=86d263785703dcf765dde277c301b6a3}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Trong-Nghia},
+           giveni={T\bibinithyphendelim N\bibinitperiod}}}%
+        {{hash=a2808b7178ee43916157d7f7d82e2462}{%
+           family={Dao},
+           familyi={D\bibinitperiod},
+           given={Viet-Hung},
+           giveni={V\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d808a69df76809b117b01577e2b7ea8}
+      \strng{fullhash}{0d808a69df76809b117b01577e2b7ea8}
+      \strng{bibnamehash}{0d808a69df76809b117b01577e2b7ea8}
+      \strng{authorbibnamehash}{0d808a69df76809b117b01577e2b7ea8}
+      \strng{authornamehash}{0d808a69df76809b117b01577e2b7ea8}
+      \strng{authorfullhash}{0d808a69df76809b117b01577e2b7ea8}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.CO}
+      \field{eprinttype}{arXiv}
+      \field{title}{A practical tutorial on Variational Bayes}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 2103.01327
+      \endverb
+    \endentry
+    \entry{Reinforcement-Learning-Through-AIF}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=3f98dc382188ff01295eb411612cb9ae}{%
+           family={Tschantz},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dcf103531a4bb5a439a2233cf52e9703}{%
+           family={Millidge},
+           familyi={M\bibinitperiod},
+           given={Beren},
+           giveni={B\bibinitperiod}}}%
+        {{hash=a18faa5d293b699968705a564971492b}{%
+           family={Seth},
+           familyi={S\bibinitperiod},
+           given={Anil\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{fullhash}{20ddd33b6e9bbc0e302a3feb1773a6c9}
+      \strng{bibnamehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{authorbibnamehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{authornamehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{authorfullhash}{20ddd33b6e9bbc0e302a3feb1773a6c9}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Reinforcement Learning through Active Inference}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2002.12636
+      \endverb
+    \endentry
+    \entry{Scaling-AIF}{article}{}
+      \name{author}{4}{}{%
+        {{hash=3f98dc382188ff01295eb411612cb9ae}{%
+           family={Tschantz},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fa7c84e2ae98e6ac22617182c34e9972}{%
+           family={Baltieri},
+           familyi={B\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a18faa5d293b699968705a564971492b}{%
+           family={Seth},
+           familyi={S\bibinitperiod},
+           given={Anil\bibnamedelima K.},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
+           family={Buckley},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima L.},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{fullhash}{ac27dbea74c8ba6d7e3bc2a74e7705ec}
+      \strng{bibnamehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{authorbibnamehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{authornamehash}{c1308c02024dfc243c971e68d399eb80}
+      \strng{authorfullhash}{ac27dbea74c8ba6d7e3bc2a74e7705ec}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Scaling active inference}
+      \field{volume}{abs/1911.10601}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1911.10601
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1911.10601
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1911.10601
+      \endverb
+    \endentry
+    \entry{Deep-AIF}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9de7ac13a278cef9d0816984a9ab8273}{%
+           family={Ueltzhöffer},
+           familyi={U\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media {LLC}}%
+      }
+      \strng{namehash}{9de7ac13a278cef9d0816984a9ab8273}
+      \strng{fullhash}{9de7ac13a278cef9d0816984a9ab8273}
+      \strng{bibnamehash}{9de7ac13a278cef9d0816984a9ab8273}
+      \strng{authorbibnamehash}{9de7ac13a278cef9d0816984a9ab8273}
+      \strng{authornamehash}{9de7ac13a278cef9d0816984a9ab8273}
+      \strng{authorfullhash}{9de7ac13a278cef9d0816984a9ab8273}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://doi.org/10.1007\%2Fs00422-018-0785-7}}
+      \field{journaltitle}{Biological Cybernetics}
+      \field{month}{10}
+      \field{number}{6}
+      \field{title}{Deep active inference}
+      \field{volume}{112}
+      \field{year}{2018}
+      \field{pages}{547\bibrangedash 573}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1007/s00422-018-0785-7
+      \endverb
+    \endentry
+    \entry{Factor-Graph-Desc-Deep-Temp-AIF}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2caeea1b18c3a6d6099b66a5232eb983}{%
+           family={Vries},
+           familyi={V\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=558c08870d21f7acad878d94e125a377}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{9bf9c52581ee658cb652bbab2b792dd9}
+      \strng{fullhash}{9bf9c52581ee658cb652bbab2b792dd9}
+      \strng{bibnamehash}{9bf9c52581ee658cb652bbab2b792dd9}
+      \strng{authorbibnamehash}{9bf9c52581ee658cb652bbab2b792dd9}
+      \strng{authornamehash}{9bf9c52581ee658cb652bbab2b792dd9}
+      \strng{authorfullhash}{9bf9c52581ee658cb652bbab2b792dd9}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Active inference is a corollary of the Free Energy Principle that prescribes how self-organizing biological agents interact with their environment. The study of active inference processes relies on the definition of a generative probabilistic model and a description of how a free energy functional is minimized by neuronal message passing under that model. This paper presents a tutorial introduction to specifying active inference processes by Forney-style factor graphs (FFG). The FFG framework provides both an insightful representation of the probabilistic model and a biologically plausible inference scheme that, in principle, can be automatically executed in a computer simulation. As an illustrative example, we present an FFG for a deep temporal active inference process. The graph clearly shows how policy selection by expected free energy minimization results from free energy minimization per se, in an appropriate generative policy model.}
+      \field{issn}{1662-5188}
+      \field{journaltitle}{Frontiers in Computational Neuroscience}
+      \field{title}{A Factor Graph Description of Deep Temporal Active Inference}
+      \field{volume}{11}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.3389/fncom.2017.00095
+      \endverb
+      \verb{urlraw}
+      \verb https://www.frontiersin.org/articles/10.3389/fncom.2017.00095
+      \endverb
+      \verb{url}
+      \verb https://www.frontiersin.org/articles/10.3389/fncom.2017.00095
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

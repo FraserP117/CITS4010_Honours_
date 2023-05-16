@@ -1,0 +1,17 @@
+TY  - JOUR
+AU  - Kaplan, Raphael
+AU  - Friston, Karl J.
+PY  - 2018
+DA  - 2018/08/01
+TI  - Planning and navigation as active inference
+JO  - Biological Cybernetics
+SP  - 323
+EP  - 343
+VL  - 112
+IS  - 4
+AB  - This paper introduces an active inference formulation of planning and navigation. It illustrates how the exploitation–exploration dilemma is dissolved by acting to minimise uncertainty (i.e. expected surprise or free energy). We use simulations of a maze problem to illustrate how agents can solve quite complicated problems using context sensitive prior preferences to form subgoals. Our focus is on how epistemic behaviour—driven by novelty and the imperative to reduce uncertainty about the world—contextualises pragmatic or goal-directed behaviour. Using simulations, we illustrate the underlying process theory with synthetic behavioural and electrophysiological responses during exploration of a maze and subsequent navigation to a target location. An interesting phenomenon that emerged from the simulations was a putative distinction between ‘place cells’—that fire when a subgoal is reached—and ‘path cells’—that fire until a subgoal is reached.
+SN  - 1432-0770
+UR  - https://doi.org/10.1007/s00422-018-0753-2
+DO  - 10.1007/s00422-018-0753-2
+ID  - Kaplan2018
+ER  - 
