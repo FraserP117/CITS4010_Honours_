@@ -1,4 +1,9 @@
-\documentclass[12pt, oneside]{article}
+% \documentclass[12pt, oneside]{article}
+\documentclass[onecolumn]{IEEEtran}
+\usepackage[
+backend=biber,
+style=numeric,
+]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{ {images/} }
@@ -7,7 +12,8 @@
 \usepackage{xcolor}
 \usepackage{gensymb}
 \usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
-\usepackage[backend=biber]{biblatex}
+% \usepackage[backend=biber]{biblatex}
+% \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \addbibresource{references.bib}
 
 
@@ -23,7 +29,7 @@
 	
 	\vspace{0.5cm}
 	\Large
-	An Analysis of Active Inference and Reinforcement Learning Paradigms in Large, Partially Observable and Non-Stationary Environments.
+	An Analysis of Active Inference and Reinforcement Learning Paradigms in Partially Observable Environments.
 	
 	\vspace{1.5cm}
 
@@ -53,18 +59,20 @@
 
 \cleardoublepage
 
+\section{Overview}
+This section should be an overview of the Lit review. Can possibly put some information related to the project in here.
+
 \section{Introduction}
 
 \subsection{Active Inference: An Overview}
 
-Active Inference is an emerging first-principles account of adaptive behaviour. Originating from Neuroscience: \textcite{A_FEP_For_The_Brain}, \textcite{The-Bayesian-Brain} and \textcite{Action-Behaviour-FE}, though the theory is increasingly making inroads into Machine Learning and Artificial Intelligence: \textcite{RL-or-AIF} and \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}. Active inference is a highly ambitious theory, as it purports to offer a fully unified account of action, perception and learning: \textcite{FEP-Unified-Brain-Theory}. The basic postulate of the theroy is that adaptive systems like living organisms, will act to fulfill prior expectations or ``preferences'' which encode desierable states for that system. The system uses a propabalistic generative model to perform free-energy minimisation on a functional of Bayesian beliefs to select actions which will counteract the thermodynamic dispersal of its internal states, away from its ``prefered'' states, thus preserving the system's self-orginisation. Free-energy may hence be thought of as encoding the ``surprisal'' of a particular sensory observation, given the agent's generative model.
+Active Inference is an emerging first-principles account of adaptive behavior. Originating from Neuroscience: \textcite{A_FEP_For_The_Brain}, \textcite{The-Bayesian-Brain} and \textcite{Action-Behaviour-FE}, though the theory is increasingly making inroads into Machine Learning and Artificial Intelligence: \textcite{RL-or-AIF} and \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}. Active inference is a highly ambitious theory, as it purports to offer a fully unified account of action, perception and learning: \textcite{FEP-Unified-Brain-Theory}. The basic postulate of the theory is that adaptive systems like living organisms, will act to fulfill prior expectations or ``preferences'' which encode desirable states for that system. The system uses a probabilistic generative model to perform free-energy minimization on a functional of Bayesian beliefs to select actions which will counteract the thermodynamic dispersal of its internal states, away from its ``preferred'' states, thus preserving the system's self-organization. Free-energy may hence be thought of as encoding the ``surprisal'' of a particular sensory observation, given the agent's generative model.
 
-This drive to reduce sensory surpirsal has the effect of introducing an impertive for information-gain in addition to the imperative to maximise reward or ``value''. value maximisation is typically the only imperative of interest in more traditional approaches to adaptive behavioir, such as Reinforecment Learning; \textcite{Reinforcement-Learning-An-Introduction}. In a nutshell, Active Inference replaces value functions with variational free energy functionals of Bayesian beliefs. Active Inference agents therefore have a built-in affordance for dynamically trading-off pragmatic and epsitemic imperatives. 
+This drive to reduce sensory surpirsal has the effect of introducing an imperative for information-gain in addition to the imperative to maximize reward or ``value''. value maximization is typically the only imperative of interest in more traditional approaches to adaptive behavior, such as Reinforcement Learning; \textcite{Reinforcement-Learning-An-Introduction}. In a nutshell, Active Inference replaces value functions with variational free energy functionals of Bayesian beliefs. Active Inference agents therefore have a built-in affordance for dynamically trading-off pragmatic and epistemic imperatives. 
 
-Historically speaking, Active Inference is a derivative of the ``Free Energy Principle'', which is a theoretical principle thought to plausibly offer a unified, constitutive account of brain function: \textcite{FEP-Rough-Guide-Brain} and perhaps even of life itself: \textcite{Life-As-We-Know-It}. The Free Energy Principle (FEP) attempts to provide a principled account of adaptivity per-se. The basic insight is that if a system maintains a boundary between itself and some exterior environment, and if this system persists over time, then this system must be capable of resisting the thermodynamic tendancy toward the dissolution of the boundary which seperates its internal states from the external environment. To do this, the system must maintain the configuration of its internal states so as to exist within some desired homeostatic bounds. The way the system can achieve this is by maximising the Bayesian model-evidence for its configuration of internal states. Hence we have internal states, external states and ``blanket'' states, where the blanket states are themselves composed of ``active'' and ``sensory'' states. Internal states can only be directly influenced by the sensory states of the blanket, and external states can only be influenced by the active states of the blanket. The Bayesian model evidence for the system's configuration of internal states is bounded above by the free energy of the system's Bayesian beliefs about the sensory states. Hence the ``Free Energy'' principle, since the Free Energy serves as a tractible upper bound to the system's model evidence. Thus the principle culminates in the following statement. Any system which persists across time, in the face of a tendency to thermodynamic dissolution must act as if it is soliciting evidence for its own existence, via a model of the world.  
+Historically speaking, Active Inference is a derivative of the ``Free Energy Principle'', which is a theoretical principle thought to plausibly offer a unified, constitutive account of brain function: \textcite{FEP-Rough-Guide-Brain} and perhaps even of life itself: \textcite{Life-As-We-Know-It}. The Free Energy Principle (FEP) attempts to provide a principled account of adaptivity per-se. The basic insight is that if a system maintains a boundary between itself and some exterior environment, and if this system persists over time, then this system must be capable of resisting the thermodynamic tendency toward the dissolution of the boundary which separates its internal states from the external environment. To do this, the system must maintain the configuration of its internal states so as to exist within some desired homeostatic bounds. The way the system can achieve this is by maximizing the Bayesian model-evidence for its configuration of internal states. Hence we have internal states, external states and ``blanket'' states, where the blanket states are themselves composed of ``active'' and ``sensory'' states. Internal states can only be directly influenced by the sensory states of the blanket, and external states can only be influenced by the active states of the blanket. The Bayesian model evidence for the system's configuration of internal states is bounded above by the free energy of the system's Bayesian beliefs about the sensory states. Hence the ``Free Energy'' principle, since the Free Energy serves as a tractable upper bound to the system's model evidence. Thus the principle culminates in the following statement. Any system which persists across time, in the face of a tendency to thermodynamic dissolution must act as if it is soliciting evidence for its own existence, via a model of the world.  
 
-See Figure \ref{fig:FEP} for a diagramatic exposition of the relationship between these variables.
-
+See Figure \ref{fig:FEP} for a diagrammatic exposition of the relationship between these variables.
 
 \begin{figure}[h]
   \centering
@@ -73,16 +81,16 @@ See Figure \ref{fig:FEP} for a diagramatic exposition of the relationship betwee
   \label{fig:FEP}
 \end{figure}
 
-The primary appeal of the Active Inference formulation of intelligence/adaptive behaviouir is twofold. First, it unifies the study of action, perception and planning under a single imperative, that of minimising variational - or expected - free energy. This is an efficient formulation of these problems, since one need only address a single methodological principle instead of three. Parsimony of this kind is always desierable in any scientific theory - all things being equal - since the generality of a theory is very often a good measure of its predictive power.  
+The primary appeal of the Active Inference formulation of intelligence/adaptive Behaviour is twofold. First, it unifies the study of action, perception and planning under a single imperative, that of minimizing variational - or expected - free energy. This is an efficient formulation of these problems, since one need only address a single methodological principle instead of three. Parsimony of this kind is always desirable in any scientific theory - all things being equal - since the generality of a theory is very often a good measure of its predictive power.  
 
-Secondly, Active Inference addresses a problem which has plauged value-function formulations of adaptivity since their inception. This is the issue of sample-efficency and of learning in the presence of sparse rewards: \textcite{RLflawed} and \textcite{RL-Real-World-Challenges}. If all that is available to the agent for generating actions or policies is a value function, mapping states and/or actions to an extrinsic reward signal, it is necessary to observe a great deal many state or state-action paris to learn the optimal mapping from state/state-action to reward signal. For problems with large state-action spaces, this presents a signifigant challenge to such methods. Active Inference eschwes this issue by placing ``information-seeking'' on the same footing as value maximization and hence drives the agent to dynamically trade-off attention between these two goals. 
+Secondly, Active Inference addresses a problem which has plagued value-function formulations of adaptivity since their inception. This is the issue of sample-efficiency and of learning in the presence of sparse rewards: \textcite{RLflawed} and \textcite{RL-Real-World-Challenges}. If all that is available to the agent for generating actions or policies is a value function, mapping states and/or actions to an extrinsic reward signal, it is necessary to observe a great deal many state or state-action par is to learn the optimal mapping from state/state-action to reward signal. For problems with large state-action spaces, this presents a significant challenge to such methods. Active Inference eschews this issue by placing ``information-seeking'' on the same footing as value maximization and hence drives the agent to dynamically trade-off attention between these two goals. 
 
-Use the ``coloured room'' example?
+Use the ``colored room'' example?
 
 
 \textcolor{red}{Active inference is interesting because of its promise to be such a general method and indeed owing to a growing body of empirical research to suggest that free-energy minimization is what the brain is doing - I have citations for this. Since the brain is thought to be the seat of "natural" intelligence, evidence attesting to the brain's function as a "free-energy minimizing machine" must surely be of interest to we who are concerned with generating instances of intelligence, artificially.}
 
-This is fine, though try to avoid ``grandiose'' claims. A better approach is to lead with an explanation as to what it is that Active Inference sovles and perhaps how it is novel in a useful way. 
+This is fine, though try to avoid ``grandiose'' claims. A better approach is to lead with an explanation as to what it is that Active Inference solves and perhaps how it is novel in a useful way. 
 
 Active Inference has typically only been implemented on relatively trivial problem instances, with a small number of states and/or actions, and in a discrete setting. T-maze, saccadic eye movements, examples... The goal of scaling up the method to problems with larger state and/or action spaces, such as in the continuous case, is an open problem, and one that would afford X, Y and Z valuable capabilities.  
 
@@ -237,7 +245,7 @@ Other Papers:
 	\item PhD Thesis: ``Applications of the FEP to ML and Neuroscience'': \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}
 \end{enumerate}
 
-
+% \bibliographystyle{IEEEtran}
 \printbibliography
 
 \end{document}

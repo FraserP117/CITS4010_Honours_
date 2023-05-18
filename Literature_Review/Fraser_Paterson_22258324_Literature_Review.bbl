@@ -59,94 +59,48 @@
       \verb https://arxiv.org/abs/2112.13251
       \endverb
     \endentry
-    \entry{Tutorial-FEP-Modelling-Perception-Action}{article}{}
-      \name{author}{1}{}{%
-        {{hash=9e7da25f8bbab1f942bbdedf221c9970}{%
-           family={Bogacz},
+    \entry{Variational-Inference-Reviews}{article}{}
+      \name{author}{3}{}{%
+        {{hash=108998f0d44d4dce8ccb93e4d78cd5c6}{%
+           family={Blei},
            familyi={B\bibinitperiod},
-           given={Rafal},
-           giveni={R\bibinitperiod}}}%
-      }
-      \strng{namehash}{9e7da25f8bbab1f942bbdedf221c9970}
-      \strng{fullhash}{9e7da25f8bbab1f942bbdedf221c9970}
-      \strng{bibnamehash}{9e7da25f8bbab1f942bbdedf221c9970}
-      \strng{authorbibnamehash}{9e7da25f8bbab1f942bbdedf221c9970}
-      \strng{authornamehash}{9e7da25f8bbab1f942bbdedf221c9970}
-      \strng{authorfullhash}{9e7da25f8bbab1f942bbdedf221c9970}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This paper provides an easy to follow tutorial on the free-energy framework for modelling perception developed by Friston, which extends the predictive coding model of Rao and Ballard. These models assume that the sensory cortex infers the most likely values of attributes or features of sensory stimuli from the noisy inputs encoding the stimuli. Remarkably, these models describe how this inference could be implemented in a network of very simple computational elements, suggesting that this inference could be performed by biological networks of neurons. Furthermore, learning about the parameters describing the features and their uncertainty is implemented in these models by simple rules of synaptic plasticity based on Hebbian learning. This tutorial introduces the free-energy framework using very simple examples, and provides step-by-step derivations of the model. It also discusses in more detail how the model could be implemented in biological neural circuits. In particular, it presents an extended version of the model in which the neurons only sum their inputs, and synaptic plasticity only depends on activity of pre-synaptic and post-synaptic neurons.}
-      \field{issn}{0022-2496}
-      \field{journaltitle}{Journal of Mathematical Psychology}
-      \field{note}{Model-based Cognitive Neuroscience}
-      \field{title}{A tutorial on the free-energy framework for modelling perception and learning}
-      \field{volume}{76}
-      \field{year}{2017}
-      \field{pages}{198\bibrangedash 211}
-      \range{pages}{14}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.jmp.2015.11.003
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0022249615000759
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0022249615000759
-      \endverb
-    \endentry
-    \entry{FEP-Mathematical-Review}{article}{}
-      \name{author}{4}{}{%
-        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
-           family={Buckley},
-           familyi={B\bibinitperiod},
-           given={Christopher\bibnamedelima L.},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=c1b5b32053d9b98890287559854c6bc0}{%
-           family={Kim},
+           given={David\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9b4bd774638a5e11db087a94dc4950b1}{%
+           family={Kucukelbir},
            familyi={K\bibinitperiod},
-           given={Chang\bibnamedelima Sub},
-           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=1f6d0ed894e9e4e40438088b9585eac8}{%
-           family={McGregor},
+           given={Alp},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2baf42315daa7e7288615fe2776de8e6}{%
+           family={McAuliffe},
            familyi={M\bibinitperiod},
-           given={Simon},
-           giveni={S\bibinitperiod}}}%
-        {{hash=a18faa5d293b699968705a564971492b}{%
-           family={Seth},
-           familyi={S\bibinitperiod},
-           given={Anil\bibnamedelima K.},
-           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+           given={Jon\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
-      \strng{namehash}{79b1493ab9729517ef84ecf75d82779b}
-      \strng{fullhash}{d6768cab4ac2fbb725f3f42aaa91b95e}
-      \strng{bibnamehash}{79b1493ab9729517ef84ecf75d82779b}
-      \strng{authorbibnamehash}{79b1493ab9729517ef84ecf75d82779b}
-      \strng{authornamehash}{79b1493ab9729517ef84ecf75d82779b}
-      \strng{authorfullhash}{d6768cab4ac2fbb725f3f42aaa91b95e}
+      \list{publisher}{1}{%
+        {Informa {UK} Limited}%
+      }
+      \strng{namehash}{853d35e6ec8363e2400561dba8cb9aae}
+      \strng{fullhash}{853d35e6ec8363e2400561dba8cb9aae}
+      \strng{bibnamehash}{853d35e6ec8363e2400561dba8cb9aae}
+      \strng{authorbibnamehash}{853d35e6ec8363e2400561dba8cb9aae}
+      \strng{authornamehash}{853d35e6ec8363e2400561dba8cb9aae}
+      \strng{authorfullhash}{853d35e6ec8363e2400561dba8cb9aae}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{The ‘free energy principle’ (FEP) has been suggested to provide a unified theory of the brain, integrating data and theory relating to action, perception, and learning. The theory and implementation of the FEP combines insights from Helmholtzian ‘perception as inference’, machine learning theory, and statistical thermodynamics. Here, we provide a detailed mathematical evaluation of a suggested biologically plausible implementation of the FEP that has been widely used to develop the theory. Our objectives are (i) to describe within a single article the mathematical structure of this implementation of the FEP; (ii) provide a simple but complete agent-based model utilising the FEP and (iii) to disclose the assumption structure of this implementation of the FEP to help elucidate its significance for the brain sciences.}
-      \field{issn}{0022-2496}
-      \field{journaltitle}{Journal of Mathematical Psychology}
-      \field{title}{The free energy principle for action and perception: A mathematical review}
-      \field{volume}{81}
+      \field{journaltitle}{Journal of the American Statistical Association}
+      \field{month}{04}
+      \field{number}{518}
+      \field{title}{Variational Inference: A Review for Statisticians}
+      \field{volume}{112}
       \field{year}{2017}
-      \field{pages}{55\bibrangedash 79}
-      \range{pages}{25}
+      \field{pages}{859\bibrangedash 877}
+      \range{pages}{19}
       \verb{doi}
-      \verb https://doi.org/10.1016/j.jmp.2017.09.004
+      \verb 10.1080/01621459.2017.1285773
       \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0022249617300962
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0022249617300962
-      \endverb
-      \keyw{Free energy principle,Perception,Action,Inference,Bayesian brain,Agent-based model}
     \endentry
     \entry{Bayesian-Policy-Selection-Using-AIF}{misc}{}
       \name{author}{5}{}{%
@@ -182,7 +136,6 @@
       \strng{authorbibnamehash}{699fb36c9052c496193e1600226b7edc}
       \strng{authornamehash}{699fb36c9052c496193e1600226b7edc}
       \strng{authorfullhash}{a27200328ae632cf52e87f4cb3ab9c43}
-      \field{extraname}{1}
       \field{sortinit}{Ç}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
@@ -195,51 +148,32 @@
       \verb 1904.08149
       \endverb
     \endentry
-    \entry{Bayesian-Policy-Selection-AIF}{misc}{}
-      \name{author}{5}{}{%
-        {{hash=a9469e9b7223203fccc44acf37205929}{%
-           family={Çatal},
-           familyi={Ç\bibinitperiod},
-           given={Ozan},
-           giveni={O\bibinitperiod}}}%
-        {{hash=b7d06c9b4d39365ac1da2ebaecdfa1d4}{%
-           family={Nauta},
-           familyi={N\bibinitperiod},
-           given={Johannes},
-           giveni={J\bibinitperiod}}}%
-        {{hash=7ae0249027282ce63a8b130db60b88f6}{%
-           family={Verbelen},
-           familyi={V\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-        {{hash=b205681adac9f09fac495059f6ece5f2}{%
-           family={Simoens},
-           familyi={S\bibinitperiod},
-           given={Pieter},
+    \entry{RLflawed}{article}{}
+      \name{author}{1}{}{%
+        {{hash=cffdbdf7d0beb981d8bb8ea28506a4b2}{%
+           family={Christiano},
+           familyi={C\bibinitperiod},
+           given={Paul},
            giveni={P\bibinitperiod}}}%
-        {{hash=f3a7566cafe3d87f70b255c25b92611a}{%
-           family={Dhoedt},
-           familyi={D\bibinitperiod},
-           given={Bart},
-           giveni={B\bibinitperiod}}}%
       }
-      \strng{namehash}{699fb36c9052c496193e1600226b7edc}
-      \strng{fullhash}{a27200328ae632cf52e87f4cb3ab9c43}
-      \strng{bibnamehash}{699fb36c9052c496193e1600226b7edc}
-      \strng{authorbibnamehash}{699fb36c9052c496193e1600226b7edc}
-      \strng{authornamehash}{699fb36c9052c496193e1600226b7edc}
-      \strng{authorfullhash}{a27200328ae632cf52e87f4cb3ab9c43}
-      \field{extraname}{2}
-      \field{sortinit}{Ç}
+      \strng{namehash}{cffdbdf7d0beb981d8bb8ea28506a4b2}
+      \strng{fullhash}{cffdbdf7d0beb981d8bb8ea28506a4b2}
+      \strng{bibnamehash}{cffdbdf7d0beb981d8bb8ea28506a4b2}
+      \strng{authorbibnamehash}{cffdbdf7d0beb981d8bb8ea28506a4b2}
+      \strng{authornamehash}{cffdbdf7d0beb981d8bb8ea28506a4b2}
+      \strng{authorfullhash}{cffdbdf7d0beb981d8bb8ea28506a4b2}
+      \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.LG}
-      \field{eprinttype}{arXiv}
-      \field{title}{Bayesian policy selection using active inference}
+      \field{journaltitle}{The Gradient}
+      \field{title}{Why Reinforcement Learning is Flawed}
       \field{year}{2019}
-      \verb{eprint}
-      \verb 1904.08149
+      \verb{urlraw}
+      \verb https://thegradient.pub/why-rl-is-flawed/
+      \endverb
+      \verb{url}
+      \verb https://thegradient.pub/why-rl-is-flawed/
       \endverb
     \endentry
     \entry{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}{article}{}
@@ -394,6 +328,74 @@
       \field{title}{The relationship between dynamic programming and active inference: the discrete, finite-horizon case}
       \field{year}{2020}
     \endentry
+    \entry{RL-Real-World-Challenges}{article}{}
+      \name{author}{7}{}{%
+        {{hash=1e75a9df444c5ef79ce4db4c8dd76ddc}{%
+           family={Dulac-Arnold},
+           familyi={D\bibinithyphendelim A\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=13cc3695358a6c91515c272e1c4f8096}{%
+           family={Levine},
+           familyi={L\bibinitperiod},
+           given={Nir},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d53f04077b0434704ab60a1a7bc58a71}{%
+           family={Mankowitz},
+           familyi={M\bibinitperiod},
+           given={Daniel\bibnamedelima J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=3b3012e4ca17639feb14b7bd7910c117}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jerry},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a58a4770e2e7fd035b28393767299b9e}{%
+           family={Paduraru},
+           familyi={P\bibinitperiod},
+           given={Cosmin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1684b384584547bc4441639093dc0533}{%
+           family={Gowal},
+           familyi={G\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c637e4ed3fcc395fa56d8aab57126d4d}{%
+           family={Hester},
+           familyi={H\bibinitperiod},
+           given={Todd},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{f365a2cfe7993eced9cc5ffa3d632001}
+      \strng{fullhash}{c1b66da100ed35228a7a909ed778aed6}
+      \strng{bibnamehash}{f365a2cfe7993eced9cc5ffa3d632001}
+      \strng{authorbibnamehash}{f365a2cfe7993eced9cc5ffa3d632001}
+      \strng{authornamehash}{f365a2cfe7993eced9cc5ffa3d632001}
+      \strng{authorfullhash}{c1b66da100ed35228a7a909ed778aed6}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reinforcement learning (RL) has proven its worth in a series of artificial domains, and is beginning to show some successes in real-world scenarios. However, much of the research advances in RL are hard to leverage in real-world systems due to a series of assumptions that are rarely satisfied in practice. In this work, we identify and formalize a series of independent challenges that embody the difficulties that must be addressed for RL to be commonly deployed in real-world systems. For each challenge, we define it formally in the context of a Markov Decision Process, analyze the effects of the challenge on state-of-the-art learning algorithms, and present some existing attempts at tackling it. We believe that an approach that addresses our set of proposed challenges would be readily deployable in a large number of real world problems. Our proposed challenges are implemented in a suite of continuous control environments called realworldrl-suite which we propose an as an open-source benchmark.}
+      \field{issn}{1573-0565}
+      \field{journaltitle}{Machine Learning}
+      \field{month}{9}
+      \field{number}{9}
+      \field{title}{Challenges of real-world reinforcement learning: definitions, benchmarks and analysis}
+      \field{volume}{110}
+      \field{year}{2021}
+      \field{pages}{2419\bibrangedash 2468}
+      \range{pages}{50}
+      \verb{doi}
+      \verb 10.1007/s10994-021-05961-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10994-021-05961-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10994-021-05961-4
+      \endverb
+    \endentry
     \entry{Codes-on-Graphs}{article}{}
       \name{author}{1}{}{%
         {{hash=1c58ad3962bf89e08d33c9278595f3c6}{%
@@ -540,6 +542,45 @@
       \endverb
       \verb{url}
       \verb https://doi.org/10.1016/j.tics.2009.04.005
+      \endverb
+    \endentry
+    \entry{FEP-Unified-Brain-Theory}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{fullhash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{bibnamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authorbibnamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authornamehash}{9f452a84796a900973333b32a5f8bc61}
+      \strng{authorfullhash}{9f452a84796a900973333b32a5f8bc61}
+      \field{extraname}{3}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Adaptive agents must occupy a limited repertoire of states and therefore minimize the long-term average of surprise associated with sensory exchanges with the world. Minimizing surprise enables them to resist a natural tendency to disorder.Surprise rests on predictions about sensations, which depend on an internal generative model of the world. Although surprise cannot be measured directly, a free-energy bound on surprise can be, suggesting that agents minimize free energy by changing their predictions (perception) or by changing the predicted sensory inputs (action).Perception optimizes predictions by minimizing free energy with respect to synaptic activity (perceptual inference), efficacy (learning and memory) and gain (attention and salience). This furnishes Bayes-optimal (probabilistic) representations of what caused sensations (providing a link to the Bayesian brain hypothesis).Bayes-optimal perception is mathematically equivalent to predictive coding and maximizing the mutual information between sensations and the representations of their causes. This is a probabilistic generalization of the principle of efficient coding (the infomax principle) or the minimum-redundancy principle.Learning under the free-energy principle can be formulated in terms of optimizing the connection strengths in hierarchical models of the sensorium. This rests on associative plasticity to encode causal regularities and appeals to the same synaptic mechanisms as those underlying cell assembly formation.Action under the free-energy principle reduces to suppressing sensory prediction errors that depend on predicted (expected or desired) movement trajectories. This provides a simple account of motor control, in which action is enslaved by perceptual (proprioceptive) predictions.Perceptual predictions rest on prior expectations about the trajectory or movement through the agent's state space. These priors can be acquired (as empirical priors during hierarchical inference) or they can be innate (epigenetic) and therefore subject to selective pressure.Predicted motion or state transitions realized by action correspond to policies in optimal control theory and reinforcement learning. In this context, value is inversely proportional to surprise (and implicitly free energy), and rewards correspond to innate priors that constrain policies.}
+      \field{issn}{1471-0048}
+      \field{journaltitle}{Nature Reviews Neuroscience}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{The free-energy principle: a unified brain theory?}
+      \field{volume}{11}
+      \field{year}{2010}
+      \field{pages}{127\bibrangedash 138}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1038/nrn2787
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1038/nrn2787
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1038/nrn2787
       \endverb
     \endentry
     \entry{A_FEP_For_The_Brain}{article}{}
@@ -708,70 +749,6 @@
       \verb{url}
       \verb https://doi.org/10.1371/journal.pone.0006421
       \endverb
-    \endentry
-    \entry{DEEP-AIF-For-POMDPs}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=06c37bfed052127a76e6474ca3f49f37}{%
-           family={Himst},
-           familyi={H\bibinitperiod},
-           given={Otto},
-           giveni={O\bibinitperiod},
-           prefix={van\bibnamedelima der},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-        {{hash=cf067a7818cf1d885b2180516a8afe69}{%
-           family={Lanillos},
-           familyi={L\bibinitperiod},
-           given={Pablo},
-           giveni={P\bibinitperiod}}}%
-      }
-      \name{editor}{4}{}{%
-        {{hash=7ae0249027282ce63a8b130db60b88f6}{%
-           family={Verbelen},
-           familyi={V\bibinitperiod},
-           given={Tim},
-           giveni={T\bibinitperiod}}}%
-        {{hash=cf067a7818cf1d885b2180516a8afe69}{%
-           family={Lanillos},
-           familyi={L\bibinitperiod},
-           given={Pablo},
-           giveni={P\bibinitperiod}}}%
-        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
-           family={Buckley},
-           familyi={B\bibinitperiod},
-           given={Christopher\bibnamedelima L.},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-        {{hash=38266ac492939aa0c420eb536a242977}{%
-           family={De\bibnamedelima Boom},
-           familyi={D\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Cedric},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Cham}%
-      }
-      \list{publisher}{1}{%
-        {Springer International Publishing}%
-      }
-      \strng{namehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
-      \strng{fullhash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
-      \strng{bibnamehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
-      \strng{authorbibnamehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
-      \strng{authornamehash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
-      \strng{authorfullhash}{a3922fc2b7d1d8fa590d9e392c28b5c9}
-      \strng{editorbibnamehash}{8b15176a83e57ea480f936b194676b3b}
-      \strng{editornamehash}{8b15176a83e57ea480f936b194676b3b}
-      \strng{editorfullhash}{c0f0fffcf97521c4f2c33afa1538123d}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Deep active inference has been proposed as a scalable approach to perception and action that deals with large policy and state spaces. However, current models are limited to fully observable domains. In this paper, we describe a deep active inference model that can learn successful policies directly from high-dimensional sensory inputs. The deep learning architecture optimizes a variant of the expected free energy and encodes the continuous state representation by means of a variational autoencoder. We show, in the OpenAI benchmark, that our approach has comparable or better performance than deep Q-learning, a state-of-the-art deep reinforcement learning algorithm.}
-      \field{booktitle}{Active Inference}
-      \field{isbn}{978-3-030-64919-7}
-      \field{title}{Deep Active Inference for Partially Observable MDPs}
-      \field{year}{2020}
-      \field{pages}{61\bibrangedash 71}
-      \range{pages}{11}
     \endentry
     \entry{The-Bayesian-Brain}{article}{}
       \name{author}{2}{}{%
@@ -1248,124 +1225,74 @@
       \verb 1312.5602
       \endverb
     \endentry
-    \entry{Mastering-Go-Without-Human-Knowledge}{article}{}
-      \name{author}{17}{}{%
-        {{hash=89dbd30410c2085cd059f32c57d4593e}{%
-           family={Silver},
-           familyi={S\bibinitperiod},
-           given={David},
+    \entry{Curiosity-Driven-RL}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=09e431093c8637ade01037714cfc992c}{%
+           family={Pathak},
+           familyi={P\bibinitperiod},
+           given={Deepak},
            giveni={D\bibinitperiod}}}%
-        {{hash=8fad8df927bc0014c0bd6a9feb7aa71d}{%
-           family={Schrittwieser},
-           familyi={S\bibinitperiod},
-           given={Julian},
-           giveni={J\bibinitperiod}}}%
-        {{hash=9d16b7284df92c9adaee86c37ab992df}{%
-           family={Simonyan},
-           familyi={S\bibinitperiod},
-           given={Karen},
-           giveni={K\bibinitperiod}}}%
-        {{hash=af540e84ef1ecdaa70b1f7c90f59fd7d}{%
-           family={Antonoglou},
+        {{hash=8386009211558835d056bfe419103c76}{%
+           family={Agrawal},
            familyi={A\bibinitperiod},
-           given={Ioannis},
-           giveni={I\bibinitperiod}}}%
-        {{hash=ba4b200ce1412a2570cb113366cc9559}{%
-           family={Huang},
-           familyi={H\bibinitperiod},
-           given={Aja},
-           giveni={A\bibinitperiod}}}%
-        {{hash=4131bd14e5ca890278ecd351e356dc34}{%
-           family={Guez},
-           familyi={G\bibinitperiod},
-           given={Arthur},
-           giveni={A\bibinitperiod}}}%
-        {{hash=80c63e95a9e243591a33a7e3156f1d78}{%
-           family={Hubert},
-           familyi={H\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=fe79638c2bf15e9cd4021e09ca0fa07b}{%
-           family={Baker},
-           familyi={B\bibinitperiod},
-           given={Lucas},
-           giveni={L\bibinitperiod}}}%
-        {{hash=f311ac3fec4a3d3207fdec17a9887704}{%
-           family={Lai},
-           familyi={L\bibinitperiod},
-           given={Matthew},
-           giveni={M\bibinitperiod}}}%
-        {{hash=fa98d81082da72fd49892566108f9cbe}{%
-           family={Bolton},
-           familyi={B\bibinitperiod},
-           given={Adrian},
-           giveni={A\bibinitperiod}}}%
-        {{hash=5759ff4990bdd8c6f85835738834874a}{%
-           family={Chen},
-           familyi={C\bibinitperiod},
-           given={Yutian},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=3a6fdf4df9a25f1d2d506ad9e86e1f6c}{%
-           family={Lillicrap},
-           familyi={L\bibinitperiod},
-           given={Timothy},
-           giveni={T\bibinitperiod}}}%
-        {{hash=59f6c5b7be30cd01647770d56f297a69}{%
-           family={Hui},
-           familyi={H\bibinitperiod},
-           given={Fan},
-           giveni={F\bibinitperiod}}}%
-        {{hash=50d24de916599d306c5cb1a77156e4b9}{%
-           family={Sifre},
-           familyi={S\bibinitperiod},
-           given={Laurent},
-           giveni={L\bibinitperiod}}}%
-        {{hash=54c5c572d4fdc5d822c240b59fcadad4}{%
-           family={Driessche},
+           given={Pulkit},
+           giveni={P\bibinitperiod}}}%
+        {{hash=5a663b27298722834a8cf09bb93d8c94}{%
+           family={Efros},
+           familyi={E\bibinitperiod},
+           given={Alexei\bibnamedelima A.},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
            familyi={D\bibinitperiod},
-           given={George},
-           giveni={G\bibinitperiod},
-           prefix={van\bibnamedelima den},
-           prefixi={v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
-        {{hash=368b9b2de627b852658c433b062d4e1e}{%
-           family={Graepel},
-           familyi={G\bibinitperiod},
-           given={Thore},
+           given={Trevor},
            giveni={T\bibinitperiod}}}%
-        {{hash=b160026950ebb1e2286dfb40c15482f5}{%
-           family={Hassabis},
-           familyi={H\bibinitperiod},
-           given={Demis},
-           giveni={D\bibinitperiod}}}%
       }
-      \strng{namehash}{4ccacac34637df06f749428b6ec5052e}
-      \strng{fullhash}{34faf92840e9c6b68a2c64d4df1b42c3}
-      \strng{bibnamehash}{4ccacac34637df06f749428b6ec5052e}
-      \strng{authorbibnamehash}{4ccacac34637df06f749428b6ec5052e}
-      \strng{authornamehash}{4ccacac34637df06f749428b6ec5052e}
-      \strng{authorfullhash}{34faf92840e9c6b68a2c64d4df1b42c3}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \name{editor}{2}{}{%
+        {{hash=4428b76e1301b2db58587fb18bb59a38}{%
+           family={Precup},
+           familyi={P\bibinitperiod},
+           given={Doina},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a71fae003da84f44e31d26e868859945}{%
+           family={Teh},
+           familyi={T\bibinitperiod},
+           given={Yee\bibnamedelima Whye},
+           giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{a353c16f2bb5e07676f9be9b2c866db4}
+      \strng{fullhash}{5e51aa99fa833fb4f48cba575f1027fd}
+      \strng{bibnamehash}{a353c16f2bb5e07676f9be9b2c866db4}
+      \strng{authorbibnamehash}{a353c16f2bb5e07676f9be9b2c866db4}
+      \strng{authornamehash}{a353c16f2bb5e07676f9be9b2c866db4}
+      \strng{authorfullhash}{5e51aa99fa833fb4f48cba575f1027fd}
+      \strng{editorbibnamehash}{ee1b5a05452f2afba9cd287be3ce0338}
+      \strng{editornamehash}{ee1b5a05452f2afba9cd287be3ce0338}
+      \strng{editorfullhash}{ee1b5a05452f2afba9cd287be3ce0338}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{A long-standing goal of artificial intelligence is an algorithm that learns, tabula rasa, superhuman proficiency in challenging domains. Recently, AlphaGo became the first program to defeat a world champion in the game of Go. The tree search in AlphaGo evaluated positions and selected moves using deep neural networks. These neural networks were trained by supervised learning from human expert moves, and by reinforcement learning from self-play. Here we introduce an algorithm based solely on reinforcement learning, without human data, guidance or domain knowledge beyond game rules. AlphaGo becomes its own teacher: a neural network is trained to predict AlphaGo's own move selections and also the winner of AlphaGo's games. This neural network improves the strength of the tree search, resulting in higher quality move selection and stronger self-play in the next iteration. Starting tabula rasa, our new program AlphaGo Zero achieved superhuman performance, winning 100--0 against the previously published, champion-defeating AlphaGo.}
-      \field{issn}{1476-4687}
-      \field{journaltitle}{Nature}
-      \field{month}{10}
-      \field{number}{7676}
-      \field{title}{Mastering the game of Go without human knowledge}
-      \field{volume}{550}
+      \field{abstract}{In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent’s ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch.}
+      \field{booktitle}{Proceedings of the 34th International Conference on Machine Learning}
+      \field{month}{06--11 Aug}
+      \field{series}{Proceedings of Machine Learning Research}
+      \field{title}{Curiosity-driven Exploration by Self-supervised Prediction}
+      \field{volume}{70}
       \field{year}{2017}
-      \field{pages}{354\bibrangedash 359}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.1038/nature24270
+      \field{pages}{2778\bibrangedash 2787}
+      \range{pages}{10}
+      \verb{file}
+      \verb http://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf
       \endverb
       \verb{urlraw}
-      \verb https://doi.org/10.1038/nature24270
+      \verb https://proceedings.mlr.press/v70/pathak17a.html
       \endverb
       \verb{url}
-      \verb https://doi.org/10.1038/nature24270
+      \verb https://proceedings.mlr.press/v70/pathak17a.html
       \endverb
     \endentry
     \entry{Step-by-Step-Tutorial-AIF-Empirical-Data}{article}{}
@@ -1448,42 +1375,6 @@
       \field{title}{Reinforcement Learning: An Introduction}
       \field{year}{2018}
     \endentry
-    \entry{Practical-Tutorial-Variational-Bayes}{misc}{}
-      \name{author}{3}{}{%
-        {{hash=48027d023678afb709bcc017b09e8c8b}{%
-           family={Tran},
-           familyi={T\bibinitperiod},
-           given={Minh-Ngoc},
-           giveni={M\bibinithyphendelim N\bibinitperiod}}}%
-        {{hash=86d263785703dcf765dde277c301b6a3}{%
-           family={Nguyen},
-           familyi={N\bibinitperiod},
-           given={Trong-Nghia},
-           giveni={T\bibinithyphendelim N\bibinitperiod}}}%
-        {{hash=a2808b7178ee43916157d7f7d82e2462}{%
-           family={Dao},
-           familyi={D\bibinitperiod},
-           given={Viet-Hung},
-           giveni={V\bibinithyphendelim H\bibinitperiod}}}%
-      }
-      \strng{namehash}{0d808a69df76809b117b01577e2b7ea8}
-      \strng{fullhash}{0d808a69df76809b117b01577e2b7ea8}
-      \strng{bibnamehash}{0d808a69df76809b117b01577e2b7ea8}
-      \strng{authorbibnamehash}{0d808a69df76809b117b01577e2b7ea8}
-      \strng{authornamehash}{0d808a69df76809b117b01577e2b7ea8}
-      \strng{authorfullhash}{0d808a69df76809b117b01577e2b7ea8}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{stat.CO}
-      \field{eprinttype}{arXiv}
-      \field{title}{A practical tutorial on Variational Bayes}
-      \field{year}{2021}
-      \verb{eprint}
-      \verb 2103.01327
-      \endverb
-    \endentry
     \entry{Reinforcement-Learning-Through-AIF}{misc}{}
       \name{author}{4}{}{%
         {{hash=3f98dc382188ff01295eb411612cb9ae}{%
@@ -1526,7 +1417,7 @@
       \verb 2002.12636
       \endverb
     \endentry
-    \entry{Scaling-AIF}{article}{}
+    \entry{Scaling-AIF}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=3f98dc382188ff01295eb411612cb9ae}{%
            family={Tschantz},
@@ -1541,7 +1432,7 @@
         {{hash=a18faa5d293b699968705a564971492b}{%
            family={Seth},
            familyi={S\bibinitperiod},
-           given={Anil\bibnamedelima K.},
+           given={Anil.\bibnamedelimi K.},
            giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
         {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
            family={Buckley},
@@ -1560,19 +1451,13 @@
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{eprinttype}{arXiv}
-      \field{journaltitle}{CoRR}
-      \field{title}{Scaling active inference}
-      \field{volume}{abs/1911.10601}
-      \field{year}{2019}
-      \verb{eprint}
-      \verb 1911.10601
-      \endverb
-      \verb{urlraw}
-      \verb http://arxiv.org/abs/1911.10601
-      \endverb
-      \verb{url}
-      \verb http://arxiv.org/abs/1911.10601
+      \field{booktitle}{2020 International Joint Conference on Neural Networks (IJCNN)}
+      \field{title}{Scaling Active Inference}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/IJCNN48605.2020.9207382
       \endverb
     \endentry
     \entry{Deep-AIF}{article}{}

@@ -1,0 +1,102 @@
+### The FEP
+The basic insight is that if a system maintains a boundary between itself and some exterior environment, and if this system persists over time, then this system must be capable of resisting the thermodynamic tendency toward the dissolution of the boundary which separates its internal states from the external environment. To do this, the system must maintain the configuration of its internal states so as to exist within some desired homeostatic bounds. The way the system can achieve this is by maximizing the Bayesian model-evidence for its configuration of internal states. Hence we have internal states, external states and ``blanket'' states, where the blanket states are themselves composed of ``active'' and ``sensory'' states. Internal states can only be directly influenced by the sensory states of the blanket, and external states can only be influenced by the active states of the blanket. The Bayesian model evidence for the system's configuration of internal states is bounded above by the free energy of the system's Bayesian beliefs about the sensory states. Hence the ``Free Energy'' principle, since the Free Energy serves as a tractable upper bound to the system's model evidence. Thus the principle culminates in the following statement. Any system which persists across time, in the face of a tendency to thermodynamic dissolution must act as if it is soliciting evidence for its own existence, via a model of the world.  
+
+See Figure \ref{fig:FEP} for a diagrammatic exposition of the relationship between these variables.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{FEP}
+  \caption{A depiction of the various sets of states and their relationships in the FEP}
+  \label{fig:FEP}
+\end{figure}
+
+
+\section{Overall Plan/Scaffold}
+
+This is simply the list of papers I intend on citing. I won't be able to cite all of them but I think it's best to write what I think I need to write and then cull.
+
+Introductory/Context-Affording papers:
+\begin{enumerate}
+	\item ``The free-energy principle: a rough guide to the brain?'': \textcite{FEP-Rough-Guide-Brain}
+	\item ``Reinforcement Learning: An Introduction'': \textcite{Reinforcement-Learning-An-Introduction}
+	\item ``Action and behavior: a free-energy formulation'': \textcite{Action-Behaviour-FE}
+	\item ``Mastering the game of Go without human knowledge'': \textcite{Mastering-Go-Without-Human-Knowledge}
+
+	\item Issue scaling AIF ``Active inference on discrete state-spaces: A synthesis'': \textcite{AIF-Discrete-Action-Spaces-Synthesis}
+	\item Issue scaling AIF ``A step-by-step tutorial on active inference and its application to empirical data'': \textcite{Step-by-Step-Tutorial-AIF-Empirical-Data}
+	\item Issue scaling AIF ``Applications of the FEP to ML and Neuroscience'': \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}
+
+	\item Contemporary RL Method ``Asynchronous Methods for Deep Reinforcement Learning'': \textcite{Async-Methods-Deep-RL}
+	\item Contemporary RL Method ``Playing Atari with Deep Reinforcement Learning'': \textcite{ATARI-Deep-RL}
+
+	\item ``Reinforcement Learning or Active Inference?'': \textcite{RL-or-AIF}
+	\item ``The FEP for action and perception a mathematical review'': \textcite{FEP-Mathematical-Review}
+	\item ``The Bayesian brain: the role of uncertainty in neural coding and computation'': \textcite{The-Bayesian-Brain}
+	\item ``An empirical evaluation of active inference in multi-armed bandits'': \textcite{Emperical-Eval-AIF-Multi-Arm-Bandits}
+	% \item "": \textcite{}
+\end{enumerate}
+
+Neural Network Approximators:
+\begin{enumerate}
+	\item ``Applications of the FEP to ML and Neuroscience'': \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}
+	\item ``Deep Active Inference'': \textcite{Deep-AIF}
+	\item ``Deep Active Inference as Variational Policy Gradients'': \textcite{Deep-AIF-As-Var-Policy-Grad}
+	\item ``Scaling Active Inference'': \textcite{Scaling-AIF}
+	\item ``Reinforcement Learning Through Active Inference'': \textcite{Reinforcement-Learning-Through-AIF}
+	\item ``Bayesian Policy Selection Using Active Inference'': \textcite{Bayesian-Policy-Selection-Using-AIF}
+	\item ``Contrastive Active Inference'': \textcite{Contrastive-AIF}
+\end{enumerate}
+
+Factor Graph and Message Passing Implementations
+\begin{enumerate}
+	\item ``Codes on graphs: normal realizations'': \textcite{Codes-on-Graphs}
+	\item ``Simulating Active Inference by Message Passing'': \textcite{Simulating-AIF-By-Message-Passing}
+	\item ``Applications of the FEP to ML and Neuroscience'': \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}
+	\item ``A factor graph approach to automated design of Bayesian signal processing algorithms'': \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}
+	\item ``Reactive Message Passing for Scalable Bayesian Inference": \textcite{Reactive-MP}
+	\item ``A Factor Graph Description of Deep Temporal Active Inference'': \textcite{Factor-Graph-Desc-Deep-Temp-AIF}
+	\item ``Deep Active Inference for Partially Observable MDPs'': \textcite{DEEP-AIF-For-POMDPs}
+	\item ``Bayesian policy selection using active inference'': \textcite{Bayesian-Policy-Selection-AIF}
+\end{enumerate}
+
+Finally, address the specific papers on Scaling that I'll use:
+\begin{enumerate}
+	\item Sampling/Neural Networks ``Scaling Active Inference'': \textcite{Scaling-AIF}
+	\item Sampling?/neural nets? "``Contrastive Active Inference'': \textcite{Contrastive-AIF}
+\end{enumerate}
+
+Other Papers:
+\begin{enumerate}
+	\item Paper: ``The FEP for action and perception a mathematical review'': \textcite{FEP-Mathematical-Review}
+	\item paper: ``Simulating Active Inference by Message Passing'': \textcite{Simulating-AIF-By-Message-Passing}
+	\item Paper: ``a practical tutorial on Variational Bayes'': \textcite{Practical-Tutorial-Variational-Bayes}
+	\item Paper: ``action and behavior, a free energy formulation'': \textcite{Action-Behaviour-FE}
+	\item paper: ``A tutorial on the free-energy framework for modelling perception and learning'': \textcite{Tutorial-FEP-Modelling-Perception-Action}
+	\item Paper: “A step-by-step tutorial on active inference and its application to empirical data'': \textcite{Step-by-Step-Tutorial-AIF-Empirical-Data}
+	\item Paper: ``Scaling Active Inference'': \textcite{Scaling-AIF}
+	\item paper: The Cape Town AIF/RL Honours Thesis - not sure if published/if appropriate
+	\item PhD Thesis: ``Applications of the FEP to ML and Neuroscience'': \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}
+\end{enumerate}
+
+
+
+
+% @article{Scaling-AIF,
+%   author    = {Alexander Tschantz and
+%                Manuel Baltieri and
+%                Anil K. Seth and
+%                Christopher L. Buckley},
+%   title     = {Scaling active inference},
+%   journal   = {CoRR},
+%   volume    = {abs/1911.10601},
+%   year      = {2019},
+%   url       = {http://arxiv.org/abs/1911.10601},
+%   eprinttype = {arXiv},
+%   eprint    = {1911.10601},
+%   timestamp = {Tue, 03 Dec 2019 14:15:54 +0100},
+%   biburl    = {https://dblp.org/rec/journals/corr/abs-1911-10601.bib},
+%   bibsource = {dblp computer science bibliography, https://dblp.org}
+% }
+
+## robustness to non-stationarity
+\textcite{Emperical-Eval-AIF-Multi-Arm-Bandits} implemented an Active Inference agent for the multi-armed bandit problem, in the stationary and non-stationary case. In the stationary case, this agent Active did not perform as well as a special purpose, state-of-the-art Bayesian UCB algorithm. However in the non-stationary case, the Active Inference agent outperformed the UCB agent. While this implementation was conducted over a small, discrete state-action space, the results plausibly suggest that Active Inference would be an effective means of robust inference and control in a higher-dimensional or continuous problem.  

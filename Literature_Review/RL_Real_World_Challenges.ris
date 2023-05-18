@@ -1,0 +1,22 @@
+TY  - JOUR
+AU  - Dulac-Arnold, Gabriel
+AU  - Levine, Nir
+AU  - Mankowitz, Daniel J.
+AU  - Li, Jerry
+AU  - Paduraru, Cosmin
+AU  - Gowal, Sven
+AU  - Hester, Todd
+PY  - 2021
+DA  - 2021/09/01
+TI  - Challenges of real-world reinforcement learning: definitions, benchmarks and analysis
+JO  - Machine Learning
+SP  - 2419
+EP  - 2468
+VL  - 110
+IS  - 9
+AB  - Reinforcement learning (RL) has proven its worth in a series of artificial domains, and is beginning to show some successes in real-world scenarios. However, much of the research advances in RL are hard to leverage in real-world systems due to a series of assumptions that are rarely satisfied in practice. In this work, we identify and formalize a series of independent challenges that embody the difficulties that must be addressed for RL to be commonly deployed in real-world systems. For each challenge, we define it formally in the context of a Markov Decision Process, analyze the effects of the challenge on state-of-the-art learning algorithms, and present some existing attempts at tackling it. We believe that an approach that addresses our set of proposed challenges would be readily deployable in a large number of real world problems. Our proposed challenges are implemented in a suite of continuous control environments called realworldrl-suite which we propose an as an open-source benchmark.
+SN  - 1573-0565
+UR  - https://doi.org/10.1007/s10994-021-05961-4
+DO  - 10.1007/s10994-021-05961-4
+ID  - Dulac-Arnold2021
+ER  - 
