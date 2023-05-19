@@ -11,11 +11,10 @@ style=numeric,
 \usepackage{subcaption}
 \usepackage{xcolor}
 \usepackage{gensymb}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
 \usepackage[a4paper, width=150mm, top=25mm, bottom=25mm]{geometry}
-% \usepackage[backend=biber]{biblatex}
-% \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \addbibresource{references.bib}
-% \bibliographystyle{unsrt}
 
 
 \begin{document}
@@ -158,7 +157,42 @@ Generalised coordinates of motion: \textcite{Generalized-Filtering} and \textcit
 
 A recent and particularly novel approach that has enjoyed great success as of late, casts the problem of inference as a task of message passing updates on a Forney factor graph: \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}, \textcite{Simulating-AIF-By-Message-Passing}, \textcite{Factor-Graph-Desc-Deep-Temp-AIF} and \textcite{Reactive-MP}. 
 
-In this framework, the agent's generative model is constructed in such a was as to instantiate a Forney or ``Normal'' factor graph: \textcite{Codes-on-Graphs}. Free Energy minimization is then cast as a process of message passing over this factor graph. Various message passing algorithms exist, such as Belief Propagation and Variational Message Passing. This message passing scheme greatly reduces the number of terms over which it is necessary to sum, when computing the approximate marginal and posterior distributions; affording much more efficient inference and a great potential for scaling up to larger state-action spaces. Indeed, this method does not make use of any approximation by means of a sampling procedure. Since this method relies upon a particular schedule of message-passing update rules on the underlying factor graph, all functions used need to be invertible and an inference is performed via a closed form update where the prior and likelihood distributions must be conjugate. The model passes around full distributions instead of mere samples. This results in a very fast and efficient implementation - when applicable, but the issue is that it is not a completely generic method, owing to the many assumptions as to the model structure just enumerated. many real-world distributions do not have conjugate prior and likelihoods and so this method cannot be applied in these cases.
+In this framework, the agent's generative model is constructed in such a was as to instantiate a Forney or ``Normal'' factor graph: \textcite{Codes-on-Graphs} and \textcite{Intro-to-Factor-Graphs}. Free Energy minimization is then cast as a process of message passing over this factor graph. 
+
+\vspace{12pt}
+\subsubsection{Forney-Style Factor Graphs (FFGs)}
+A Forney-style factor graph is a graphical representation of a factorised probabilistic model. In these graphs, edges represent variables and vertices represent relationships between these variables. Consider a simple generative model - included in \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}:
+
+
+\begin{equation}
+p(x_1, ..., x_5) = p_a(x_1) \cdot p_b(x_1, x_2) \cdot p_c(x_2, x_3, x_4) \cdot p_d(x_4, x_5) \label{eq:factorized-model}
+\end{equation}
+
+Where $p_\cdot(\cdot)$ represents a probability density function.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[>=stealth, node distance=1.5cm]
+	  % Define the nodes
+	  \node[draw] (pa) {$p_a$};
+	  \node[draw, right=of pa] (pb) {$p_b$};
+	  \node[draw, right=of pb] (pc) {$p_c$};
+	  \node[draw, below=of pc] (pd) {$p_d$};
+
+	  % Draw the edges
+	  \draw[->, shorten >=2pt, shorten <=2pt] (pa) -- node[above] {$x_1$} (pb);
+	  \draw[->, shorten >=2pt, shorten <=2pt] (pb) -- node[above] {$x_2$} (pc);
+	  \draw[->, shorten >=2pt, shorten <=2pt] (pc) -- +(1cm, 0) node[midway, above] {$x_3$};
+	  \draw[->, shorten >=2pt, shorten <=2pt] (pd) -- +(0, -1cm) node[midway, right] {$x_5$};
+	  \draw[->, shorten >=2pt, shorten <=2pt] (pc) -- (pd) node[midway, right] {$x_4$};
+  \end{tikzpicture}
+  \caption{An FFG representation of Equation \ref{eq:factorized-model}. Adapted from \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}. A node (factor) connects to all edges (variables) that are arguments in that factor. For instance, $p_c$ is connected to $x_2$, $x_3$ and $x_4$, since these all appear as arguments to factor $p_c$. Variables that only appear in one factor are represented as half-edges. Now an FFG is technically an undirected graph, however we can specify a direction for the edges to indicate the generatve direction of the model.}
+  \label{fig:factor-graph}
+\end{figure}
+
+
+
+Various message passing algorithms exist, such as Belief Propagation and Variational Message Passing. This message passing scheme greatly reduces the number of terms over which it is necessary to sum, when computing the approximate marginal and posterior distributions; affording much more efficient inference and a great potential for scaling up to larger state-action spaces. Indeed, this method does not make use of any approximation by means of a sampling procedure. Since this method relies upon a particular schedule of message-passing update rules on the underlying factor graph, all functions used need to be invertible and an inference is performed via a closed form update where the prior and likelihood distributions must be conjugate. The model passes around full distributions instead of mere samples. This results in a very fast and efficient implementation - when applicable, but the issue is that it is not a completely generic method, owing to the many assumptions as to the model structure just enumerated. many real-world distributions do not have conjugate prior and likelihoods and so this method cannot be applied in these cases.
 
 
 \subsection{Sampling Based Approximation Methods}

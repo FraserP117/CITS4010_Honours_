@@ -1032,6 +1032,35 @@
       \verb https://www.frontiersin.org/articles/10.3389/frobt.2019.00020
       \endverb
     \endentry
+    \entry{Intro-to-Factor-Graphs}{article}{}
+      \name{author}{1}{}{%
+        {{hash=db2f8600c0724792e0d3db19774a9595}{%
+           family={Loeliger},
+           familyi={L\bibinitperiod},
+           given={H.-A.},
+           giveni={H\bibinithyphendelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{db2f8600c0724792e0d3db19774a9595}
+      \strng{fullhash}{db2f8600c0724792e0d3db19774a9595}
+      \strng{bibnamehash}{db2f8600c0724792e0d3db19774a9595}
+      \strng{authorbibnamehash}{db2f8600c0724792e0d3db19774a9595}
+      \strng{authornamehash}{db2f8600c0724792e0d3db19774a9595}
+      \strng{authorfullhash}{db2f8600c0724792e0d3db19774a9595}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Signal Processing Magazine}
+      \field{number}{1}
+      \field{title}{An introduction to factor graphs}
+      \field{volume}{21}
+      \field{year}{2004}
+      \field{pages}{28\bibrangedash 41}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/MSP.2004.1267047
+      \endverb
+    \endentry
     \entry{Contrastive-AIF}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=f5f328ed70c8b2dfc4b2eb2d82372eec}{%
