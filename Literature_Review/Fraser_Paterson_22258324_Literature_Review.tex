@@ -15,6 +15,7 @@ style=numeric,
 % \usepackage[backend=biber]{biblatex}
 % \usepackage[backend=biber, style=numeric, sorting=none]{biblatex}
 \addbibresource{references.bib}
+% \bibliographystyle{unsrt}
 
 
 \begin{document}
@@ -60,120 +61,105 @@ style=numeric,
 \cleardoublepage
 
 \section{Overview}
-This section should be an overview of the Lit review. Can possibly put some information related to the project in here.
+This section will be an overview of the Lit review. Can possibly put some information related to the project in here.
 
 \section{Introduction}
 
-\subsection{Active Inference: An Overview}
+\subsection{Agent Based Artificial Intelligence}
+The field of Agent-based AI is the discipline concerned with the creation of autonomous systems, capable of dynamically adapting to the constraints of some environment. From the persepctive of Artificial Intelligence, an ``agent'' simply refers to any computationally instantiated entity capable of percieving and acting in its environment. Agents typically have a constitutive goal of maintaining their self-organisation across time.  
 
-The field of adaptive, agent-based AI is perhaps, entering its renacance. The last few years have seen major advances in the capability, sophistication and operation of agent-based methods from Deep Reinforcement Learning to Active Inference... 
+The general paradigm of interest with these methods is that of the ``sensorimotor loop''
+
+One of the most general distinctions to be made in this field is that between ``model based'' and ``model free'' methods. 
+
+\vspace{12pt}
+\subsubsection{Model Based Methods}
+
+\vspace{12pt}
+\subsubsection{Model Free Methods}
+
+\subsection{Generative Artificial Intelligence}
+One of the most fundamental tasks that an agent can perform is \textit{prediction}.
+
+\subsection{Partially Observable Markov Decision Porcesses (POMDPs)}
+
+\section{Active Inference}
+
+\subsection{An Overview}
+
+It is highly plausible that the field of adaptive, agent-based AI is perhaps, entering its Renaissance. The last few years have made histroy, in terms of the the capability, sophistication and operation of what these methods have been able to achieve.
 
 Active Inference is an emerging first-principles, account of adaptive behavior. Originating from Neuroscience: \textcite{A_FEP_For_The_Brain}, \textcite{The-Bayesian-Brain} and \textcite{Action-Behaviour-FE} as a corollary of the ``Free Energy Principle'', the theory is increasingly making inroads into Machine Learning and Artificial Intelligence: \textcite{RL-or-AIF} and \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}. 
 
-Active inference is a highly ambitious theory, as it purports to offer a fully unified account of action, perception and learning: \textcite{FEP-Unified-Brain-Theory}. In Active Inference, these three cognitive processes are integrated under the rubric of variational inference via the minimisation of variational free energy. 
+Active inference is a highly ambitious theory, as it purports to offer a fully unified account of action, perception and learning: \textcite{FEP-Unified-Brain-Theory}. In Active Inference, these three cognitive processes are integrated under the rubric of variational inference via the minimization of variational free energy. 
 
 The basic postulate of the theory is that adaptive systems like living organisms, will act to fulfill prior expectations or ``preferences'' which encode desirable states for that system. These agents make use of a generative model to afford predictions about hidden states of their environment. These predictions are, in turn, used to produce inferences about the causes of observations and also to inform action-selection. 
 
-Under Active Inference, perception is cast as the problem of inferring the hidden states of the agent's environment, given the agent's sensory observations. Action-selection and planning can be described as inference on policies over trajectories into the future. Finally, learning is viewed as inference over the parameters of the agent's genreative model, that best account for the agent's sensory data. ``Learning'' of this kind takes place over a slower timescale than does perceptual inference. Active Inference describes all three processes in terms of variational free energy minimisation over a single functional. This functional is composed of the agent's beliefs about the hidden states of the environment, in addition to the sensory surpirsal of its observations. It should be noted that this ``divergence minus evidence'' formulation of the free energy is simply one of many, there are several other ways to parameterise the free energy, such as ``energy minus entropy'' or ``complexity minus accuracy''. I shall adhere to the ``divergence minus evidence'' formulation for the remainder of this review. 
-
-To ellucidate these constructs in greater detail, it will be necessary to talk about variational inference.
+Under Active Inference, perception is cast as the problem of inferring the hidden states of the agent's environment, given the agent's sensory observations. Action-selection and planning can be described as inference on policies over trajectories into the future. Finally, learning is viewed as inference over the parameters of the agent's generative model, that best account for the agent's sensory data. ``Learning'' of this kind takes place over a slower timescale than does perceptual inference. Active Inference describes all three processes in terms of variational free energy minimization over a single functional. This functional is composed of the agent's beliefs about the hidden states of the environment, in addition to the sensory surprisal of its observations. It should be noted that this ``divergence minus evidence'' formulation of the free energy is simply one of many, there are several other ways to parameterize the free energy, such as ``energy minus entropy'' or ``complexity minus accuracy''. I shall adhere to the ``divergence minus evidence'' formulation for the remainder of this review...
 
 \subsection{Why Care About Active Inference?}
 
 Active Inference addresses a problem which has plagued value-function formulations of adaptivity since their inception. This is the issue of sample-efficiency and of learning in the presence of sparse rewards: \textcite{RLflawed} and \textcite{RL-Real-World-Challenges}. If all that is available to the agent for action-selection, is a value function mapping from states and/or actions to an extrinsic reward signal, it is necessary to observe a great deal many state or state-action pairs to learn the optimal mapping from state/state-action to reward signal. For problems with large state-action spaces, this presents a significant challenge to such methods. Active Inference eschews this issue by placing ``information-gain'' on the same footing as value maximization and hence drives the agent to dynamically trade-off attention between these two goals. 
 
-Since the Free Energy is an upper bound on sensory surpirsal, and since the miniimisation of free energy is the sole imperative under Active inference, both action and perception have as their effect, the reduction of sensory surpirsal. This is a crucial point of difference between Active Inference and Reinforcement Leraning agents. While Reinfrcement Learning agents select actions in an attempt to maximise a reward function of states (or states and actions), Active Inference agents select actions so as to minimise a free energy functional composed of the following two parts: 
+Since the Free Energy is an upper bound on sensory surprisal, and since the minimization of free energy is the sole imperative under Active inference, both action and perception have as their effect, the reduction of sensory surprisal. This is a crucial point of difference between Active Inference and Reinforcement Learning agents. While Reinforcement Learning agents select actions in an attempt to maximize a reward function of states (or states and actions), Active Inference agents select actions so as to minimize a free energy functional composed of the following two parts: 
 
 \begin{enumerate}
 	\item The discrepancy - KL divergence - between the agent's prior preference for a certain observation, and the actual observation garnered as a consequence of performing a certain action.
 	\item The ``surprisal'' - negative log probability - of the observation. This is essentially a measure of how unlikely the observation is given the agent's model.
 \end{enumerate}
 
-This formulation of the Active Inference agent's objective function might appear to be unecessarily convoluted, especially since these agents have essentially the same goal as their Reinforcement Learning cousins: adaption to the constraints of some environemnt. There is, however, something very special about this formulation. In addition to a ``pragmatic'' or ``reward-maximising'' imperative, encoded by the divergence between the agent's prefered and actual observations, the free energy functional affords an additional ``epistemic'' impertive for information-gain, encoded via the surpirsal. This means that Active Inference agents have a built-in affordance for exploratory/curious behaviour, in addition to that of maximising the extrinsic value of realising their preferred observations.
+This formulation of the Active Inference agent's objective function might appear to be unnecessarily convoluted, especially since these agents have essentially the same goal as their Reinforcement Learning cousins: adaption to the constraints of some environment. There is, however, something very special about this formulation. In addition to a ``pragmatic'' or ``reward-maximizing'' imperative, encoded by the divergence between the agent's preferred and actual observations, the free energy functional affords an additional ``epistemic'' imperative for information-gain, encoded via the surprisal. This means that Active Inference agents have a built-in affordance for exploratory/curious behavior, in addition to that of maximizing the extrinsic value of realizing their preferred observations.
 
-Mere extrinsic, value-maximization is typically the \textit{only} operative imperative in Reinforcement Learning approches; \textcite{Reinforcement-Learning-An-Introduction}. It is not impossible to endow Reinforcement Learning agents with a drive toward information-gain or ``curiosity''. Though typically, one has to contrive some \textit{hd hoc} manipulation of the reward signal to hand-craft an \textit{encoding} of the epsitemic imperative: \textcite{Curiosity-Driven-RL}. In a nutshell, Active Inference replaces value functions with variational free energy functionals of Bayesian beliefs. Active Inference agents therefore have a built-in affordance for dynamically trading-off pragmatic and epistemic imperatives. This means that in the face of sparse rewards, or a persistent failure to realise prior preferences, Active Inference agents will naturally engage in exploratry behaviour, in an attempt to find as-yet unknown routes to realise its prior preferences. 
+Mere extrinsic, value-maximization is typically the \textit{only} operative imperative in Reinforcement Learning approaches; \textcite{Reinforcement-Learning-An-Introduction}. It is not impossible to endow Reinforcement Learning agents with a drive toward information-gain or ``curiosity''. Though typically, one has to contrive some \textit{hd hoc} manipulation of the reward signal to hand-craft an \textit{encoding} of the epistemic imperative: \textcite{Curiosity-Driven-RL}. In a nutshell, Active Inference replaces value functions with variational free energy functionals of Bayesian beliefs. Active Inference agents therefore have a built-in affordance for dynamically trading-off pragmatic and epistemic imperatives. This means that in the face of sparse rewards, or a persistent failure to realize prior preferences, Active Inference agents will naturally engage in exploratory behavior, in an attempt to find as-yet unknown routes to realize its prior preferences. 
 
-The primary appeal of the Active Inference formulation of intelligence/adaptive Behaviour is twofold. First, it unifies the study of action, perception and planning under a single imperative, that of minimizing variational - or expected - free energy. This is an efficient formulation of these problems, since one need only address a single methodological principle instead of three. Parsimony of this kind is always desirable in any scientific theory - all things being equal - since the generality of a theory is very often a good measure of its predictive power. Second, as just ellaborated, Active Inference affords a much greater sample-efficiency than does Reinforcement Learning: \textcite{Scaling-AIF}. This is an especially intriuging aspect of the theory, since the majority of real-world problems are characterised by a sparsity of rewards. Hence Active Inference is plausibly posed to inaugrate a new era of real-world agent-based AI.
+The primary appeal of the Active Inference formulation of intelligence/adaptive Behaviour is twofold. First, it unifies the study of action, perception and planning under a single imperative, that of minimizing variational - or expected - free energy. This is an efficient formulation of these problems, since one need only address a single methodological principle instead of three. Parsimony of this kind is always desirable in any scientific theory - all things being equal - since the generality of a theory is very often a good measure of its predictive power. Second, as just elaborated, Active Inference affords a much greater sample-efficiency than does Reinforcement Learning: \textcite{Scaling-AIF}. This is an especially intriguing aspect of the theory, since the majority of real-world problems are characterized by a sparsity of rewards. Hence Active Inference is plausibly posed to inaugurate a new era of real-world agent-based AI.
 
-Lastly, \textcolor{red}{Active inference is interesting because of its promise to be such a general method and indeed owing to a growing body of empirical research to suggest that free-energy minimization is what the brain is doing. Since the brain is thought to be the seat of ``natural'' intelligence, evidence attesting to the brain's function as a ``free-energy minimizing machine'' must surely be of interest to we who are concerned with generating instances of intelligence, artificially.}
-
-This is fine, though try to avoid ``grandiose'' claims. A better approach is to lead with an explanation as to what it is that Active Inference solves and perhaps how it is novel in a useful way. 
-
-Since Active Inference makes use of Variational Inference, it will be necessary to understand the fundements of the latter. 
-
-\subsection{Variational Inference}
-Variational inference: \textcite{Variational-Inference-Reviews} is a technique of approximate Bayesian inference, in the case that the exact inference procedure becomes intractible, typically due to the large or infinite number of states over which it is necessary to marginalise. The goal in all Bayesian inference methods is to compute the posterior distribution over some variable, given the prior and liklihood distributions. These latter encode - respectively - the supposed causal relationship between the variable of interest and a observation, in addition to a ``prior'' belief about the distribution of the variable at issue. If we wish to infer the posterior distribution of $x$ as a consequence of observing $y$, then this is given as the distribution: $p(x | y)$ and bayes's rule gives: 
-
-$$ p(x | y) = \frac{p(y | x)p(x)}{p(y)}$$
-
-For all but the smallest problems, computing the posterior exactly is intractible, due to the sheer number of states over which it is necessary to sum/integrate when computing $p(y)$. To eschew this, variational inference proposes an approximation scheme, whereby a family of ``variational'' or ``approximate'' posterior distributions is posited, each of which is a potential, appoximate solution to the true posterior. These approximate posteriors are usiually denoted: $q_i(x)$ where the subscript denotes that this is the ith member of the family. We select a particular approximate posterior by chosing the one with the smalest ``divergence'' from the true posterior. Typically this is the Kullback-Libeler Divergence (KL Divergence). 
-
-\subsection{The Free Energy Principle}
-
-Historically speaking, Active Inference is a derivative of the ``Free Energy Principle'', which is a theoretical principle thought to plausibly offer a unified, constitutive account of brain function: \textcite{FEP-Rough-Guide-Brain} and perhaps even of life itself: \textcite{Life-As-We-Know-It}. 
-
-The Free Energy Principle (FEP) attempts to provide a principled account of adaptivity per-se. The basic insight is that if a system maintains a boundary between itself and some exterior environment, and if this system persists over time, then this system must be capable of resisting the thermodynamic tendency toward the dissolution of the boundary which separates its internal states from the external environment. To do this, the system must maintain the configuration of its internal states so as to exist within some desired homeostatic bounds. The way the system can achieve this is by maximizing the Bayesian model-evidence for its configuration of internal states. Hence we have internal states, external states and ``blanket'' states, where the blanket states are themselves composed of ``active'' and ``sensory'' states. Internal states can only be directly influenced by the sensory states of the blanket, and external states can only be influenced by the active states of the blanket. The Bayesian model evidence for the system's configuration of internal states is bounded above by the free energy of the system's Bayesian beliefs about the sensory states. Hence the ``Free Energy'' principle, since the Free Energy serves as a tractable upper bound to the system's model evidence. Thus the principle culminates in the following statement. Any system which persists across time, in the face of a tendency to thermodynamic dissolution must act as if it is soliciting evidence for its own existence, via a model of the world.  
-
-\subsection{Present Questions}
-
-Although Active Inference offers several exciting new directions in agent-based AI and might hold the key to truly sample-efficient real-world implementations, the theory has typically only been implemented on relatively trivial problem instances, with a small number of states and/or actions, most commonly in a discrete setting: \textcite{Uncertainty_Epistemics_AIF_Saccad} and \textcite{AIF-Epistemic-Value}. Although it has been used to great effect in these ``proof of concept'' cases, it is not yet applicable to the same sorts of problems that reinforcement learning can curently address. Many of the sorts of real-world applications of practical interest are thus far beyond the reach of Active Inference, especially for real-time implementations. The main difficulty stems from the fact that the variational free energy is a functional of hidden states and observations. Hidden states are usually exist in a very high dimensional space and observations are usually highly time-varying. The task of minimising a highly dimensional, time-varying functional is non-trivial. The goal of scaling up the method to problems with larger state and/or action spaces, such as in the continuous case, is very much an open one, and one that must be satisfacotrially adressed if Active Inference is to become a serious contender as a real-world method.  
+Lastly, \textcolor{red}{Active inference is interesting because of its promise to be such a general method and indeed owing to a growing body of empirical research to suggest that free-energy minimization is what the brain is doing. Since the brain is thought to be the seat of ``natural'' intelligence, evidence attesting to the brain's function as a ``free-energy minimizing machine'' must surely be of interest to we who are concerned with generating instances of intelligence, artificially.}...
 
 \subsection{Active Inference: Key Concepts} 
 
-\textbf{Provide brief overview of key concepts and theories to be discussed in the review}
+\vspace{12pt}
+\subsubsection{Variational Inference}
+Variational inference: \textcite{Variational-Inference-Reviews} is a technique of approximate Bayesian inference, in the case that the exact inference procedure becomes intractable, typically due to the large or infinite number of states over which it is necessary to marginalize. The goal in all Bayesian inference methods is to compute the posterior distribution over some variable, given the prior and likelihood distributions. These latter encode - respectively - the supposed causal relationship between the variable of interest and a observation, in addition to a ``prior'' belief about the distribution of the variable at issue. If we wish to infer the posterior distribution of $x$ as a consequence of observing $y$, then this is given as the distribution: $p(x | y)$ and Bayes's rule gives: 
 
-Things that will some elaboration, or at least a definition:
+$$ p(x | y) = \frac{p(y | x)p(x)}{p(y)} $$
 
-\begin{enumerate}
-	\item Bayesian Inference - absolutely
-	\item MDP and POMDP
-	\item Variational Inference
-	\item Variational Free Energy
-	\item Expected Free Energy
-	\item Model-Based vs Model-Free Methods - absolutely
-	\item Factor Graphs and Message Passing - absolutely
-	\item Policy (Reinforcement Learning vs Active Inference framing)
-	\item Amortized Inference
-\end{enumerate}
+\textcolor{red}{Not sure if this is really necesary, I should probably stick to a verbal exposition.}
 
-There are too many here to do full justice in the manner you desire. Maintain a glossary of key terms, in addition.
+For all but the smallest problems, computing the posterior exactly is intractable, due to the sheer number of states over which it is necessary to sum/integrate when computing $p(y)$. To eschew this, variational inference proposes an approximation scheme, whereby a family of ``variational'' or ``approximate'' posterior distributions is posited, each of which is a potential, approximate solution to the true posterior. These approximate posteriors are usually denoted: $q_i(x)$ where the subscript denotes that this is the i-th member of the family. We select a particular approximate posterior by choosing the one with the smallest ``divergence'' from the true posterior. Typically this is the Kullback-Libeler Divergence (KL Divergence)...
 
-\subsection{Overview of Research Direction}
+\vspace{12pt}
+\subsubsection{The Free Energy Principle}
 
-The central aim of my proposed research topic is twofold. The first constituent aim is to investigate the relative merits/demerits of active inference as a real-world control and optimization strategy, against reinforcement learning baselines. I propose to investigate this by framing the question of real-world suitability in terms of the approach's ability to afford fast and reliable solutions in noisy, uncertain or partially observable environments. the subsequent active inference agents I develop will be compared to Reinforcement Learning baselines. 
+\textbf{A couple of words like this might still be appropriate?}
 
-The second aim concerns the potential for ``scaling up'' Active Inference methods to continuous and/or higher-dimensional state-spaces. This is a natural corollary to the first aim, since if we are interested in the suitability of Active Inference as a real-world control and optimization technique, it is not enough to simply determine if it can favorably compare to an established method in the noisy case. Since the real-world tasks of interest are overwhelmingly characterized by a high degree of dimensionality, it is necessary to investigate the performance of Active inference in high-dimensional settings.  
+Historically speaking, Active Inference is a derivative of the ``Free Energy Principle'', which is a theoretical principle thought to plausibly offer a unified, constitutive account of brain function: \textcite{FEP-Rough-Guide-Brain} and perhaps even of life itself: \textcite{Life-As-We-Know-It}. 
 
-Thus are the central questions raised in this Thesis:
+\subsection{Present Questions}
 
-\begin{itemize}
-\item Are Active Inference agents more robust to noisy observations and non-stationarity than a comparable RL baseline?
-\item What are the most promising avenues of investigation in the attempt to scale up active inference to larger problem instances? 
-\end{itemize} 
-
-\section{Gaps in The Literature}
-Though there has been much focus on the implementation of active inference methods for small, discrete state-action spaces: \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}, \textcite{AIF-Discrete-Action-Spaces-Synthesis}, \textcite{Step-by-Step-Tutorial-AIF-Empirical-Data}, \textcite{Relationship-Dynamic-Programming-AIF} and \textcite{AIF-Epistemic-Value}. The method is not currently viable for practical use in larger or continuous state-action spaces, for which it is necessary to plan future actions over some time horizon. Owing to the relatively small size of the state-action spaces in which active inference has historically been implemented, it has been possible to simply evaluate the expected free energy of all possible actions over the specified time horizon. This owes primarily to the issue of evaluating the expected free energy, which is the expectation of the Variational free energy evaluated for future actions over some time horizon: \textcite{Message-Passing-Perspective-Planning-Under-AIF} and \textcite{Bayesian-Policy-Selection-Using-AIF}. 
-
-Unfortunately, enumerating all possible action-trajectories over the specified time horizon does not scale well to problems with larger state-action spaces
-and/or longer time horizons. Hence we can now specify exactly what it is that the problem of ``scaling'' is supposed to be. 
-
-Let $S$ be a solution technique. Let $P_1$ and $P_2$ be problem instances of the same type. Let $X$ and $Y$ be the solution spaces for $P_1$ and $P_2$ (respectfully), where $|X| << |Y|$. Suppose the solution technique $S$ affords an adequate solution to problem instance $P_1$, in the sense that the solution is both adequate for the task at hand and $S$ found the solution in an adequate amount of time, consuming an acceptable amount of computational resources. 
-
-$S$ will be is said to scale (or scale well) to problem instance $P_2$, if $S$ can generate a solution to $P_2$, in an acceptable amount of time, while consuming an acceptable amount of computational resources. In other words, the cost associated with generating the solution to $P_2$ does not outweigh the utility of being able to generate the solution to $P_2$, $S$ is a ``viable'' solution technique for instance $P_2$. 
-
-Evaluating all possible trajectories in a problem instance's state-action space, scales exponentially with the size of the state-action space: \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}. For large state-action spaces, evaluating all possible action trajectories quickly becomes an ``unviable'' solution technique.
-
+Although Active Inference offers several exciting new directions in agent-based AI and might hold the key to truly sample-efficient real-world implementations, the theory has typically only been implemented on relatively trivial problem instances, with a small number of states and/or actions, most commonly in a discrete setting: \textcite{Uncertainty_Epistemics_AIF_Saccad} and \textcite{AIF-Epistemic-Value}. Although it has been used to great effect in these ``proof of concept'' cases, it is not yet applicable to the same sorts of problems that reinforcement learning can currently address. Many of the sorts of real-world applications of practical interest are thus far beyond the reach of Active Inference, especially for real-time implementations. The main difficulty stems from the fact that the variational free energy is a functional of hidden states and observations. Hidden states are usually exist in a very high dimensional space and observations are usually highly time-varying. The task of minimizing a highly dimensional, time-varying functional is non-trivial. The goal of scaling up the method to problems with larger state and/or action spaces, such as in the continuous case, is very much an open one, and one that must be satisfactorily addressed if Active Inference is to become a serious contender as a real-world method.  
 
 \section{Previous Work}
 
-Naturally, the question of scaling Active Inference to larger and more complicated state-action spaces has already begun to occupy the attention of the rsearch community, though these endeavors are still very much in their infancy. As of the time of writing this review, two distinct approaches seem to have crystalised in the literature. The most general bifurcation is between sample-based approximation methods and distribution-based message passing methods. The latter can be either exact or approximate.
+Naturally, the question of scaling Active Inference to larger and more complicated state-action spaces has already begun to occupy the attention of the research community, though these endeavors are still very much in their infancy. As of the time of writing this review, two distinct approaches seem to have crystalized in the literature. The most general bifurcation is between sample-based approximation methods and distribution-based message passing methods. The latter can be either exact or approximate.
 
-The former, sample-based methods typically make use of a function approximator, such as a neural network to parameterise the distributions of interest. This is perhaps a more``traditional'' approach, very much inspired by the sucess of such methods in scaling Reinforcement Learning to larger state-action spaces.
+The former, sample-based methods typically make use of a function approximator such as a neural network, to parameterize the distributions of interest. This is perhaps a more``traditional'' approach, very much inspired by the success of such methods in scaling Reinforcement Learning to larger state-action spaces: \textcite{ATARI-Deep-RL}.
 
 The latter message-passing methods take a completely different approach to the sampling paradigm. This approach represents the generative model as a ``Forney-style'' factor graph: \textcite{Codes-on-Graphs} and inference is performed via a kind of message-passing on this graph.  
-Instead of processing samples, the factor graph approach manipulates full distributions to produce messages which are passed around the graph. This is an extreemly fast and efficient method of implementing variational inference as it completely eschews the coputational expense of processinag samples, which is very often the bottlensck in sample-based approximations. 
+Instead of processing samples, the factor graph approach manipulates full distributions to produce messages which are passed around the graph. This is an extremely fast and efficient method of implementing variational inference as it completely eschews the computational expense of processing samples, which is very often the bottleneck in sample-based approximations. 
 
 Both approaches have their respective advantages and disadvantages. I'll now turn to a detailed exposition of each approach. 
+
+\subsection{Generalised Filtering and the Laplace Approximation}
+
+Generalised coordinates of motion: \textcite{Generalized-Filtering} and \textcite{Bayes-State-Estimation}.
+
+\subsection{Factor Graphs and Message Passing Methods}
+
+A recent and particularly novel approach that has enjoyed great success as of late, casts the problem of inference as a task of message passing updates on a Forney factor graph: \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}, \textcite{Simulating-AIF-By-Message-Passing}, \textcite{Factor-Graph-Desc-Deep-Temp-AIF} and \textcite{Reactive-MP}. 
+
+In this framework, the agent's generative model is constructed in such a was as to instantiate a Forney or ``Normal'' factor graph: \textcite{Codes-on-Graphs}. Free Energy minimization is then cast as a process of message passing over this factor graph. Various message passing algorithms exist, such as Belief Propagation and Variational Message Passing. This message passing scheme greatly reduces the number of terms over which it is necessary to sum, when computing the approximate marginal and posterior distributions; affording much more efficient inference and a great potential for scaling up to larger state-action spaces. Indeed, this method does not make use of any approximation by means of a sampling procedure. Since this method relies upon a particular schedule of message-passing update rules on the underlying factor graph, all functions used need to be invertible and an inference is performed via a closed form update where the prior and likelihood distributions must be conjugate. The model passes around full distributions instead of mere samples. This results in a very fast and efficient implementation - when applicable, but the issue is that it is not a completely generic method, owing to the many assumptions as to the model structure just enumerated. many real-world distributions do not have conjugate prior and likelihoods and so this method cannot be applied in these cases.
+
 
 \subsection{Sampling Based Approximation Methods}
 
@@ -187,19 +173,50 @@ Pragmatic value is encoded as the sum of discounted reward across time, in the c
 
 Lastly, the approach of \textcite{Contrastive-AIF}, implemented a contrastive method for their Active Inference agent, which significantly reduced the computational burden of learning the parameters for the generative model and planning future actions. This method performed substantially better than the usual, likelihood-based ``reconstructive'' means of implementing Active Inference and it was also computationally cheaper to train. Importantly, this method offered a unique way to afford increased model-robustness in the face of environmental distractors. 
 
-\subsection{Factor Graphs and Message Passing Methods}
+Main disadvantage of these methods is the computational resources involved in the sampling procedure...
 
-A particularly novel approach that has enjoyed some success as of late, casts the problem of inference as a species of message passing updates on a Forney factor graph: \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}, \textcite{Simulating-AIF-By-Message-Passing}, \textcite{Factor-Graph-Desc-Deep-Temp-AIF} and \textcite{Reactive-MP}. 
+\section{Gaps in The Literature}
+Though there has been much focus on the implementation of active inference methods for small, discrete state-action spaces: \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}, \textcite{AIF-Discrete-Action-Spaces-Synthesis}, \textcite{Step-by-Step-Tutorial-AIF-Empirical-Data}, \textcite{Relationship-Dynamic-Programming-AIF} and \textcite{AIF-Epistemic-Value}. The method is not currently viable for practical use in larger or continuous state-action spaces, for which it is necessary to plan future actions over some time horizon. Owing to the relatively small size of the state-action spaces in which active inference has historically been implemented, it has been possible to simply evaluate the expected free energy of all possible actions over the specified time horizon. This owes primarily to the issue of evaluating the expected free energy, which is the expectation of the Variational free energy evaluated for future actions over some time horizon: \textcite{Message-Passing-Perspective-Planning-Under-AIF} and \textcite{Bayesian-Policy-Selection-Using-AIF}. 
 
-In this framework, the agent's generative model is constructed in such a was as to instantiate a Forney or ``Normal'' factor graph: \textcite{Codes-on-Graphs}. Free Energy minimization is then cast as a process of message passing over this factor graph. Various message passing algorithms exist, such as Belief Propagation and Variational Message Passing. This message passing scheme greatly reduces the number of terms over which it is necessary to sum, when computing the approximate marginal and posterior distributions; affording much more efficient inference and a great potential for scaling up to larger state-action spaces. Indeed, this method does not make use of any approximation by means of a sampling procedure. Since this method relies upon a particular schedule of message-passing update rules on the underlying factor graph, all functions used need to be invertible and an inference is performed via a closed form update where the prior and likelihood distributions must be conjugate. The model passes around full distributions instead of mere samples. This results in a very fast and efficient implementation - when applicable, but the issue is that it is not a completely generic method as of yet, owing to the many assumptions as to the model structure just enumerated. 
+Unfortunately, enumerating all possible action-trajectories over the specified time horizon does not scale well to problems with larger state-action spaces
+and/or longer time horizons. Hence we can now specify exactly what it is that the problem of ``scaling'' is supposed to be. 
 
+\textcolor{red}{Let $S$ be a solution technique. Let $P_1$ and $P_2$ be problem instances of the same type. Let $X$ and $Y$ be the solution spaces for $P_1$ and $P_2$ (respectfully), where $|X| << |Y|$. Suppose the solution technique $S$ affords an adequate solution to problem instance $P_1$, in the sense that the solution is both adequate for the task at hand and $S$ found the solution in an adequate amount of time, consuming an acceptable amount of computational resources.}
+
+\textcolor{red}{$S$ will be is said to scale (or scale well) to problem instance $P_2$, if $S$ can generate a solution to $P_2$, in an acceptable amount of time, while consuming an acceptable amount of computational resources. In other words, the cost associated with generating the solution to $P_2$ does not outweigh the utility of being able to generate the solution to $P_2$, $S$ is a ``viable'' solution technique for instance $P_2$.}
+
+Evaluating all possible trajectories in a problem instance's state-action space, scales exponentially with the size of the state-action space: \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}. For large state-action spaces, evaluating all possible action trajectories quickly becomes an ``unviable'' solution technique.
+
+\section{Discussion}
+\textbf{In this section, I'll aim to settle on a particular ``gap'' as identified above and to justify my choice in this regard.}
 
 \section{Conclusion}
 
 Here I think I'll reiterate why this problem of scaling active inference is important at all and suggest potential implications for being able to make some headway in on this problem. 
 
+\appendix
+\section{Appendix}
 
-% \bibliographystyle{IEEEtran}
+% \subsection{Partially Observable Markov Decision Process (POMDP)}
+% This is important enough to the topic that I think it might just need to go in the text, probably in the introduction.
+
+\subsection{Factor Graphs}
+
+\subsection{Message Passing}
+
+% \subsection{Model Based Methods}
+
+% \subsection{Model Free Methods}
+
+Remaining things that will some elaboration, or at least a definition?
+
+\begin{enumerate}
+	\item Bayesian Inference
+	\item Policy (Reinforcement Learning vs Active Inference framing)
+	\item Amortized Inference
+\end{enumerate}
+
+
 \printbibliography
 
 \end{document}

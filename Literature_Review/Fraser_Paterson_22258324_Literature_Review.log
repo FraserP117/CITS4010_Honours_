@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.6)  18 MAY 2023 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.6)  19 MAY 2023 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,20 +503,20 @@ Package biblatex Warning: Load 'inputenc' before biblatex.
 (./Fraser_Paterson_22258324_Literature_Review.aux)
 \openout1 = `Fraser_Paterson_22258324_Literature_Review.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 -- Lines per column: 58 (approximate, difference = 6.78308pt).
 Package biblatex Info: Trying to load language 'english'...
@@ -534,8 +534,8 @@ Package biblatex Info: ... file 'Fraser_Paterson_22258324_Literature_Review.bbl
 ' found.
 
 (./Fraser_Paterson_22258324_Literature_Review.bbl)
-Package biblatex Info: Reference section=0 on input line 20.
-Package biblatex Info: Reference segment=0 on input line 20.
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -561,15 +561,15 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \celsius on input line 20.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 20.
+LaTeX Info: Redefining \celsius on input line 21.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 21.
 
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 20.
-Package gensymb Info: Using \Omega for \ohm on input line 20.
+LaTeX Info: Redefining \ohm on input line 21.
+Package gensymb Info: Using \Omega for \ohm on input line 21.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -610,7 +610,7 @@ Package gensymb Warning: Not defining \micro.
 <images//UWA_Logo.png, id=1, 1505.625pt x 1505.625pt>
 File: images//UWA_Logo.png Graphic file (type png)
 <use images//UWA_Logo.png>
-Package pdftex.def Info: images//UWA_Logo.png  used on input line 45.
+Package pdftex.def Info: images//UWA_Logo.png  used on input line 46.
 (pdftex.def)             Requested size: 170.71393pt x 170.6965pt.
 [0{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//UWA_Logo.png>]
 (./Fraser_Paterson_22258324_Literature_Review.toc
@@ -624,58 +624,45 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1] [2
 
-] [3]
-
-LaTeX Warning: Citation 'Uncertainty_Epistemics_AIF_Saccad' on page 4 undefined
- on input line 119.
-
-[4] [5] [6]
+] [3] [4] [5]
+** WARNING: Ignoring useless \section in Appendix (line 198).
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-03.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+20.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
+) [6]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 203.
+(biblatex)                Using fallback driver on input line 220.
 
 [7] [8] (./Fraser_Paterson_22258324_Literature_Review.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Fraser_Paterson_22258324_Literature_Review
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'Fraser_Paterson_22258324_Literature_R
 eview.run.xml'.
 \openout1 = `Fraser_Paterson_22258324_Literature_Review.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12717 strings out of 478287
- 245626 string characters out of 5849289
- 965308 words of memory out of 5000000
- 30821 multiletter control sequences out of 15000+600000
+ 12726 strings out of 478287
+ 246081 string characters out of 5849289
+ 964452 words of memory out of 5000000
+ 30830 multiletter control sequences out of 15000+600000
  501285 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,68p,2503b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,68p,2503b,1619s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr
-8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Fraser_Paterson_22258324_Literature_Review.pdf (9 pages, 2004
-62 bytes).
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
+er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Fraser_Paterson_22258324_Literature_Review.pdf (9 pages, 1940
+18 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

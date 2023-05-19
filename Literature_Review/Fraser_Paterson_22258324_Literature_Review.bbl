@@ -59,6 +59,63 @@
       \verb https://arxiv.org/abs/2112.13251
       \endverb
     \endentry
+    \entry{Bayes-State-Estimation}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=0fd156a15a478f90a7dc3353dc1a3e97}{%
+           family={Balaji},
+           familyi={B\bibinitperiod},
+           given={Bhashyam},
+           giveni={B\bibinitperiod}}}%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=7b704fc0a28053bb266d11dd0b255e67}{%
+           family={Kadar},
+           familyi={K\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{organization}{2}{%
+        {International Society for Optics}%
+        {Photonics}%
+      }
+      \list{publisher}{1}{%
+        {SPIE}%
+      }
+      \strng{namehash}{48e06832f1075687069b9d3116242b3a}
+      \strng{fullhash}{48e06832f1075687069b9d3116242b3a}
+      \strng{bibnamehash}{48e06832f1075687069b9d3116242b3a}
+      \strng{authorbibnamehash}{48e06832f1075687069b9d3116242b3a}
+      \strng{authornamehash}{48e06832f1075687069b9d3116242b3a}
+      \strng{authorfullhash}{48e06832f1075687069b9d3116242b3a}
+      \strng{editorbibnamehash}{7b704fc0a28053bb266d11dd0b255e67}
+      \strng{editornamehash}{7b704fc0a28053bb266d11dd0b255e67}
+      \strng{editorfullhash}{7b704fc0a28053bb266d11dd0b255e67}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Signal Processing, Sensor Fusion, and Target Recognition XX}
+      \field{title}{{Bayesian state estimation using generalized coordinates}}
+      \field{volume}{8050}
+      \field{year}{2011}
+      \field{pages}{80501Y}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1117/12.883513
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1117/12.883513
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1117/12.883513
+      \endverb
+      \keyw{Variational Bayes,Variational Filtering,Generalized Coordinates,Dynamical Causal Modelling,Hierarchical Dynamical Model,Continuous-Discrete Filtering,Kolmogorov Equation,Fokker-Planck Equation}
+    \endentry
     \entry{Variational-Inference-Reviews}{article}{}
       \name{author}{3}{}{%
         {{hash=108998f0d44d4dce8ccb93e4d78cd5c6}{%
@@ -700,6 +757,62 @@
       \verb https://doi.org/10.1080/17588928.2015.1020053
       \endverb
     \endentry
+    \entry{Generalized-Filtering}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9f452a84796a900973333b32a5f8bc61}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4f9f1e677c3b173e5723cce467a7621c}{%
+           family={Stephan},
+           familyi={S\bibinitperiod},
+           given={Klaas},
+           giveni={K\bibinitperiod}}}%
+        {{hash=b29e9e747205f1b025dc145e440698b7}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Baojuan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=8d47f509e61c9543876ac29ea6eff7ea}{%
+           family={Daunizeau},
+           familyi={D\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Hindawi Publishing Corporation}%
+      }
+      \strng{namehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{fullhash}{1ba7dad87dee2906e5a604c5702e1381}
+      \strng{bibnamehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{authorbibnamehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{authornamehash}{a5aa6cc9fa51d6be7eef2a1be62bf301}
+      \strng{authorfullhash}{1ba7dad87dee2906e5a604c5702e1381}
+      \field{extraname}{3}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We describe a Bayesian filtering scheme for nonlinear state-space models in continuous time. This scheme is called Generalised Filtering and furnishes posterior (conditional) densities on hidden states and unknown parameters generating observed data. Crucially, the scheme operates online, assimilating data to optimize the conditional density on time-varying states and time-invariant parameters. In contrast to Kalman and Particle smoothing, Generalised Filtering does not require a backwards pass. In contrast to variational schemes, it does not assume conditional independence between the states and parameters. Generalised Filtering optimises the conditional density with respect to a free-energy bound on the model's log-evidence. This optimisation uses the generalised motion of hidden states and parameters, under the prior assumption that the motion of the parameters is small. We describe the scheme, present comparative evaluations with a fixed-form variational version, and conclude with an illustrative application to a nonlinear state-space model of brain imaging time-series.}
+      \field{issn}{1024-123X}
+      \field{journaltitle}{Mathematical Problems in Engineering}
+      \field{month}{6}
+      \field{title}{Generalised Filtering}
+      \field{volume}{2010}
+      \field{year}{2010}
+      \field{pages}{621670}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1155/2010/621670
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1155/2010/621670
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1155/2010/621670
+      \endverb
+    \endentry
     \entry{RL-or-AIF}{article}{}
       \name{author}{3}{}{%
         {{hash=558c08870d21f7acad878d94e125a377}{%
@@ -918,58 +1031,6 @@
       \verb{url}
       \verb https://www.frontiersin.org/articles/10.3389/frobt.2019.00020
       \endverb
-    \endentry
-    \entry{Emperical-Eval-AIF-Multi-Arm-Bandits}{article}{}
-      \name{author}{4}{}{%
-        {{hash=fb5bcd02a0c08033a95e19fa22db5659}{%
-           family={Marković},
-           familyi={M\bibinitperiod},
-           given={Dimitrije},
-           giveni={D\bibinitperiod}}}%
-        {{hash=d1a843f1419786bf5083e8421624b68f}{%
-           family={Stojić},
-           familyi={S\bibinitperiod},
-           given={Hrvoje},
-           giveni={H\bibinitperiod}}}%
-        {{hash=868a0d6e2c7004c2335ddf9572950076}{%
-           family={Schwöbel},
-           familyi={S\bibinitperiod},
-           given={Sarah},
-           giveni={S\bibinitperiod}}}%
-        {{hash=2f90964b242f5332c487e701a6d5f780}{%
-           family={Kiebel},
-           familyi={K\bibinitperiod},
-           given={Stefan\bibnamedelima J.},
-           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \strng{namehash}{e58637c4542160d10544ad01947ca7bb}
-      \strng{fullhash}{9ee56376af48024f88da0d5d11099dd5}
-      \strng{bibnamehash}{e58637c4542160d10544ad01947ca7bb}
-      \strng{authorbibnamehash}{e58637c4542160d10544ad01947ca7bb}
-      \strng{authornamehash}{e58637c4542160d10544ad01947ca7bb}
-      \strng{authorfullhash}{9ee56376af48024f88da0d5d11099dd5}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A key feature of sequential decision making under uncertainty is a need to balance between exploiting—choosing the best action according to the current knowledge, and exploring—obtaining information about values of other actions. The multi-armed bandit problem, a classical task that captures this trade-off, served as a vehicle in machine learning for developing bandit algorithms that proved to be useful in numerous industrial applications. The active inference framework, an approach to sequential decision making recently developed in neuroscience for understanding human and animal behaviour, is distinguished by its sophisticated strategy for resolving the exploration–exploitation trade-off. This makes active inference an exciting alternative to already established bandit algorithms. Here we derive an efficient and scalable approximate active inference algorithm and compare it to two state-of-the-art bandit algorithms: Bayesian upper confidence bound and optimistic Thompson sampling. This comparison is done on two types of bandit problems: a stationary and a dynamic switching bandit. Our empirical evaluation shows that the active inference algorithm does not produce efficient long-term behaviour in stationary bandits. However, in the more challenging switching bandit problem active inference performs substantially better than the two state-of-the-art bandit algorithms. The results open exciting venues for further research in theoretical and applied machine learning, as well as lend additional credibility to active inference as a general framework for studying human and animal behaviour.}
-      \field{issn}{0893-6080}
-      \field{journaltitle}{Neural Networks}
-      \field{title}{An empirical evaluation of active inference in multi-armed bandits}
-      \field{volume}{144}
-      \field{year}{2021}
-      \field{pages}{229\bibrangedash 246}
-      \range{pages}{18}
-      \verb{doi}
-      \verb https://doi.org/10.1016/j.neunet.2021.08.018
-      \endverb
-      \verb{urlraw}
-      \verb https://www.sciencedirect.com/science/article/pii/S0893608021003233
-      \endverb
-      \verb{url}
-      \verb https://www.sciencedirect.com/science/article/pii/S0893608021003233
-      \endverb
-      \keyw{Decision making,Bayesian inference,Multi-armed bandits,Active inference,Upper confidence bound,Thompson sampling}
     \endentry
     \entry{Contrastive-AIF}{inproceedings}{}
       \name{author}{3}{}{%
@@ -1223,6 +1284,50 @@
       \field{year}{2013}
       \verb{eprint}
       \verb 1312.5602
+      \endverb
+    \endentry
+    \entry{Uncertainty_Epistemics_AIF_Saccad}{article}{}
+      \name{author}{2}{}{%
+        {{hash=11ecca46a14363f21a56a51e1cb6c0ad}{%
+           family={Parr},
+           familyi={P\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=558c08870d21f7acad878d94e125a377}{%
+           family={Friston},
+           familyi={F\bibinitperiod},
+           given={Karl\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{94d447c85e90b56495ba75ac7c353cc3}
+      \strng{fullhash}{94d447c85e90b56495ba75ac7c353cc3}
+      \strng{bibnamehash}{94d447c85e90b56495ba75ac7c353cc3}
+      \strng{authorbibnamehash}{94d447c85e90b56495ba75ac7c353cc3}
+      \strng{authornamehash}{94d447c85e90b56495ba75ac7c353cc3}
+      \strng{authorfullhash}{94d447c85e90b56495ba75ac7c353cc3}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Biological systems—like ourselves—are constantly faced with uncertainty. Despite noisy sensory data, and volatile environments, creatures appear to actively maintain their integrity. To account for this remarkable ability to make optimal decisions in the face of a capricious world, we propose a generative model that represents the beliefs an agent might possess about their own uncertainty. By simulating a noisy and volatile environment, we demonstrate how uncertainty influences optimal epistemic (visual) foraging. In our simulations, saccades were deployed less frequently to regions with a lower sensory precision, while a greater volatility led to a shorter inhibition of return. These simulations illustrate a principled explanation for some cardinal aspects of visual foraging—and allow us to propose a correspondence between the representation of uncertainty and ascending neuromodulatory systems, complementing that suggested by Yu \&amp; Dayan (Yu \&amp; Dayan 2005 Neuron 46, 681–692. (doi:10.1016/j.neuron.2005.04.026)).}
+      \field{journaltitle}{Journal of The Royal Society Interface}
+      \field{number}{136}
+      \field{title}{Uncertainty, epistemics and active inference}
+      \field{volume}{14}
+      \field{year}{2017}
+      \field{pages}{20170376}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1098/rsif.2017.0376
+      \endverb
+      \verb{eprint}
+      \verb https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2017.0376
+      \endverb
+      \verb{urlraw}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2017.0376
+      \endverb
+      \verb{url}
+      \verb https://royalsocietypublishing.org/doi/abs/10.1098/rsif.2017.0376
       \endverb
     \endentry
     \entry{Curiosity-Driven-RL}{inproceedings}{}

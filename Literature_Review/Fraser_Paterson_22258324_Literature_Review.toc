@@ -1,14 +1,24 @@
 \contentsline {section}{\numberline {I}Overview}{2}{}%
 \contentsline {section}{\numberline {II}Introduction}{2}{}%
-\contentsline {subsection}{\numberline {\mbox {II-A}}Active Inference: An Overview}{2}{}%
-\contentsline {subsection}{\numberline {\mbox {II-B}}Why Care About Active Inference?}{2}{}%
-\contentsline {subsection}{\numberline {\mbox {II-C}}Variational Inference}{3}{}%
-\contentsline {subsection}{\numberline {\mbox {II-D}}The Free Energy Principle}{3}{}%
-\contentsline {subsection}{\numberline {\mbox {II-E}}Present Questions}{4}{}%
-\contentsline {subsection}{\numberline {\mbox {II-F}}Active Inference: Key Concepts}{4}{}%
-\contentsline {subsection}{\numberline {\mbox {II-G}}Overview of Research Direction}{4}{}%
-\contentsline {section}{\numberline {III}Gaps in The Literature}{5}{}%
-\contentsline {section}{\numberline {IV}Previous Work}{5}{}%
-\contentsline {subsection}{\numberline {\mbox {IV-A}}Sampling Based Approximation Methods}{5}{}%
-\contentsline {subsection}{\numberline {\mbox {IV-B}}Factor Graphs and Message Passing Methods}{6}{}%
-\contentsline {section}{\numberline {V}Conclusion}{6}{}%
+\contentsline {subsection}{\numberline {\mbox {II-A}}Agent Based Artificial Intelligence}{2}{}%
+\contentsline {subsubsection}{\numberline {\mbox {II-A}1}Model Based Methods}{2}{}%
+\contentsline {subsubsection}{\numberline {\mbox {II-A}2}Model Free Methods}{2}{}%
+\contentsline {subsection}{\numberline {\mbox {II-B}}Generative Artificial Intelligence}{2}{}%
+\contentsline {subsection}{\numberline {\mbox {II-C}}Partially Observable Markov Decision Porcesses (POMDPs)}{2}{}%
+\contentsline {section}{\numberline {III}Active Inference}{2}{}%
+\contentsline {subsection}{\numberline {\mbox {III-A}}An Overview}{2}{}%
+\contentsline {subsection}{\numberline {\mbox {III-B}}Why Care About Active Inference?}{3}{}%
+\contentsline {subsection}{\numberline {\mbox {III-C}}Active Inference: Key Concepts}{3}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}1}Variational Inference}{3}{}%
+\contentsline {subsubsection}{\numberline {\mbox {III-C}2}The Free Energy Principle}{4}{}%
+\contentsline {subsection}{\numberline {\mbox {III-D}}Present Questions}{4}{}%
+\contentsline {section}{\numberline {IV}Previous Work}{4}{}%
+\contentsline {subsection}{\numberline {\mbox {IV-A}}Generalised Filtering and the Laplace Approximation}{5}{}%
+\contentsline {subsection}{\numberline {\mbox {IV-B}}Factor Graphs and Message Passing Methods}{5}{}%
+\contentsline {subsection}{\numberline {\mbox {IV-C}}Sampling Based Approximation Methods}{5}{}%
+\contentsline {section}{\numberline {V}Gaps in The Literature}{6}{}%
+\contentsline {section}{\numberline {VI}Discussion}{6}{}%
+\contentsline {section}{\numberline {VII}Conclusion}{6}{}%
+\contentsline {section}{Appendix}{6}{}%
+\contentsline {subsection}{\numberline {A}Factor Graphs}{6}{}%
+\contentsline {subsection}{\numberline {B}Message Passing}{6}{}%

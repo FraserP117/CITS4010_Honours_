@@ -674,22 +674,6 @@
       primaryClass={cs.LG}
 }
 
-% @article{Scaling-AIF,
-%   author    = {Alexander Tschantz and
-%                Manuel Baltieri and
-%                Anil K. Seth and
-%                Christopher L. Buckley},
-%   title     = {Scaling active inference},
-%   journal   = {CoRR},
-%   volume    = {abs/1911.10601},
-%   year      = {2019},
-%   url       = {http://arxiv.org/abs/1911.10601},
-%   eprinttype = {arXiv},
-%   eprint    = {1911.10601},
-%   timestamp = {Tue, 03 Dec 2019 14:15:54 +0100},
-%   biburl    = {https://dblp.org/rec/journals/corr/abs-1911-10601.bib},
-%   bibsource = {dblp computer science bibliography, https://dblp.org}
-% }
 
 @INPROCEEDINGS{Scaling-AIF,
   author={Tschantz, Alexander and Baltieri, Manuel and Seth, Anil. K. and Buckley, Christopher L.},
@@ -917,4 +901,67 @@ eprint = {https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2017.0376}
   pdf =      {http://proceedings.mlr.press/v70/pathak17a/pathak17a.pdf},
   url =      {https://proceedings.mlr.press/v70/pathak17a.html},
   abstract =     {In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent’s ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: VizDoom and Super Mario Bros. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch.}
+}
+
+@Article{Generalized-Filtering,
+    author={Friston, Karl
+    and Stephan, Klaas
+    and Li, Baojuan
+    and Daunizeau, Jean},
+    title={Generalised Filtering},
+    journal={Mathematical Problems in Engineering},
+    year={2010},
+    month={Jun},
+    day={27},
+    publisher={Hindawi Publishing Corporation},
+    volume={2010},
+    pages={621670},
+    abstract={We describe a Bayesian filtering scheme for nonlinear state-space models in continuous time. This scheme is called Generalised Filtering and furnishes posterior (conditional) densities on hidden states and unknown parameters generating observed data. Crucially, the scheme operates online, assimilating data to optimize the conditional density on time-varying states and time-invariant parameters. In contrast to Kalman and Particle smoothing, Generalised Filtering does not require a backwards pass.  In contrast to variational schemes, it does not assume conditional independence between the states and parameters. Generalised Filtering optimises the conditional density with respect to a free-energy bound on the model's log-evidence. This optimisation uses the generalised motion of hidden states and parameters, under the prior assumption that the motion of the parameters is small. We describe the scheme, present comparative evaluations with a fixed-form variational version, and conclude with an illustrative application to a nonlinear state-space model of brain imaging time-series.},
+    issn={1024-123X},
+    doi={10.1155/2010/621670},
+    url={https://doi.org/10.1155/2010/621670}
+}
+
+@article{DEM,
+    title = {DEM: A variational treatment of dynamic systems},
+    journal = {NeuroImage},
+    volume = {41},
+    number = {3},
+    pages = {849-885},
+    year = {2008},
+    issn = {1053-8119},
+    doi = {https://doi.org/10.1016/j.neuroimage.2008.02.054},
+    url = {https://www.sciencedirect.com/science/article/pii/S1053811908001894},
+    author = {K.J. Friston and N. Trujillo-Barreto and J. Daunizeau},
+    keywords = {Variational Bayes, Free energy, Action, Dynamic expectation maximisation, Dynamical systems, Nonlinear, Bayesian filtering, Variational filtering},
+    abstract = {This paper presents a variational treatment of dynamic models that furnishes time-dependent conditional densities on the path or trajectory of a system's states and the time-independent densities of its parameters. These are obtained by maximising a variational action with respect to conditional densities, under a fixed-form assumption about their form. The action or path-integral of free-energy represents a lower bound on the model's log-evidence or marginal likelihood required for model selection and averaging. This approach rests on formulating the optimisation dynamically, in generalised coordinates of motion. The resulting scheme can be used for online Bayesian inversion of nonlinear dynamic causal models and is shown to outperform existing approaches, such as Kalman and particle filtering. Furthermore, it provides for dual and triple inferences on a system's states, parameters and hyperparameters using exactly the same principles. We refer to this approach as dynamic expectation maximisation (DEM).}
+}
+
+@article{Branch-Time-AIF,
+    title = {Branching time active inference: Empirical study and complexity class analysis},
+    journal = {Neural Networks},
+    volume = {152},
+    pages = {450-466},
+    year = {2022},
+    issn = {0893-6080},
+    doi = {https://doi.org/10.1016/j.neunet.2022.05.010},
+    url = {https://www.sciencedirect.com/science/article/pii/S0893608022001824},
+    author = {Théophile Champion and Howard Bowman and Marek Grześ},
+    keywords = {Active inference, Variational message passing, Tree search, Planning, Free energy principle},
+    abstract = {Active inference is a state-of-the-art framework for modelling the brain that explains a wide range of mechanisms such as habit formation, dopaminergic discharge and curiosity. However, recent implementations suffer from an exponential (space and time) complexity class when computing the prior over all the possible policies up to the time horizon. Fountas et al. (2020) used Monte Carlo tree search to address this problem, leading to very good results in two different tasks. Additionally, Champion et al. (2021a) proposed a tree search approach based on (temporal) structure learning. This was enabled by the development of a variational message passing approach to active inference (Champion, Bowman, Grześ, 2021), which enables compositional construction of Bayesian networks for active inference. However, this message passing tree search approach, which we call branching-time active inference (BTAI), has never been tested empirically. In this paper, we present an experimental study of the approach (Champion, Grześ, Bowman, 2021) in the context of a maze solving agent. In this context, we show that both improved prior preferences and deeper search help mitigate the vulnerability to local minima. Then, we compare BTAI to standard active inference (AcI) on a graph navigation task. We show that for small graphs, both BTAI and AcI successfully solve the task. For larger graphs, AcI exhibits an exponential (space) complexity class, making the approach intractable. However, BTAI explores the space of policies more efficiently, successfully scaling to larger graphs. Then, BTAI was compared to the POMCP algorithm (Silver and Veness, 2010) on the frozen lake environment. The experiments suggest that BTAI and the POMCP algorithm accumulate a similar amount of reward. Also, we describe when BTAI receives more rewards than the POMCP agent, and when the opposite is true. Finally, we compared BTAI to the approach of Fountas et al. (2020) on the dSprites dataset, and we discussed the pros and cons of each approach.}
+}
+
+@inproceedings{Bayes-State-Estimation,
+    author = {Bhashyam Balaji and Karl Friston},
+    title = {{Bayesian state estimation using generalized coordinates}},
+    volume = {8050},
+    booktitle = {Signal Processing, Sensor Fusion, and Target Recognition XX},
+    editor = {Ivan Kadar},
+    organization = {International Society for Optics and Photonics},
+    publisher = {SPIE},
+    pages = {80501Y},
+    keywords = {Variational Bayes, Variational Filtering, Generalized Coordinates, Dynamical Causal Modelling, Hierarchical Dynamical Model, Continuous-Discrete Filtering, Kolmogorov Equation, Fokker-Planck Equation},
+    year = {2011},
+    doi = {10.1117/12.883513},
+    URL = {https://doi.org/10.1117/12.883513}
 }
