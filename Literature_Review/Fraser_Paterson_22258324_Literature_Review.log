@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.6)  19 MAY 2023 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.6)  20 MAY 2023 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -950,33 +950,33 @@ Package pdftex.def Info: images//UWA_Logo.png  used on input line 46.
 
  [1] [2
 
-] [3] [4]
-Overfull \hbox (10.85457pt too wide) detected at line 207
+] [3] [4] [5]
+Overfull \hbox (10.85457pt too wide) detected at line 226
 []
  []
 
-[5] [6]
-** WARNING: Ignoring useless \section in Appendix (line 255).
+[6] [7]
+** WARNING: Ignoring useless \section in Appendix (line 286).
 LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-77.
+97.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [7]
+) [8]
 
 Package biblatex Warning: No driver for entry type 'unknown'.
-(biblatex)                Using fallback driver on input line 277.
+(biblatex)                Using fallback driver on input line 297.
 
-[8] [9] (./Fraser_Paterson_22258324_Literature_Review.aux)
+[9] [10] (./Fraser_Paterson_22258324_Literature_Review.aux)
 Package logreq Info: Writing requests to 'Fraser_Paterson_22258324_Literature_R
 eview.run.xml'.
 \openout1 = `Fraser_Paterson_22258324_Literature_Review.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23518 strings out of 478287
- 477788 string characters out of 5849289
- 1163033 words of memory out of 5000000
- 41395 multiletter control sequences out of 15000+600000
+ 23535 strings out of 478287
+ 478818 string characters out of 5849289
+ 1163506 words of memory out of 5000000
+ 41412 multiletter control sequences out of 15000+600000
  501739 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,80p,2503b,1885s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -991,11 +991,11 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 ></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Fraser_Paterson_22258324_Literature_Review.pdf (10 pages, 217
-616 bytes).
+Output written on Fraser_Paterson_22258324_Literature_Review.pdf (11 pages, 222
+700 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 101 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

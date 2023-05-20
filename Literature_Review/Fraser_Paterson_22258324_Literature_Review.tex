@@ -66,7 +66,7 @@ This section will be an overview of the Lit review. Can possibly put some inform
 \section{Introduction}
 
 \subsection{Agent Based Artificial Intelligence}
-The field of Agent-based AI is the discipline concerned with the creation of autonomous systems, capable of dynamically adapting to the constraints of some environment. From the persepctive of Artificial Intelligence, an ``agent'' simply refers to any computationally instantiated entity capable of percieving and acting in its environment. Agents typically have a constitutive goal of maintaining their self-organisation across time.  
+The field of Agent-based AI is the discipline concerned with the creation of autonomous systems, capable of dynamically adapting to the constraints of some environment. From the perspective of Artificial Intelligence, an ``agent'' simply refers to any computationally instantiated entity capable of perceiving and acting in its environment. Agents typically have a constitutive goal of maintaining their self-organization across time.  
 
 The general paradigm of interest with these methods is that of the ``sensorimotor loop''
 
@@ -81,13 +81,13 @@ One of the most general distinctions to be made in this field is that between ``
 \subsection{Generative Artificial Intelligence}
 One of the most fundamental tasks that an agent can perform is \textit{prediction}.
 
-\subsection{Partially Observable Markov Decision Porcesses (POMDPs)}
+\subsection{Partially Observable Markov Decision Processes (POMDPs)}
 
 \section{Active Inference}
 
 \subsection{An Overview}
 
-It is highly plausible that the field of adaptive, agent-based AI is perhaps, entering its Renaissance. The last few years have made histroy, in terms of the the capability, sophistication and operation of what these methods have been able to achieve.
+It is highly plausible that the field of adaptive, agent-based AI is perhaps, entering its Renaissance. The last few years have made history, in terms of the the capability, sophistication and operation of what these methods have been able to achieve.
 
 Active Inference is an emerging first-principles, account of adaptive behavior. Originating from Neuroscience: \textcite{A_FEP_For_The_Brain}, \textcite{The-Bayesian-Brain} and \textcite{Action-Behaviour-FE} as a corollary of the ``Free Energy Principle'', the theory is increasingly making inroads into Machine Learning and Artificial Intelligence: \textcite{RL-or-AIF} and \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}. 
 
@@ -124,7 +124,7 @@ Variational inference: \textcite{Variational-Inference-Reviews} is a technique o
 
 $$ p(x | y) = \frac{p(y | x)p(x)}{p(y)} $$
 
-\textcolor{red}{Not sure if this is really necesary, I should probably stick to a verbal exposition.}
+\textcolor{red}{Not sure if this is really necessary, I should probably stick to a verbal exposition.}
 
 For all but the smallest problems, computing the posterior exactly is intractable, due to the sheer number of states over which it is necessary to sum/integrate when computing $p(y)$. To eschew this, variational inference proposes an approximation scheme, whereby a family of ``variational'' or ``approximate'' posterior distributions is posited, each of which is a potential, approximate solution to the true posterior. These approximate posteriors are usually denoted: $q_i(x)$ where the subscript denotes that this is the i-th member of the family. We select a particular approximate posterior by choosing the one with the smallest ``divergence'' from the true posterior. Typically this is the Kullback-Libeler Divergence (KL Divergence)...
 
@@ -137,7 +137,13 @@ Historically speaking, Active Inference is a derivative of the ``Free Energy Pri
 
 \subsection{Present Questions}
 
-Although Active Inference offers several exciting new directions in agent-based AI and might hold the key to truly sample-efficient real-world implementations, the theory has typically only been implemented on relatively trivial problem instances, with a small number of states and/or actions, most commonly in a discrete setting: \textcite{Uncertainty_Epistemics_AIF_Saccad} and \textcite{AIF-Epistemic-Value}. Although it has been used to great effect in these ``proof of concept'' cases, it is not yet applicable to the same sorts of problems that reinforcement learning can currently address. Many of the sorts of real-world applications of practical interest are thus far beyond the reach of Active Inference, especially for real-time implementations. The main difficulty stems from the fact that the variational free energy is a functional of hidden states and observations. Hidden states are usually exist in a very high dimensional space and observations are usually highly time-varying. The task of minimizing a highly dimensional, time-varying functional is non-trivial. The goal of scaling up the method to problems with larger state and/or action spaces, such as in the continuous case, is very much an open one, and one that must be satisfactorily addressed if Active Inference is to become a serious contender as a real-world method.  
+Although Active Inference offers several exciting new directions in agent-based AI and might hold the key to truly sample-efficient real-world implementations, the theory has typically only been implemented on relatively trivial problem instances, with a small number of states and/or actions, most commonly in a discrete setting: \textcite{Uncertainty_Epistemics_AIF_Saccad} and \textcite{AIF-Epistemic-Value}. Although it has been used to great effect in these ``proof of concept'' cases, it is not yet applicable to the same sorts of problems that reinforcement learning can currently address. 
+
+This is largely due to the inherently exponential search space of evaluating potential actions into some horizon into the future. Sophisticated agents require the ability to plan actions in this manner, not merely to perform the optimal action at the present time. This requires the determination of a sequence of actions (a trajectory) into the future time horizon, the ability to score this trajectory and then the selection of the optimal trajectory, with respect to the cost function. Evaluating all possible trajectories in a problem instance's state-action space, scales exponentially with the size of the state-action space: \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}. This is very much the ``heart of the issue'' of scaling Active Inference. In an Active Inference context, the objective function in question for the case of planning future actions is the Expected Free Energy (EFE) and it is simply the expectation of the Variational Free Energy, under the approximate posterior for a given trajectory of actions into the future. 
+
+Aside from the exponential search space over trajectories into the future, another difficulty stems from the fact that the variational free energy is a functional of hidden states and observations. Hidden states usually exist in a very high dimensional space and observations are usually highly time-varying. Observations can easily be on the order of milliseconds, for instance. The task of minimizing a highly dimensional, time-varying functional is non-trivial. The goal of scaling up the method to problems with larger state and/or action spaces, such as in the continuous caseis, for the above reasons, very much an open one. It is a problem that must be satisfactorily addressed if Active Inference is to become a serious contender as a real-world method.  
+
+
 
 \section{Previous Work}
 
@@ -150,9 +156,22 @@ Instead of processing samples, the factor graph approach manipulates full distri
 
 Both approaches have their respective advantages and disadvantages. I'll now turn to a detailed exposition of each approach. 
 
-\subsection{Generalised Filtering and the Laplace Approximation}
+\subsection{The Laplace Approximation and Generalised Coordinates}
 
-Generalised coordinates of motion: \textcite{Generalized-Filtering} and \textcite{Bayes-State-Estimation}.
+A common approximation scheme used to simplify the calculation of the free energy is the \textit{Laplace Approximation}. This consists in simply assuming that the optimal approximate posterior distribution is a Gaussian distribution. The sufficient statistics of this Gaussian then become parameters which can be optimised so as to minimise the VFE. 
+
+It is almost always further assumed that the approximate posterior is sharply peaked about its mean value and that the constituent functions of the hidden states are smooth. This makes the integration problem of evaluating the VFE appreciably non-zero, only at the peaks. We can then use a Taylor series expansion of the constituent functions about their mean value. 
+
+This affords a highly tractible, analytic form for the VFE but the above assumptions are fairly strong ones, many of which are highly questionable - depending on the intended use case. For instance, the assumption that the approximate posteror is strongly peaked about its mean, will generally be appropriate in proportion to the degree that the approximate posterior \textit{already} constitutes a good aproximation to the true posterior. In the case of a greater amount of uncertainty about the fitness of the approximate posterior, this assumption is less and less appropriate. For small or simple problems, this is often not a large issue, but in the large multivariate case, the approximate posterior need not at all resemble a multivariate Gaussian.  
+
+This approach also has highly non-trivial implications for the interpretation of brain function. To the degree that Active Inference is used as a model of brain function, this is an obvious limitation of the approximation. See \textcite{FEP-Mathematical-Review} 
+
+In conjunction with the Laplace appoximation, when implementing Active Inference in continuous state-action spaces, a related means of representing beliefs about trajectories through time is to use \textit{generalised coordinates of motion}. This is a rather straightforward procedure, whereby inferences are drawn, not only about each hidden state variable - $x$, say - but also regarding each successive temporal derivative of $x$: $x'$, $x''$, $x'''$ and so on. These temporal derivatives can then be used to construct an approximation to the actual trajectory. This again, is a simple means of representing the trajectory of the hidden states, in an analytically tractible way. 
+
+Both these approaches are perfectly viable constituent means of implementing Active Inference on their own but it is common to use both simultaneously. These approximations culminate in a method called ``Generalised Filtering'': \textcite{Generalized-Filtering} and \textcite{Bayes-State-Estimation}. This is a fully online Bayesian filtering scheme that uses generalized coordinates.
+
+While these sorts of schemes afford computationally tractible means of formuating and evaluating the VFE, they do not necessarily afford the ability to scale these procedures to larger problem instances.
+
 
 \subsection{Factor Graphs and Message Passing Methods}
 
@@ -187,7 +206,7 @@ Where $p_\cdot(\cdot)$ represents a probability density function.
 	  \draw[->, shorten >=2pt, shorten <=2pt] (pd) -- +(0, -1cm) node[midway, right] {$x_5$};
 	  \draw[->, shorten >=2pt, shorten <=2pt] (pc) -- (pd) node[midway, right] {$x_4$};
   \end{tikzpicture}
-  \caption{An FFG representation of Equation \ref{eq:factorized-model}. Adapted from \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}. A node (factor) connects to all edges (variables) that are arguments in that factor. For instance, $p_c$ is connected to $x_2$, $x_3$ and $x_4$, since these all appear as arguments to factor $p_c$. Variables that only appear in one factor are represented as half-edges. Now an FFG is technically an undirected graph, however we can specify a direction for the edges to indicate the generatve direction of the model.}
+  \caption{An FFG representation of Equation \ref{eq:factorized-model}. Adapted from \textcite{Factor-Graph-Approach-Automated-Design-Bayesian-Algos}. A node (factor) connects to all edges (variables) that are arguments in that factor. For instance, $p_c$ is connected to $x_2$, $x_3$ and $x_4$, since these all appear as arguments to factor $p_c$. Variables that only appear in one factor are represented as half-edges. Now an FFG is technically an undirected graph, however we can specify a direction for the edges to indicate the generative direction of the model.}
   \label{fig:factor-graph}
 \end{figure}
 
@@ -195,7 +214,7 @@ Where $p_\cdot(\cdot)$ represents a probability density function.
 \vspace{12pt}
 \subsubsection{Message Passing}
 
-Upon observing some particular value of one of the variables, say $x_5 = \hat{x_5}$, suppose we are interested in computing the marginal posterior probability distribution of $x_2$ given this observation of $x_5$. In an FFG formulation, observing a value for a particular variable leads to the introduction of a new factor in the model. This has the effect of ``clamping'' the varaible to its observed value. Hence in our example, we now have:
+Upon observing some particular value of one of the variables, say $x_5 = \hat{x_5}$, suppose we are interested in computing the marginal posterior probability distribution of $x_2$ given this observation of $x_5$. In an FFG formulation, observing a value for a particular variable leads to the introduction of a new factor in the model. This has the effect of ``clamping'' the variable to its observed value. Hence in our example, we now have:
 
 $$ p(x_1, ..., x_5) \cdot \delta(x_5 - \hat{x_5})$$ 
 
@@ -209,20 +228,30 @@ To compute the marginal posterior distribution of $x_2$ given an observation of 
 
 These nested integrals in \eqref{eq:posterior_2} result from the substitution of the factored form of Equation \ref{eq:factorized-model} into \eqref{eq:posterior_1} and then rearranging the resulting integrals via the distributive law.
 
-The structure of the FFG can automate the the rearrangement of these integrals into a product of nested sub-integrals. The solutions to these sub-integrals can be interpreted as mesages flowing over the FFG, hence this method is known as \textit{message passing}. The massages are ordered or ``scheduled'' so as to only contain backward dependencies. In other words, each message can be derived from preceeding messages in the schedule. Importantly, these schedules can be automatically generated by performing a depth-first search on the FFG - for isntance. 
+The structure of the FFG can automate the the rearrangement of these integrals into a product of nested sub-integrals. The solutions to these sub-integrals can be interpreted as messages flowing over the FFG, hence this method is known as \textit{message passing}. The massages are ordered or ``scheduled'' so as to only contain backward dependencies. In other words, each message can be derived from preceding messages in the schedule. Importantly, these schedules can be automatically generated by performing a depth-first search on the FFG - for instance. 
 
-Message passing is very efficient, since the computation of every message is local to each node in the FFG. Indeed, the message flowing from factor node $p_b$ can be derived from the mere analytic expression for $p_b$ and all messages inbound to $p_b$. Furtheremore, if the analytic form of eaach incomming message is known, a pre-derived message computation rule can be used to derive the outgoing message. These rules can be easily stored in a lookup table for resue in any model in which that specific factor-message combination is found. 
+Message passing is very efficient, since the computation of every message is local to each node in the FFG. Indeed, the message flowing from factor node $p_b$ can be derived from the mere analytic expression for $p_b$ and all messages inbound to $p_b$. Furthermore, if the analytic form of each incoming message is known, a pre-derived message computation rule can be used to derive the outgoing message. These rules can be easily stored in a lookup table for reuse in any model in which that specific factor-message combination is found. 
 
 The above example elaborates the fundaments of the \textit{sum-product} message passing algorithm, however various message passing algorithms exist, such as Variational Message Passing. All message passing schemes greatly reduces the number of terms over which it is necessary to sum, when computing the approximate marginal and posterior distributions; affording much more efficient inference and a great potential for scaling up to larger state-action spaces. Indeed, this method does not make use of any approximation by means of a sampling procedure and so it avoids the computational burden associated with calculating these samples. 
 
-Since this method relies upon a particular schedule of message-passing update rules on the underlying factor graph, all functions used need to be invertible and an inference is performed via a closed form update where the prior and likelihood distributions must be conjugate. The model passes around full distributions instead of mere samples. This results in a very fast and efficient implementation - when applicable, but the issue is that it is not a completely generic method, owing to the many assumptions as to the model structure just enumerated. many real-world distributions do not have conjugate prior and likelihoods and so this method cannot be applied in these cases.
+Since this method relies upon a particular schedule of message-passing update rules on the underlying factor graph, all functions used need to be invertible (bijective) and an inference is performed via a closed form update where the prior and likelihood distributions must be conjugate. The model passes around full distributions instead of mere samples. This results in a very fast and efficient implementation - when applicable, but the issue is that it is not a completely generic method, owing to the many assumptions as to the model structure just enumerated. many real-world distributions do not have conjugate prior and likelihoods and so this method cannot be applied in these cases. 
 
 
 \subsection{Sampling Based Approximation Methods}
 
-A more standard approach that has seen a comparatively greater deal of attention is that of using deep neural network function approximators to either parameterize the distributions of interest, or to afford an efficient means of sampling these distributions. This affords approximate inference. Indeed this "genre" of approach has already seen great success in scaling reinforcement learning methods to larger state-action spaces: \textcite{Async-Methods-Deep-RL}, \textcite{ATARI-Deep-RL}, other citations needed and available.
+These are the papers I'll actually talk about, all others in this section will be removed.
 
-See: \textcite{Deep-AIF}, \textcite{Applications-of-FEP-Machine-Learning-Neuroscience}, \textcite{Deep-AIF-As-Var-Policy-Grad}, \textcite{Reinforcement-Learning-Through-AIF} and \textcite{Bayesian-Policy-Selection-Using-AIF}. 
+\begin{enumerate}
+	\item Deep AIF for POMDPs: \textcite{DEEP-AIF-For-POMDPs}
+	\item Scaling AIF: \textcite{Scaling-AIF}
+	\item AIF in ML and Neroscience: \textcite{Applications-of-FEP-Machine-Learning-Neuroscience},
+	\item Bayesian Policy Selection AIF: \textcite{Bayesian-Policy-Selection-AIF}
+	\item Combining information-seeking exploration and reward maximization: Unified inference on continuous state and action spaces under partial observability: \textcite{Combine-Info-Seek-Explore-and-Reward-Maximization-Under-POMDP}
+	\item Learning Generative State Space Models for Active Inference: \textcite{Learn-Gen-State-Space-Models-AIF}
+	\item Contrastive AIF: \textcite{Contrastive-AIF}
+\end{enumerate}
+
+A more standard approach that has seen a comparatively greater deal of attention is that of using deep neural network function approximators to either parameterize the distributions of interest, or to afford an efficient means of sampling these distributions. This instantiates an approximate inference scheme. Indeed this ``genre'' of approach has already seen great success in scaling reinforcement learning methods to larger state-action spaces: \textcite{Async-Methods-Deep-RL}, \textcite{ATARI-Deep-RL} and so it is a natural choice for attempting the same task in Active Inference.
 
 Of particular interest are: \textcite{Scaling-AIF}, \textcite{Bayesian-Policy-Selection-Using-AIF} and \textcite{Contrastive-AIF}. The former makes use of amortized inference, in the form of neural network function approximators to parameterize the relevant distributions. Free Energy minimization is then performed with respect to the function approximators. In addition, the free energy functional is amortized over the training data. This affords several advantages. For example, the number of parameters remains constant with respect to the size of the data and inference can be achieved via a single forward pass through the network. This contrasts with the iterative approach, where the VFE must be scored for every sample, individually. The resulting algorithm was able to explore a much greater proportion of the state space in a simple stationary environment, in comparison with two Reinforcement Learning baseline agents. In addition, the agent was able to learn to control the continuous inverted pendulum task with a far greater sample efficiency than the baseline agents. Although the approach offered in \textcite{Scaling-AIF} is promising, its analysis was restricted in every case to fully observable environments. This potentially sold the implementaon short, since the partially observable domain is the more "natural" problem instance for which active inference was conceived as a solution strategy. Active Inference has a built-in drive to effect uncertainty reduction, this is not so with standard reinforcement learning, for which only ad-hoc strategies exist to afford the same sort of epistemic drive that exists in active inference. This is a salient point of departure between active inference and reinforcement learning, since both already implement strategies for realizing pragmatic value. 
 
@@ -254,18 +283,7 @@ Here I think I'll reiterate why this problem of scaling active inference is impo
 \appendix
 \section{Appendix}
 
-% \subsection{Partially Observable Markov Decision Process (POMDP)}
-% This is important enough to the topic that I think it might just need to go in the text, probably in the introduction.
-
-\subsection{Factor Graphs}
-
-\subsection{Message Passing}
-
-% \subsection{Model Based Methods}
-
-% \subsection{Model Free Methods}
-
-Remaining things that will some elaboration, or at least a definition?
+Remaining things that will some elaboration, or at least a definition? I'm not sure this appendix will be necessary in the end.
 
 \begin{enumerate}
 	\item Bayesian Inference
