@@ -1759,48 +1759,6 @@
       \field{title}{Reinforcement Learning: An Introduction}
       \field{year}{2018}
     \endentry
-    \entry{Reinforcement-Learning-Through-AIF}{misc}{}
-      \name{author}{4}{}{%
-        {{hash=3f98dc382188ff01295eb411612cb9ae}{%
-           family={Tschantz},
-           familyi={T\bibinitperiod},
-           given={Alexander},
-           giveni={A\bibinitperiod}}}%
-        {{hash=dcf103531a4bb5a439a2233cf52e9703}{%
-           family={Millidge},
-           familyi={M\bibinitperiod},
-           given={Beren},
-           giveni={B\bibinitperiod}}}%
-        {{hash=a18faa5d293b699968705a564971492b}{%
-           family={Seth},
-           familyi={S\bibinitperiod},
-           given={Anil\bibnamedelima K.},
-           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=6ba2af6672c84ba8cffc8b86bc35d608}{%
-           family={Buckley},
-           familyi={B\bibinitperiod},
-           given={Christopher\bibnamedelima L.},
-           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
-      }
-      \strng{namehash}{c1308c02024dfc243c971e68d399eb80}
-      \strng{fullhash}{20ddd33b6e9bbc0e302a3feb1773a6c9}
-      \strng{bibnamehash}{c1308c02024dfc243c971e68d399eb80}
-      \strng{authorbibnamehash}{c1308c02024dfc243c971e68d399eb80}
-      \strng{authornamehash}{c1308c02024dfc243c971e68d399eb80}
-      \strng{authorfullhash}{20ddd33b6e9bbc0e302a3feb1773a6c9}
-      \field{extraname}{1}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.LG}
-      \field{eprinttype}{arXiv}
-      \field{title}{Reinforcement Learning through Active Inference}
-      \field{year}{2020}
-      \verb{eprint}
-      \verb 2002.12636
-      \endverb
-    \endentry
     \entry{Scaling-AIF}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=3f98dc382188ff01295eb411612cb9ae}{%
@@ -1830,7 +1788,6 @@
       \strng{authorbibnamehash}{c1308c02024dfc243c971e68d399eb80}
       \strng{authornamehash}{c1308c02024dfc243c971e68d399eb80}
       \strng{authorfullhash}{ac27dbea74c8ba6d7e3bc2a74e7705ec}
-      \field{extraname}{2}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
       \field{labelnamesource}{author}

@@ -145,3 +145,20 @@ The Free Energy Principle (FEP) attempts to provide a principled account of adap
 
 % sampling based approx methods
 See: \textcite{Deep-AIF}, \textcite{Deep-AIF-As-Var-Policy-Grad}, \textcite{Reinforcement-Learning-Through-AIF} and \textcite{Bayesian-Policy-Selection-Using-AIF}. 
+
+% Active Inference has a built-in drive to effect uncertainty reduction, this is not so with standard reinforcement learning, for which only ad-hoc strategies exist to afford the same sort of epistemic drive that exists in active inference. This is a salient point of departure between active inference and reinforcement learning, since both already implement strategies for realizing pragmatic value. 
+
+% Pragmatic value is encoded as the sum of discounted reward across time, in the case of reinforcement learning. In the case of active inference, the drive to realize pragmatic value is afforded by the choice of action/s that realize the agent's prior preferences. The realization of prior preferences in active inference is analogous to maximizing the reward signal in reinforcement learning. However there is no analogous process for a drive to realize epistemic value, going from active inference to reinforcement learning, at least not without some aforementioned ad-hoc contrivance of the reward signal. 
+
+
+These are the papers I'll actually talk about, all others in this section will be removed.
+
+\begin{enumerate}
+	\item Deep AIF for POMDPs: \textcite{DEEP-AIF-For-POMDPs}
+	\item Scaling AIF: \textcite{Scaling-AIF}
+	\item AIF in ML and Neroscience: \textcite{Applications-of-FEP-Machine-Learning-Neuroscience},
+	\item Bayesian Policy Selection AIF: \textcite{Bayesian-Policy-Selection-AIF}
+	\item Combining information-seeking exploration and reward maximization: Unified inference on continuous state and action spaces under partial observability: \textcite{Combine-Info-Seek-Explore-and-Reward-Maximization-Under-POMDP}
+	\item Learning Generative State Space Models for Active Inference: \textcite{Learn-Gen-State-Space-Models-AIF}
+	\item Contrastive AIF: \textcite{Contrastive-AIF}
+\end{enumerate}
